@@ -268,11 +268,49 @@
             text-align: center; /* Centraliza o texto das outras células e cabeçalhos */
         }
 		
+		.tooltip {
+		position: relative;
+		display: inline-block;
+	}
+
+	.info-button {
+		background-color: #4CAF50; /* Cor do botão */
+		color: white;
+		border: none;
+		border-radius: 4px;
+		padding: 5px 10px;
+		cursor: pointer;
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.tooltip .tooltiptext {
+		visibility: hidden;
+		width: 160px; /* Largura do texto */
+		background-color: #555; /* Cor de fundo do texto */
+		color: #fff; /* Cor do texto */
+		text-align: center;
+		border-radius: 5px;
+		padding: 5px 0;
+		position: absolute;
+		z-index: 1;
+		bottom: 125%; /* Posiciona o texto acima do botão */
+		left: 50%;
+		margin-left: -80px; /* Centro o texto em relação ao botão */
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+		opacity: 1;
+	}
+
 	</style>
 </head>
 <body>
 
-	<h2>Tabela</h2>
+	<h2>Tabela comparativa de produtos da unidade de Redes Intelbras</h2>
 
     <button class="button" onclick="showTable('table1')">Roteadores Corporativos</button>
     <button class="button" onclick="showTable('table2')">Roteadores Residenciais</button>
@@ -1092,13 +1130,199 @@
     <div id="table3" class="hidden">
         <table border="1">
             <tr>
-                <th>Coluna X</th>
-                <th>Coluna Y</th>
+                <th>Modelo</th>
+                <th>Interface</th>
+				<th>Indicado</th>
+                <th>Ganho de Antena</th>
+				<th>Potência de Transmissão</th>
+                <th>Taxa de Encam. de Pacotes</th>
+				<th>Throughput Efetivo | Nominal</th>
+				<th>Abertura</th>
+				<th>Distância Máx. Recomendada</th>
+				<th>Wireless</th>
+				<th>Alimentação</th>
+                <th>Garantia</th>
+                <th>Página</th>
             </tr>
-            <tr>
-                <td>Dado X1</td>
-                <td>Dado Y1</td>
-            </tr>
+			<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				WOM AC</td>
+			<td>Giga</td>
+			<td>PTP</td>
+			<td>16 dBi</td>
+			<td>Até 23 dBm</td>
+			<td>80.000 PPS</td>
+			<td>450 Mbps  | 867 Mbps</td>
+			<td>H-40° | V-20°</td>
+			<td>5 Km</td>
+			<td>MiMo 2x2</td>
+			<td>12V / 24V</td>
+			<td>1 ano</td>       
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+		</tr>
+
+			<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				WOM AC MAX</td>
+			<td>Giga</td>
+			<td>PTP</td>
+			<td>20 dBi</td>
+			<td>Até 23 dBm</td>
+			<td>80.000 PPS</td>
+			<td>450 Mbps  | 867 Mbps</td>
+			<td>H-16° | V-16°</td>
+			<td>8 Km</td>
+			<td>MiMo 2x2</td>
+			<td>12V / 24V</td>
+			<td>1 ano</td>       
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+		</tr>
+
+		</tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				KIT WOM 5A MIMO</td>
+			<td>Fast</td>
+			<td>PTP</td>
+			<td>16 dBi</td>
+			<td>Até 28 dBm</td>
+			<td>60.000 PPS</td>
+			<td>160 Mbps | 300 Mbps</td>
+			<td>H-40° | V-18°</td>
+			<td>1 Km</td>
+			<td>MiMo 2x2</td>
+			<td>12V / 24V</td>
+			<td>1 ano</td>       
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+		</tr>		
+		<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				WOM 5A MIMO</td>
+			<td>Fast</td>
+			<td>PTP</td>
+			<td>16 dBi</td>
+			<td>Até 28 dBm</td>
+			<td>60.000 PPS</td>
+			<td>160 Mbps | 300 Mbps</td>
+			<td>H-40° | V-18°</td>
+			<td>5 Km</td>
+			<td>MiMo 2x2</td>
+			<td>12V / 24V</td>
+			<td>1 ano</td>       
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+		</tr>	
+		<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				WOM 5A</td>
+			<td>Fast</td>
+			<td>PTP</td>
+			<td>16 dBi</td>
+			<td>Até 28 dBm</td>
+			<td>60.000 PPS</td>
+			<td>110 Mbps | 300 Mbps</td>
+			<td>H-40° | V-18°</td>
+			<td>4 Km</td>
+			<td>SiSo 1x1</td>
+			<td>12V / 24V</td>
+			<td>1 ano</td>       
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+		</tr>			
+		<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				APC 5A-15</td>
+			<td>Fast</td>
+			<td>PTP</td>
+			<td>15 dBi</td>
+			<td>Até 29 dBm</td>
+			<td>80.000 PPS</td>
+			<td>180 Mbps | 300 Mbps</td>
+			<td>H-35° | V-35°</td>
+			<td>6 Km</td>
+			<td>MiMo 2x2</td>
+			<td>12V / 24V</td>
+			<td>1 ano</td>       
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+		</tr>	
+
+		<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				APC 5A-20</td>
+			<td>Fast</td>
+			<td>PTP</td>
+			<td>20 dBi</td>
+			<td>Até 29 dBm</td>
+			<td>80.000 PPS</td>
+			<td>180 Mbps | 300 Mbps</td>
+			<td>H-16° | V-16°</td>
+			<td>10 Km</td>
+			<td>MiMo 2x2</td>
+			<td>12V / 24V</td>
+			<td>1 ano</td>       
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+		</tr>	
+		<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				APC 5A-90 Giga V3</td>
+			<td>Giga</td>
+			<td>Base</td>
+			<td>18 dBi</td>
+			<td>Até 29 dBm</td>
+			<td>80.000 PPS</td>
+			<td>180 Mbps | 300 Mbps</td>
+			<td>H-90° | V-20°</td>
+			<td>10 Km</td>
+			<td>MiMo 2x2</td>
+			<td>12V / 24V</td>
+			<td>1 ano</td>       
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+	</tr>	
+
+	<tr>
+			<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+			<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+			APC 5A-90</td>
+		<td>Fast</td>
+		<td>Base</td>
+		<td>18 dBi</td>
+		<td>Até 29 dBm</td>
+		<td>80.000 PPS</td>
+		<td>180 Mbps | 300 Mbps</td>
+		<td>H-90° | V-20°</td>
+		<td>10 Km</td>
+		<td>MiMo 2x2</td>
+		<td>12V / 24V</td>
+		<td>1 ano</td>       
+		<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+	</tr>	
+
+	<tr>
+			<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+			<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+			APC 5A Giga</td>
+			<div class="tooltip">
+				<button class="info-button">?</button>
+				<span class="tooltiptext">Texto oculto que aparece ao passar o mouse</span>
+			</div>
+		<td>Giga</td>
+		<td>Base - PTP</td>
+		<td>N/A</td>
+		<td>Até 29 dBm</td>
+		<td>80.000 PPS</td>
+		<td>180 Mbps | 300 Mbps</td>
+		<td>N/A</td>
+		<td>N/A</td>
+		<td>MiMo 2x2</td>
+		<td>12V / 24V</td>
+		<td>1 ano</td>       
+		<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+
+</tr>	
+
         </table>
     </div>
 
