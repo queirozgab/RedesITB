@@ -226,6 +226,7 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
 }
+
 table {
     border-spacing: 15px; /* Define o espaçamento entre as colunas */
     margin: 10px;
@@ -349,12 +350,12 @@ td:not(.modelo), th:not(.modelo) {
 }
 
   /* Estilos para o botão e a tooltip */
-  .tooltip {
+.qwert {
     position: relative;
     display: inline-block;
 }
 
-.tooltip .tooltiptext {
+.qwert .tooltiptext {
     visibility: hidden;
     width: 160px;
     background-color: black;
@@ -371,7 +372,7 @@ td:not(.modelo), th:not(.modelo) {
     transition: opacity 0.3s;
 }
 
-.tooltip .tooltiptext::after {
+.qwert .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%; /* Posiciona a seta abaixo da tooltip */
@@ -382,7 +383,7 @@ td:not(.modelo), th:not(.modelo) {
     border-color: black transparent transparent transparent;
 }
 
-.tooltip:hover .tooltiptext {
+.qwert:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
 }
@@ -392,7 +393,7 @@ td:not(.modelo), th:not(.modelo) {
     background-color: #4CAF50; /* Verde */
     border: none;
     color: white;
-    padding: 10px 20px;
+    padding: 0px 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
