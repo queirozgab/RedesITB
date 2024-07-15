@@ -145,12 +145,14 @@
     <button class="button" onclick="showTable('table1')">Roteadores Corporativos</button>
     <button class="button" onclick="showTable('table2')">Roteadores Residenciais</button>
     <button class="button" onclick="showTable('table3')">Rádios</button>
-    <button class="button" onclick="showTable('table4')">Switches</button>
-    <button class="button" onclick="showTable('table5')">ONT/ONU</button>
-	<button class="button" onclick="showTable('table6')">OLT</button>
-	<button class="button" onclick="showTable('table7')">Racks e acessórios</button>
-	<button class="button" onclick="showTable('table8')">Cabeamento estruturado</button>
-    <button class="button" onclick="showTable('table9')">5G</button>
+    <button class="button" onclick="showTable('table4')">ONT/ONU</button>
+    <button class="button" onclick="showTable('table5')">Módulo SFP</button>
+	<button class="button" onclick="showTable('table6')">Conversor de Mídia</button>
+    <button class="button" onclick="showTable('table7')">5G</button>
+	<button class="button" onclick="showTable('table8')">Switches</button>
+	<button class="button" onclick="showTable('table9')">Racks e acessórios</button>
+	<button class="button" onclick="showTable('table10')">Cabeamento estruturado</button>
+    <button class="button" onclick="showTable('table11')">5G</button>
 
 
     <script>
@@ -1269,7 +1271,7 @@
 		<td>N/A</td>
 		<td>90 Mbps | 150 Mbps</td>
 		<td>H-60° | V-30°</td>
-		<td>N/A</td>
+		<td>2 Km</td>
 		<td>SiSo 1x1</td>
 		<td>12V</td>
 		<td>1 ano</td>       
@@ -1283,26 +1285,584 @@
 	<div id="table4" class="hidden">
         <table border="1">
             <tr>
-                <th>Coluna X</th>
-                <th>Coluna Y</th>
+                <th>Modelo</th>
+				<th>Interface</th>
+				<th>Qtde FXS</th>
+                <th>Qtde RJ45</th>
+				<th>Sensibilidade Max | Min</th>
+				<th>Cobertura</th>
+				<th>Usuários Máx.</th>
+				<th>Datarate Máx. 2Ghz</th>
+				<th>Datarate Máx. 5Ghz</th>
+				<th>SSID</th>
+				<th>TR069</th>
+				<th>Customize</th>
+				<th>Remotize</th>
+				<th>Garantia</th>
+				<th>Página</th>
             </tr>
-            <tr>
-                <td>Dado X1</td>
-                <td>Dado Y1</td>
+				<tr>
+					<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					ONT HG6145D2
+					<div class="qwert">
+						<button class="info-button">?</button>
+						<span class="tooltiptext">Parceria FiberHome | Intelbras</span>
+					</div>
+				</td>	
+				<td>Giga</td>
+				<td>1 porta</td>
+				<td>4 portas</td>
+				<td>-8 dbm | -28 dbm</td>
+				<td>120 m²</td>
+				<td>64 usuários</td>
+				<td>300 Mbps</td>
+				<td>867 Mbps</td>
+				<td>8 SSID</td>
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+				<td>1 ano</td>
+				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+				</tr>	
             </tr>
-        </table>
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				ONT HG6145F
+				<div class="qwert">
+					<button class="info-button">?</button>
+					<span class="tooltiptext">Parceria FiberHome | Intelbras</span>
+				</div>
+			</td>	
+			<td>Giga</td>
+			<td>1 porta</td>
+			<td>4 portas</td>
+			<td>-8 dbm | -28 dbm</td>
+			<td>140 m²</td>
+			<td>64 usuários</td>
+			<td>573 Mbps</td>
+			<td>1200 Mbps</td>
+			<td>8 SSID</td>
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>	
+
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				ONT HG6145F3
+				<div class="qwert">
+					<button class="info-button">?</button>
+					<span class="tooltiptext">Parceria FiberHome | Intelbras</span>
+				</div>
+			</td>	
+			<td>Giga</td>
+			<td>1 porta</td>
+			<td>4 portas</td>
+			<td>-8 dbm | -28 dbm</td>
+			<td>140 m²</td>
+			<td>64 usuários</td>
+			<td>573 Mbps</td>
+			<td>2400 Mbps</td>
+			<td>8 SSID</td>
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				ONT 140 PoE
+			</td>	
+			<td>Giga</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>4 portas</td>
+			<td>-8 dbm | -27 dbm</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+			
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				ONT 120 AC
+			</td>	
+			<td>Giga</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>2 portas</td>
+			<td>-7 dbm | -27 dbm</td>
+			<td>120 m²</td>
+			<td>64 usuários</td>
+			<td>300 Mbps</td>
+			<td>867 Mbps</td>
+			<td>8 SSIDs</td>
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				ONT 121 AC
+			</td>	
+			<td>Giga</td>
+			<td>1 porta</td>
+			<td>2 portas</td>
+			<td>-7 dbm | -27 dbm</td>
+			<td>120 m²</td>
+			<td>64 usuários</td>
+			<td>300 Mbps</td>
+			<td>867 Mbps</td>
+			<td>8 SSIDs</td>
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				ONT 1200R
+			</td>	
+			<td>Giga</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>2 portas</td>
+			<td>-8 dbm | -28 dbm</td>
+			<td>100 m²</td>
+			<td>64 usuários</td>
+			<td>300 Mbps</td>
+			<td>867 Mbps</td>
+			<td>10 SSIDs</td>
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				ONT AX 1800
+			</td>	
+			<td>Giga</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>4 portas</td>
+			<td>-7 dbm | -27 dbm</td>
+			<td>140 m²</td>
+			<td>64 usuários</td>
+			<td>570 Mbps</td>
+			<td>1200 Mbps</td>
+			<td>10 SSIDs</td>
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				ONT AX 1800V
+			</td>	
+			<td>Giga</td>
+			<td>1 portas</td>
+			<td>4 portas</td>
+			<td>-7 dbm | -27 dbm</td>
+			<td>140 m²</td>
+			<td>64 usuários</td>
+			<td>570 Mbps</td>
+			<td>1200 Mbps</td>
+			<td>10 SSIDs</td>
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				ONU 110B
+				<div class="qwert">
+					<button class="info-button">?</button>
+					<span class="tooltiptext">Não possuí rede wireless.</span>
+				</div>
+			</td>	
+			<td>Giga</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>1 porta</td>
+			<td>-7 dbm | -27 dbm</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				ONU R1
+				<div class="qwert">
+					<button class="info-button">?</button>
+					<span class="tooltiptext">Não possuí rede wireless.</span>
+				</div>
+			</td>	
+			<td>Giga</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>1 porta</td>
+			<td>-7 dbm | -27 dbm</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/amarelo.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				ONT 121W
+			</td>	
+			<td>Giga | Fast</td>
+			<td>1 porta</td>
+			<td>2 portas</td>
+			<td>-7 dbm | -27 dbm</td>
+			<td>100 m²</td>
+			<td>64 usuários</td>
+			<td>300 Mbps</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>4 SSIDs</td>  
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/amarelo.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				ONT 142NW
+			</td>	
+			<td>Giga | Fast</td>
+			<td>2 portas</td>
+			<td>4 portas</td>
+			<td>-8 dbm | -27 dbm</td>
+			<td>100 m²</td>
+			<td>64 usuários</td>
+			<td>300 Mbps</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>4 SSIDs</td>  
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/vermelho.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				ONT 142NG
+			</td>	
+			<td>Giga</td>
+			<td>2 portas</td>
+			<td>4 portas</td>
+			<td>-7 dbm | -27 dbm</td>
+			<td>100 m²</td>
+			<td>16 usuários</td>
+			<td>300 Mbps</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>4 SSIDs</td>  
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/vermelho.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				ONU 110
+				<div class="qwert">
+					<button class="info-button">?</button>
+					<span class="tooltiptext">Não possuí rede wireless.</span>
+				</div>
+			</td>	
+			<td>Giga</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>1 porta</td>
+			<td>-8 dbm | -27 dbm</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+
+			</table>
     </div>
 
     <div id="table5" class="hidden">
         <table border="1">
-            <tr>
-                <th>Coluna X</th>
-                <th>Coluna Y</th>
+			<tr>
+                <th>Modelo</th>
+				<th>Interface</th>       
+				<th>Conector</th>
+				<th>WDM</th>
+				<th>Padrão do Módulo</th>       
+				<th>Distância Recomendada</th>
+				<th>Fibra Recomendada</th>
+				<th>Potência Tx Max | Min</th>       
+				<th>Sensibilidade Max | Min</th>
+				<th>Comprimento Sinal RX</th>
+				<th>Comprimento Sinal TX</th>
+				<th>Garantia</th>
+				<th>Página</th>
             </tr>
-            <tr>
-                <td>Dado X1</td>
-                <td>Dado Y1</td>
-            </tr>
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				GPON
+				<div class="qwert">
+					<button class="info-button">?</button>
+					<span class="tooltiptext">Parceria FiberHome | Intelbras</span>
+				</div>
+			</td>	
+			<td>1 Giga</td>
+			<td>SC/UPC</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>GPON</td>
+			<td>20 Km</td>
+			<td>Monomodo - VALIDAR</td>
+			<td>4 dBm | 7 dBm</td>
+			<td>-32 dBm</td>
+			<td>1260 nm a 1360 nm</td>
+			<td>1480 nm a 1500 nm</td>
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				GPON & XGS-PON
+				<div class="qwert">
+					<button class="info-button">?</button>
+					<span class="tooltiptext">Parceria FiberHome | Intelbras</span>
+				</div>
+			</td>	
+			<td>10 Giga</td>
+			<td>SC/UPC</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>GPON | XGSPON</td>
+			<td>20 Km</td>
+			<td>Monomodo - VALIDAR</td>
+			<td>GPON: 3 a 7dBm - XGSPON: 5 a 8 dBm</td>
+			<td>GPON: -32 dBm - XGPON: -30,5dBm - XGSPON: -29dBm</td>
+			<td>1260 nm a 136 0nm</td>
+			<td>1480 nm a 1500 nm</td>
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				KGM 2105
+			</td>	
+			<td>Giga</td>
+			<td>LC/UPC</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>SFP</td>
+			<td>500 M</td>
+			<td>Multimodo</td>
+			<td>-3 dBm | -9,5 dBm</td>
+			<td>-3 dBm | -17 dbm</td>
+			<td>850 nm</td>
+			<td>850 nm</td>
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				KGS 2110
+			</td>	
+			<td>Giga</td>
+			<td>LC/UPC</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>SFP</td>
+			<td>10 Km</td>
+			<td>Monomodo</td>
+			<td>-3 dBm | -9,5 dBm</td>
+			<td>-8 dBm | -21 dbm</td>
+			<td>1310 nm</td>
+			<td>1310 nm</td>
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				KGSD 2110 A/B
+				<div class="qwert">
+					<button class="info-button">?</button>
+					<span class="tooltiptext">Este módulo deve ser usado em pares, ou seja, em uma extremidade utiliza-se o modelo A e na outra extremidade o modelo B.</span>
+				</div>
+			</td>	
+			<td>Giga</td>
+			<td>LC/UPC</td>
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td>SFP</td>
+			<td>10 Km</td>
+			<td>Monomodo</td>
+			<td>A – 1310 nm / B – 1550 nm</td>
+			<td>A – 1310 nm / B – 1550 nm</td>
+			<td>1310 nm</td>
+			<td>1310 nm</td>
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+		
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				KPSD 1120 E
+			</td>	
+			<td>Giga</td>
+			<td>SC/UPC</td>
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td>EPON</td>
+			<td>20 Km</td>
+			<td>Monomodo</td>
+			<td>2,5 dBm | 7 dBm</td>
+			<td>-8 dBm | -30 dBm</td>
+			<td>1310 nm</td>
+			<td>1490 nm</td>
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				KPSD 1120 G B+
+			</td>	
+			<td>Giga</td>
+			<td>SC/UPC</td>
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td>GPON</td>
+			<td>20 Km</td>
+			<td>Monomodo</td>
+			<td>1,5 dBm | 5 dBm</td>
+			<td>-8 dBm | -28 dBm</td>
+			<td>1310 nm</td>
+			<td>1490 nm</td>
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				KPSD 1120 G C+
+			</td>	
+			<td>Giga</td>
+			<td>SC/UPC</td>
+			<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+			<td>GPON</td>
+			<td>20 Km</td>
+			<td>Monomodo</td>
+			<td>3 dBm | 8 dBm</td>
+			<td>-8 dBm | -30 dBm</td>
+			<td>1310 nm</td>
+			<td>1490 nm</td>
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				KTS 2110+
+			</td>	
+			<td>10 Giga</td>
+			<td>LC/UPC</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>SFP+</td>
+			<td>10 Km</td>
+			<td>Monomodo</td>
+			<td>-7 dBm | 0,5 dBm</td>
+			<td>0,5 dBm | -14,4 dBm</td>
+			<td>1310 nm</td>
+			<td>1490 nm</td>
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				KTS 2110
+			</td>	
+			<td>10 Giga</td>
+			<td>LC/UPC</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>XFP</td>
+			<td>10 Km</td>
+			<td>Monomodo</td>
+			<td>-6 dBm | -1 dBm</td>
+			<td>0,5 dBm | -14.4 dBm</td>
+			<td>1310 0nm</td>
+			<td>1490 nm</td>
+			<td>1 ano</td>
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+			</tr>
+
         </table>
     </div>
 
