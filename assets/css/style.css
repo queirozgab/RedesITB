@@ -347,6 +347,7 @@ a.saiba-mais:hover {
 
 .modelo {
     text-align: left; /* Alinha o texto da coluna "Modelo" à esquerda */
+    width: 200px;
 }
 th.modelo {
     text-align: left; /* Alinha o texto do cabeçalho da coluna "Modelo" à esquerda */
@@ -354,7 +355,14 @@ th.modelo {
 td:not(.modelo), th:not(.modelo) {
     text-align: center; /* Centraliza o texto das outras células e cabeçalhos */
 }
-
+.abertura {
+    text-align: center; /* Alinha o texto da coluna "Modelo" à esquerda */
+    width: 150px;
+}
+.tensão {
+    text-align: center; /* Alinha o texto da coluna "Modelo" à esquerda */
+    width: 150px;
+}
   /* Estilos para o botão e a tooltip */
 .qwert {
     position: relative;
