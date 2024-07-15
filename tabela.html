@@ -152,20 +152,17 @@
 			margin-bottom: 20px;
 		}
 		table {
-			width: 100%;
-			 /* border-collapse: separate;Permitir espaçamento entre colunas */
 			border-spacing: 15px; /* Define o espaçamento entre as colunas */
 			margin: 10px;
 			background-color: #fff;
 			box-shadow: 0 2px 35px rgba(0, 0, 0, 0.1);
+			border-collapse: collapse; /* Remove espaçamento entre bordas das células */
+            width: 100%; /* Ajuste a largura da tabela conforme necessário */
 		}
 		table, th, td {
 			border: 3px solid #cccccc00;
 		}
-		th, td {
-			padding: 12px;
-			text-align: left;
-		}
+	
 		th {
 			background-color: #00A335;
 			color: white;
@@ -183,10 +180,11 @@
 			background-color: #C5E9D2;
 		}
 		td {
-			text-align: center;
-			padding: 2px ;
+            padding: 0; /* Remove o padding padrão das células */
 			font-size: 15px;
 			color: #3e5055 ;
+			vertical-align: middle; /* Alinha verticalmente ao meio */
+            text-align: center; /* Centraliza o conteúdo horizontalmente */
 		}
 		a.saiba-mais {
 			display: inline-block;
@@ -213,40 +211,63 @@
 			th, td {
 				padding: 10px;
 				font-size: 12px;
+				border: 1px solid black; /* Borda das células */
+				padding: 5px; /* Adiciona algum espaço interno nas células */
 			}
 			a.saiba-mais {
 				padding: 8px 16px;
 				font-size: 12px;
 			}
         }
-
-        .button i {
-            margin-right: 1px;
-        }
-
-        .button:hover {
-            background-color: #007A25;
-
 			.hidden {
             display: none;
         }
         .button {
-    	    display: inline-block;
+            display: flex;
             align-items: center;
-            padding: 10px 20px;
-            font-size: 16px;
-            font-weight: bold;
-            color: white;
-            background-color: #00A335;
-            border: none;
-            border-radius: 5px;
-            text-align: center;
-            text-decoration: none;
-            transition: background-color 0.3s;
-            cursor: pointer;
+            background-color: #4CAF50; /* Cor de fundo */
+            border: none; /* Remover borda */
+            color: white; /* Cor do texto */
+            padding: 15px 32px; /* Espaçamento interno */
+            text-align: center; /* Centralizar texto */
+            text-decoration: none; /* Remover sublinhado */
+            display: inline-block; /* Exibir como bloco inline */
+            font-size: 16px; /* Tamanho da fonte */
+            margin: 4px 2px; /* Margem */
+            cursor: pointer; /* Cursor de ponteiro */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+            transition: background-color 0.3s; /* Transição para a cor de fundo */
+        }
+        .button:hover {
+            background-color: #45a049; /* Cor de fundo ao passar o mouse */
+            transform: translateY(-2px); /* Elevar o botão ao passar o mouse */
         }
 
+        .button:active {
+            background-color: #3e8e41; /* Cor de fundo ao clicar */
+            transform: translateY(2px); /* Rebaixar o botão ao clicar */
 		}
+
+		.image-text-container img {
+            margin-right: 5px; /* Espaçamento entre a imagem e o texto */
+        }
+        .image-text-container {
+            display: flex; /* Usa flexbox para alinear a imagem e o texto */
+            align-items: center; /* Alinha a imagem e o texto verticalmente */
+            margin: 0; /* Remove qualquer margem */
+        }
+
+        .modelo {
+            text-align: left; /* Alinha o texto da coluna "Modelo" à esquerda */
+        }
+        th.modelo {
+            text-align: left; /* Alinha o texto do cabeçalho da coluna "Modelo" à esquerda */
+        }
+        td:not(.modelo), th:not(.modelo) {
+            text-align: center; /* Centraliza o texto das outras células e cabeçalhos */
+        }
+		
 	</style>
 </head>
 <body>
@@ -262,7 +283,12 @@
 	<button class="button" onclick="showTable('table7')">Racks e acessórios</button>
 	<button class="button" onclick="showTable('table8')">Cabeamento estruturado</button>
     <button class="button" onclick="showTable('table9')">5G</button>
-
+    <script>
+        function showTable(tableId) {
+            // Função exemplo para demonstrar o evento onclick
+            alert('Mostrar tabela: ' + tableId);
+        }
+    </script>
 
     <div id="table1" class="hidden">
         <table border="1">
@@ -284,7 +310,9 @@
 				<th>Página</th>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">AP 1250 AC MAX</td>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					AP 1250 AC MAX</td>
 				<td>Giga</td>
 				<td>450 m²</td>
 				<td>12 m</td>
@@ -301,7 +329,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">AP 1250 AC OUTDOOR</td>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					AP 1250 AC OUTDOOR</td>
 				<td>Giga</td>
 				<td>400 m²</td>
 				<td>11,2 m</td>
@@ -318,7 +348,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">AP 1350 AC-S</td> <!--AP 1350 AC-S-->
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					AP 1350 AC-S</td> <!--AP 1350 AC-S-->
 				<td>Giga</td>
 				<td>350 m²</td>
 				<td>10,52 m</td>
@@ -335,7 +367,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">AP 1800 AX</td> <!--AP 1800 AX-->
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					AP 1800 AX</td> <!--AP 1800 AX-->
 				<td>Giga</td>
 				<td>200 m²</td>
 				<td>7,98 m</td>
@@ -352,7 +386,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">AP 3000 AX</td> <!--AP 3000 AX-->
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					AP 3000 AX</td> <!--AP 3000 AX-->
 				<td>Giga</td>
 				<td>300 m²</td>
 				<td>10,5 m</td>
@@ -369,7 +405,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">AP 3000 AX OUTDOOR</td> <!--AP 3000 AX OUTDOOR-->
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					AP 3000 AX OUTDOOR</td> <!--AP 3000 AX OUTDOOR-->
 				<td>Giga</td>
 				<td>300 m²</td>
 				<td>10,5 m</td>
@@ -386,7 +424,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">AP 360</td> <!--AP 360-->
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					AP 360</td> <!--AP 360-->
 				<td>fast</td>
 				<td>400 m²</td>
 				<td>11,2 m</td>
@@ -403,7 +443,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">AP 310</td> <!--AP 310-->
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					AP 310</td> <!--AP 310-->
 				<td>fast</td>
 				<td>200 m²</td>
 				<td>7,98 m</td>
@@ -420,7 +462,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">AP 1350 AC</td> <!--AP 1350 AC-->
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/amarelo.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					AP 1350 AC</td> <!--AP 1350 AC-->
 				<td>Giga</td>
 				<td>350 m²</td>
 				<td>10,52 m</td>
@@ -437,7 +481,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">BSPRO 1350 AC</td> <!--BSPRO 1350 AC-->
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/amarelo.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					BSPRO 1350 AC</td> <!--BSPRO 1350 AC-->
 				<td>Giga</td>
 				<td>350 m²</td>
 				<td>10,52 m</td>
@@ -454,7 +500,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">BSPRO 1350 AC-S</td> <!--BSPRO 1350 AC-S-->
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/amarelo.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					BSPRO 1350 AC-S</td> <!--BSPRO 1350 AC-S-->
 				<td>Giga</td>
 				<td>350 m²</td>
 				<td>10,52 m</td>
@@ -471,7 +519,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">BSPRO 360</td> <!--BSPRO 360-->
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/amarelo.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					BSPRO 360</td> <!--BSPRO 360-->
 				<td>fast</td>
 				<td>400 m²</td>
 				<td>11,2 m</td>
@@ -489,7 +539,9 @@
 			</tr>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">AP 1210 AC</td> <!--AP 1210 AC-->
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/vermelho.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					AP 1210 AC</td> <!--AP 1210 AC-->
 				<td>Giga</td>
 				<td>450 m²</td>
 				<td>12 m</td>
@@ -506,7 +558,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">AP 300</td> <!--AP 300-->
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/vermelho.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					AP 300</td> <!--AP 300-->
 				<td>Fast</td>
 				<td>30 m²</td>
 				<td>9,77 m</td>
@@ -523,7 +577,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">HOTSPOT 300</td> <!--HOTSPOT 300-->
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/vermelho.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					HOTSPOT 300</td> <!--HOTSPOT 300-->
 				<td>Fast</td>
 				<td>30 m²</td>
 				<td>9,77 m</td>
@@ -562,7 +618,10 @@
                 <th>Página</th>
             </tr>
             <tr>
-				<td style="text-decoration: underline; font-weight: bold;">RX 1500</td>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					RX 1500
+				</td>
                 <td>Giga</td>
 				<td>140m²</td>
 				<td>6,67m</td>
@@ -579,7 +638,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
             </tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">RX 3000</td>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					RX 3000</td>
                 <td>Giga</td>
 				<td>140m²</td>
 				<td>6,67m</td>
@@ -596,7 +657,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">SR1041E</td>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					SR1041E</td>
                 <td>Giga</td>
 				<td>120m²</td>
 				<td>6,18m</td>
@@ -613,7 +676,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
 			</tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">TWIBI FORCE AX</td>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					TWIBI FORCE AX</td>
                 <td>Giga</td>
 				<td>140m²</td>
 				<td>6,67m</td>
@@ -630,7 +695,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
             </tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">TWIBI FORCE PLUG</td>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					TWIBI FORCE PLUG</td>
                 <td>Giga</td>
 				<td>80m²</td>
 				<td>5,04m</td>
@@ -638,7 +705,7 @@
 				<td>Até 100 Mbps</td>
 				<td>300 Mbps (AX)</td>
 				<td>867 Mbps (AX)</td>
-				<td>100-240 V</td>
+				<td>100 - 240 V</td>
 				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
 				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
 				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
@@ -647,7 +714,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
             </tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">W6 1500</td>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					W6 1500</td>
                 <td>Giga</td>
 				<td>140m²</td>
 				<td>6,67m</td>
@@ -655,7 +724,7 @@
 				<td>Até 600 Mbps</td>
 				<td>300 Mbps (AX)</td>
 				<td>1201 Mbps (AX)</td>
-				<td>12 / 1A</td>
+				<td>12V / 1A</td>
 				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
 				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
 				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
@@ -664,7 +733,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
             </tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">W5 1200GS</td>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					W5 1200GS</td>
                 <td>Giga</td>
 				<td>120m²</td>
 				<td>6,17m</td>
@@ -672,7 +743,7 @@
 				<td>Até 400 Mbps</td>
 				<td>300 Mbps (AX)</td>
 				<td>867 Mbps (AX)</td>
-				<td>12 / 1A</td>
+				<td>12V / 1A</td>
 				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
 				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
 				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
@@ -681,7 +752,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
             </tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">W5 2100G</td>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					W5 2100G</td>
                 <td>Giga</td>
 				<td>180m²</td>
 				<td>7,5m</td>
@@ -689,7 +762,7 @@
 				<td>Até 500 Mbps</td>
 				<td>300 Mbps (AX)</td>
 				<td>1733 Mbps (AX)</td>
-				<td>12 / 1,5A</td>
+				<td>12V / 1,5A</td>
 				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
 				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
 				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
@@ -698,7 +771,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
             </tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">W5 1200G</td>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					W5 1200G</td>
                 <td>Giga</td>
 				<td>120m²</td>
 				<td>6,18m</td>
@@ -706,7 +781,7 @@
 				<td>Até 400 Mbps</td>
 				<td>300 Mbps (AX)</td>
 				<td>867 Mbps (AX)</td>
-				<td>9-12 / 1,5A</td>
+				<td>9 - 12V / 1,5A</td>
 				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
 				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
 				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
@@ -715,7 +790,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
             </tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">W5 1200F</td>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					W5 1200F</td>
                 <td>Fast</td>
 				<td>80m²</td>
 				<td>5,04m</td>
@@ -723,7 +800,7 @@
 				<td>Até 100 Mbps</td>
 				<td>300 Mbps (AX)</td>
 				<td>867 Mbps (AX)</td>
-				<td>12 / 1A</td>
+				<td>12V / 1A</td>
 				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
 				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
 				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
@@ -732,7 +809,9 @@
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
             </tr>
 			<tr>
-				<td style="text-decoration: underline; font-weight: bold;">W4 300F</td>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					W4 300F</td>
 				<td>Fast</td>
 				<td>70m²</td>
 				<td>4,72m</td>
@@ -740,7 +819,7 @@
 				<td>Até 70 Mbps</td>
 				<td>300 Mbps (AX)</td>
 				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
-				<td>12 / 1A</td>
+				<td>12V / 1A</td>
 				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
 				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
 				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
@@ -748,6 +827,265 @@
 				<td>5 anos</td>       
 				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
             </tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					IWA 3001</td>
+				<td>USB 2.0</td>
+				<td>N/A</td>
+				<td>N/A</td>
+				<td>N/A</td>
+				<td>Até 40 Mbps</td>
+				<td>300 Mbps (AX)</td>
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+				<td>5V / USB</td>
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+				<td>5 anos</td>       
+				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+            </tr>
+			<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+				ACTION A 1200</td>
+			<td>USB 3.0</td>
+			<td>N/A</td>
+			<td>N/A</td>
+			<td>N/A</td>
+			<td>400 Mbps</td>
+			<td>300 Mbps (AX)</td>
+			<td>867 Mbps (AX)</td>
+			<td>5V / USB</td>
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td> 
+			<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+			<td>5 anos</td>       
+			<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+		</tr>
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/amarelo.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					GF 1200F</td>
+				<td>UpLink Giga | Fast</td>
+				<td>100m²</td>
+				<td>5,64m</td>
+				<td>30 usuários</td>
+				<td>Até 400 Mbps</td>
+				<td>300 Mbps (AX)</td>
+				<td>867 Mbps (AX)</td>
+				<td>12V / 1A</td>
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td>5 anos</td>       
+				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+            </tr>
+			
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/amarelo.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					ACTION RF 1200</td>
+				<td>Fast</td>
+				<td>80m²</td>
+				<td>5,04m</td>
+				<td>20 usuários</td>
+				<td>Até 100 Mbps</td>
+				<td>300 Mbps (AX)</td>
+				<td>867 Mbps (AX)</td>
+				<td>9V / 1A</td>
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td>5 anos</td>       
+				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+            </tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/amarelo.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					ACTION RG 1200</td>
+				<td>Giga</td>
+				<td>120m²</td>
+				<td>6,18m</td>
+				<td>40 usuários</td>
+				<td>Até 400 Mbps</td>
+				<td>300 Mbps (AX)</td>
+				<td>867 Mbps (AX)</td>
+				<td>12V / 1A</td>
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td>5 anos</td>       
+				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+            </tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/amarelo.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					RF 301K</td>
+				<td>Fast</td>
+				<td>70m²</td>
+				<td>4,72m</td>
+				<td>10 usuários</td>
+				<td>Até 40 Mbps</td>
+				<td>300 Mbps (AX)</td>
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+				<td>9-12V / 0,6-1A</td>
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>   
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td>5 anos</td>       
+				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+            </tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/amarelo.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					Twibi Fast</td>
+				<td>Fast</td>
+				<td>100m²</td>
+				<td>5,64m</td>
+				<td>40 usuários</td>
+				<td>Até 100 Mbps</td>
+				<td>300 Mbps (AX)</td>
+				<td>867 Mbps (AX)</td>
+				<td>9V / 1A</td>
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td>5 anos</td>       
+				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+            </tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/amarelo.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					Twibi Giga</td>
+				<td>Giga</td>
+				<td>180m²</td>
+				<td>7,56m</td>
+				<td>60 usuários</td>
+				<td>Até 400 Mbps</td>
+				<td>300 Mbps (AX)</td>
+				<td>867 Mbps (AX)</td>
+				<td>12V / 1,5A</td>
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td>5 anos</td>       
+				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+            </tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/amarelo.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					Twibi Giga+</td>
+				<td>Giga</td>
+				<td>180m²</td>
+				<td>7,56m</td>
+				<td>60 usuários</td>
+				<td>Até 400 Mbps</td>
+				<td>300 Mbps (AX)</td>
+				<td>867 Mbps (AX)</td>
+				<td>12V / 1,5A</td>
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td>   
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td>5 anos</td>       
+				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+            </tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/vermelho.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					ACTION R 1200</td>
+				<td>Fast</td>
+				<td>80m²</td>
+				<td>5,04m</td>
+				<td>10 usuários</td>
+				<td>N/A</td>
+				<td>300 Mbps (AX)</td>
+				<td>867 Mbps (AX)</td>
+				<td>12V / 1A</td>
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td>5 anos</td>       
+				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+            </tr>
+			
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/vermelho.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					IWE 3001</td>
+				<td>Fast</td>
+				<td>40m²</td>
+				<td>3,56m</td>
+				<td>5 usuários</td>
+				<td>N/A</td>
+				<td>300 Mbps (AX)</td>
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td> 
+				<td>100 - 240 V</td>
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td> 
+				<td>5 anos</td>       
+				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+            </tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/vermelho.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					IWR 1000N</td>
+				<td>Fast</td>
+				<td>80m²</td>
+				<td>5,04m</td>
+				<td>10 usuários</td>
+				<td>N/A</td>
+				<td>300 Mbps (AX)</td>
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td> 
+				<td>12V / 0,5A</td>
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td> 
+				<td>5 anos</td>       
+				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+            </tr>
+
+			<tr>
+				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+					<img src="./assets/img/icons/vermelho.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+					IWR 3000N</td>
+				<td>Fast</td>
+				<td>70m²</td>
+				<td>4,72m</td>
+				<td>10 usuários</td>
+				<td>Até 40 Mpbs</td>
+				<td>300 Mbps (AX)</td>
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td> 
+				<td>12V / 0,3 - 0,5A</td>
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td> 
+				<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;"></td> 
+				<td>5 anos</td>       
+				<td><a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a></td>
+            </tr>
+
+
         </table>
     </div>
 
