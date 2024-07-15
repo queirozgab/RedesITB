@@ -215,3 +215,193 @@ table {
 #id_do_menu {
   margin-right: 15px; /* Add spacing between select and icon */
 }
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    margin: -10;
+    padding: 0px;
+}
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+table {
+    border-spacing: 15px; /* Define o espaçamento entre as colunas */
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 35px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse; /* Remove espaçamento entre bordas das células */
+    width: 100%; /* Ajuste a largura da tabela conforme necessário */
+}
+table, th, td {
+    border: 3px solid #cccccc00;
+}
+
+th {
+    background-color: #00A335;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+}
+tr:nth-child(even) {
+    background-color: #E6F7EB;
+}
+tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+tr:hover {
+    background-color: #C5E9D2;
+}
+td {
+    padding: 0; /* Remove o padding padrão das células */
+    font-size: 15px;
+    color: #3e5055 ;
+    vertical-align: middle; /* Alinha verticalmente ao meio */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+a.saiba-mais {
+    display: inline-block;
+    padding: 2px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #00A335;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+a.saiba-mais:hover {
+    background-color: #007A25;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        border-spacing: 10px;
+    }
+    th, td {
+        padding: 10px;
+        font-size: 12px;
+        border: 1px solid black; /* Borda das células */
+        padding: 5px; /* Adiciona algum espaço interno nas células */
+    }
+    a.saiba-mais {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+    .hidden {
+    display: none;
+}
+
+
+
+
+
+.button {
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50; /* Cor de fundo */
+    border: none; /* Remover borda */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno */
+    text-align: center; /* Centralizar texto */
+    text-decoration: none; /* Remover sublinhado */
+    display: inline-block; /* Exibir como bloco inline */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Cursor de ponteiro */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: background-color 0.3s; /* Transição para a cor de fundo */
+}
+.button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Elevar o botão ao passar o mouse */
+}
+
+.button:active {
+    background-color: #3e8e41; /* Cor de fundo ao clicar */
+    transform: translateY(2px); /* Rebaixar o botão ao clicar */
+}
+
+.image-text-container img {
+    margin-right: 5px; /* Espaçamento entre a imagem e o texto */
+}
+.image-text-container {
+    display: flex; /* Usa flexbox para alinear a imagem e o texto */
+    align-items: center; /* Alinha a imagem e o texto verticalmente */
+    margin: 0; /* Remove qualquer margem */
+}
+
+.modelo {
+    text-align: left; /* Alinha o texto da coluna "Modelo" à esquerda */
+}
+th.modelo {
+    text-align: left; /* Alinha o texto do cabeçalho da coluna "Modelo" à esquerda */
+}
+td:not(.modelo), th:not(.modelo) {
+    text-align: center; /* Centraliza o texto das outras células e cabeçalhos */
+}
+
+  /* Estilos para o botão e a tooltip */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Posiciona a tooltip acima do botão */
+    left: 50%;
+    margin-left: -80px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Posiciona a seta abaixo da tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Estilos para o botão */
+.info-button {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.info-button:hover {
+    background-color: #45a049; /* Verde mais escuro */
+}

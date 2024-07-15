@@ -8,8 +8,7 @@
 	<meta name="description" content="Redes ITB">
 	<meta name="author" content="Intelbras">
 	
-    <!-- CSS -->
-
+	<link rel="stylesheet" href="assets/css/style.css">
 	<link href="https://fonts.cdnfonts.com/css/nunito-sans" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,7 +17,7 @@
 	<link href="assets/css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="styles.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -139,174 +138,7 @@
 			<section id="faq-roteadores" >
 				<!-- accordion -->
 				<div class="accordion w-100 mt-5"> <!-- espaço correto -->
-	<style>
-		body {
-			font-family: 'Inter', sans-serif;
-			background-color: #f9f9f9;
-			margin: -10;
-			padding: 0px;
-		}
-		h2 {
-			color: #333;
-			text-align: center;
-			margin-bottom: 20px;
-		}
-		table {
-			border-spacing: 15px; /* Define o espaçamento entre as colunas */
-			margin: 10px;
-			background-color: #fff;
-			box-shadow: 0 2px 35px rgba(0, 0, 0, 0.1);
-			border-collapse: collapse; /* Remove espaçamento entre bordas das células */
-            width: 100%; /* Ajuste a largura da tabela conforme necessário */
-		}
-		table, th, td {
-			border: 3px solid #cccccc00;
-		}
-	
-		th {
-			background-color: #00A335;
-			color: white;
-			font-weight: bold;
-			text-align: center;
-			font-size: 15px;
-		}
-		tr:nth-child(even) {
-			background-color: #E6F7EB;
-		}
-		tr:nth-child(odd) {
-			background-color: #FFFFFF;
-		}
-		tr:hover {
-			background-color: #C5E9D2;
-		}
-		td {
-            padding: 0; /* Remove o padding padrão das células */
-			font-size: 15px;
-			color: #3e5055 ;
-			vertical-align: middle; /* Alinha verticalmente ao meio */
-            text-align: center; /* Centraliza o conteúdo horizontalmente */
-		}
-		a.saiba-mais {
-			display: inline-block;
-			padding: 2px 20px;
-			font-size: 14px;
-			font-weight: bold;
-			color: white;
-			background-color: #00A335;
-			border: none;
-			border-radius: 5px;
-			text-align: center;
-			text-decoration: none;
-			transition: background-color 0.3s;
-		}
-		a.saiba-mais:hover {
-			background-color: #007A25;
-		}
-		/* Responsividade */
-		@media (max-width: 768px) {
-			table {
-				width: 100%;
-				border-spacing: 10px;
-			}
-			th, td {
-				padding: 10px;
-				font-size: 12px;
-				border: 1px solid black; /* Borda das células */
-				padding: 5px; /* Adiciona algum espaço interno nas células */
-			}
-			a.saiba-mais {
-				padding: 8px 16px;
-				font-size: 12px;
-			}
-        }
-			.hidden {
-            display: none;
-        }
-        .button {
-            display: flex;
-            align-items: center;
-            background-color: #4CAF50; /* Cor de fundo */
-            border: none; /* Remover borda */
-            color: white; /* Cor do texto */
-            padding: 15px 32px; /* Espaçamento interno */
-            text-align: center; /* Centralizar texto */
-            text-decoration: none; /* Remover sublinhado */
-            display: inline-block; /* Exibir como bloco inline */
-            font-size: 16px; /* Tamanho da fonte */
-            margin: 4px 2px; /* Margem */
-            cursor: pointer; /* Cursor de ponteiro */
-            border-radius: 8px; /* Bordas arredondadas */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-            transition: background-color 0.3s; /* Transição para a cor de fundo */
-        }
-        .button:hover {
-            background-color: #45a049; /* Cor de fundo ao passar o mouse */
-            transform: translateY(-2px); /* Elevar o botão ao passar o mouse */
-        }
 
-        .button:active {
-            background-color: #3e8e41; /* Cor de fundo ao clicar */
-            transform: translateY(2px); /* Rebaixar o botão ao clicar */
-		}
-
-		.image-text-container img {
-            margin-right: 5px; /* Espaçamento entre a imagem e o texto */
-        }
-        .image-text-container {
-            display: flex; /* Usa flexbox para alinear a imagem e o texto */
-            align-items: center; /* Alinha a imagem e o texto verticalmente */
-            margin: 0; /* Remove qualquer margem */
-        }
-
-        .modelo {
-            text-align: left; /* Alinha o texto da coluna "Modelo" à esquerda */
-        }
-        th.modelo {
-            text-align: left; /* Alinha o texto do cabeçalho da coluna "Modelo" à esquerda */
-        }
-        td:not(.modelo), th:not(.modelo) {
-            text-align: center; /* Centraliza o texto das outras células e cabeçalhos */
-        }
-		
-		.tooltip {
-		position: relative;
-		display: inline-block;
-	}
-
-	.info-button {
-		background-color: #4CAF50; /* Cor do botão */
-		color: white;
-		border: none;
-		border-radius: 4px;
-		padding: 5px 10px;
-		cursor: pointer;
-		font-size: 16px;
-		text-align: center;
-	}
-
-	.tooltip .tooltiptext {
-		visibility: hidden;
-		width: 160px; /* Largura do texto */
-		background-color: #555; /* Cor de fundo do texto */
-		color: #fff; /* Cor do texto */
-		text-align: center;
-		border-radius: 5px;
-		padding: 5px 0;
-		position: absolute;
-		z-index: 1;
-		bottom: 125%; /* Posiciona o texto acima do botão */
-		left: 50%;
-		margin-left: -80px; /* Centro o texto em relação ao botão */
-		opacity: 0;
-		transition: opacity 0.3s;
-	}
-
-	.tooltip:hover .tooltiptext {
-		visibility: visible;
-		opacity: 1;
-	}
-
-	</style>
 </head>
 <body>
 
@@ -1301,13 +1133,17 @@
 	</tr>	
 
 	<tr>
-			<td class="modelo" style="text-decoration: underline; font-weight: bold;">
-			<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
-			APC 5A Giga</td>
+		<td>
 			<div class="tooltip">
 				<button class="info-button">?</button>
 				<span class="tooltiptext">Texto oculto que aparece ao passar o mouse</span>
 			</div>
+		</td>
+	</tr>
+	<tr>
+			<td class="modelo" style="text-decoration: underline; font-weight: bold;">
+			<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+			APC 5A Giga</td>	
 		<td>Giga</td>
 		<td>Base - PTP</td>
 		<td>N/A</td>
