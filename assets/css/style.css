@@ -2,6 +2,7 @@
     scroll-margin-top: 75px;
 }
 
+
 .sidebar-content {
     background: #ffffff;
 }
@@ -47,7 +48,12 @@ a.sidebar-link:hover {
     width: 100%;
     padding: 10px;
 }
+.sidebar-item {
+    background: #ffffff;
+    display: flex;
+    margin-bottom: 0px; /* Ajuste este valor conforme necessário */
 
+}
 .icon-container {
     display: flex;
     align-items: center;
@@ -62,12 +68,7 @@ a.sidebar-link:hover {
     white-space: nowrap;
     height: 15px; /* Garante que a altura do texto seja igual à do ícone */
 }
-.sidebar-item {
-    background: #ffffff;
-    display: flex;
-    margin-bottom: 0px; /* Ajuste este valor conforme necessário */
 
-}
 
 .font-color-grey {
     color: #647279;
@@ -232,6 +233,13 @@ h3 {
     text-align: left;
     margin-bottom: 10px;
     font-size: 15px;
+}
+
+h4 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
 }
 table {
     border-spacing: 15px; /* Define o espaçamento entre as colunas */
