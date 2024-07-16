@@ -118,45 +118,46 @@
 			</div>
 		</nav>
 
-        <div class="main">
+
+		<div class="main text-center">
 			<div class="row" style="margin-left: 0.1px;">
-				
-				
-				<nav>
-					<ul>
-						<li>
-							<a href="">Home</a>
-						</li>
-						<li>
-							<a href="">Sobre</a>
-						</li>
-						<li class="dropdown">
-							<a href="">Serviços</a>
-			
-							<div class="dropdown-menu">
-								<a href="">Serviço 1</a>
-								<a href="">Serviço 2</a>
-								<a href="">Serviço 3</a>
-							</div>
-						</li>
-						<li>
-							<a href="">Contato</a>
-						</li>
-					</ul>
+				<nav class="w-100 navbar navbar-expand navbar-light border position-fixed" style="z-index: 999; background-color: #f8f9fa;">
+					<div class="d-flex flex-row">
+						<div class="">
+							<a class="sidebar-toggle d-flex" id="sidebarToggle">
+								<i class="hamburger align-self-center"></i>
+							</a>
+						</div>
+					</div>
 				</nav>
+			</div>
+				
 
+	<main class="content">	
+                <section id="faq-5g">
+                    <!-- accordion -->
+                    <div class="accordion w-100 mt-5">
+                        <!-- item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button id="Inicializacao" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse" aria-expanded="false" aria-controls="collapseOne">
+                                    Dúvidas Frequentes
+                                </button>
+                            </h2>
+                                <div id="InicializacaoCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
+                                    <div class="accordion-body">
+										<p class="text-justify"> ESCREVA SOBRE O CONTEUDO</p>
+                                        <div class="embed-responsive video-container">
+                                            <iframe class="embed-responsive-item" src="COLOQUE O LINK" width="100%" height="auto" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
 
-
-
-
-
-<!-- 							
-						 <div class="imagem">
+						<div class="imagem">
 							<img src=".\assets\img\png\construction.svg" style="width: 800px;">
-						</div>  -->
-										
+						</div>
                 </main>
-			
 				<footer class="footer border footer-shadow">
 					<div class="container-fluid">
 						<div class="row text-muted">
@@ -171,9 +172,16 @@
 			</div>
 		</div>
 		<script>
-			if (location.hash !== null && location.hash !== "") {
-				$(location.hash).trigger('click');
-			}
-		</script>
+					
+			$(document).ready(function() {
+				$('#sidebarToggle').click(function() {
+					$('#sidebar').toggleClass('collapsed');
+					});
+			});
+
+			</script>
 	</body>
 	</html>
+	
+
+

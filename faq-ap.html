@@ -117,16 +117,15 @@
 			</div>
 		</nav>
 
-		<div class="main">
+		<div class="main text-center">
 			<div class="row" style="margin-left: 0.1px;">
 				<nav class="w-100 navbar navbar-expand navbar-light border position-fixed" style="z-index: 999; background-color: #f8f9fa;">
 					<div class="d-flex flex-row">
 						<div class="">
-							<a class="sidebar-toggle d-flex">
+							<a class="sidebar-toggle d-flex" id="sidebarToggle">
 								<i class="hamburger align-self-center"></i>
 							</a>
 						</div>
-						<span class="title-page">Access Point</span>
 					</div>
 				</nav>
 			</div>
@@ -154,26 +153,29 @@
 						<div class="imagem">
 							<img src=".\assets\img\png\construction.svg" style="width: 800px;">
 						</div>
-                </section>
-			</main>
-			<footer class="footer border footer-shadow">
-				<div class="container-fluid">
-					<div class="row text-muted">
-						<div class="col text-center">
-							<p class="mb-0">
-								<a href="http://www.intelbras.com" class="text-muted" target="_blank"><strong>Intelbras</strong></a> &copy;
-							</p>
+                </main>
+				<footer class="footer border footer-shadow">
+					<div class="container-fluid">
+						<div class="row text-muted">
+							<div class="col text-center">
+								<p class="mb-0">
+									<a href="http://www.intelbras.com" class="text-muted" target="_blank"><strong>Intelbras</strong></a> &copy;
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-			</footer>
+				</footer>
+			</div>
 		</div>
-	</div>
-	<script src="assets/js/app.js"></script>
-	<script>
-        if (location.hash !== null && location.hash !== "") {
-			$(location.hash).trigger('click');
-        }
-    </script>
-</body>
-</html>
+		<script>
+					
+			$(document).ready(function() {
+				$('#sidebarToggle').click(function() {
+					$('#sidebar').toggleClass('collapsed');
+					});
+			});
+
+			</script>
+	</body>
+	</html>
+	

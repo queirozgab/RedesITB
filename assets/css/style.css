@@ -126,10 +126,7 @@ a.sidebar-link:hover {
     font-size: large;
     font-weight: 600;
 }
-table {
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 /* Estilo CSS para aproximar os submenus */
 .navbar {
@@ -240,7 +237,16 @@ h4 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 25px;
+    font-family: 'MuseoSans-300.otf', sans-serif; /* Aplica a fonte local */
+
 }
+
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('/workspaces/queirozgab.github.io/assets/fonts/MuseoSans-300.otf') format('truetype'); /* Ajuste o caminho e formato conforme necessário */
+}
+
+
 table {
     border-spacing: 15px; /* Define o espaçamento entre as colunas */
     margin: 10px;
@@ -259,6 +265,8 @@ th {
     font-weight: bold;
     text-align: center;
     font-size: 15px;
+    height: 50px; /* Define a altura dos cabeçalhos da tabela */
+
 }
 tr:nth-child(even) {
     background-color: #E6F7EB;
@@ -273,8 +281,7 @@ td {
     padding: 0; /* Remove o padding padrão das células */
     font-size: 15px;
     color: #3e5055 ;
-    vertical-align: middle; /* Alinha verticalmente ao meio */
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    vertical-align: -webkit-baseline-middle; /* Centraliza verticalmente o conteúdo da célula */
 }
 a.saiba-mais {
     display: inline-block;
@@ -294,10 +301,8 @@ a.saiba-mais:hover {
 }
 /* Responsividade */
 @media (max-width: 768px) {
-    table {
-        width: 100%;
-        border-spacing: 10px;
-    }
+
+  
     th, td {
         padding: 10px;
         font-size: 12px;
@@ -357,6 +362,12 @@ a.saiba-mais:hover {
     text-align: left; /* Alinha o texto da coluna "Modelo" à esquerda */
     width: 200px;
 }
+
+.interface {
+    text-align: center; /* Alinha o texto da coluna "Modelo" à esquerda */
+    width: 200px;
+}
+
 th.modelo {
     text-align: left; /* Alinha o texto do cabeçalho da coluna "Modelo" à esquerda */
 }
@@ -442,4 +453,180 @@ td:not(.modelo), th:not(.modelo) {
 
 .info-button:hover {
     background-color: #45a049; /* Verde mais escuro */
+}
+
+.rectangle-cell {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o conteúdo da célula */
+    align-items: center;     /* Centraliza verticalmente o conteúdo da célula */
+    height: 100%;            /* Garante que a célula ocupe a altura total */
+    min-height: 50px;        /* Garante altura mínima para a célula */
+}
+
+.yellow-rectangle {
+    width: 50px; /* Largura do retângulo */
+    height: 20px; /* Altura do retângulo */
+    border-radius: 15px; /* Bordas arredondadas */
+    background-color: #EB741F; /* Amarelo */
+    color: #ffffff; /* Cor do texto */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente o texto dentro do retângulo */
+    align-items: center;     /* Centraliza verticalmente o texto dentro do retângulo */
+    font-size: 14px;
+    font-weight: bold; /* Negrito */
+    text-align: center; /* Alinha o texto no centro */
+}
+
+.green-rectangle {
+    width: 50px; /* Largura do retângulo */
+    height: 20px; /* Altura do retângulo */
+    border-radius: 15px; /* Bordas arredondadas */
+    background-color: #48b554; /* Amarelo */
+    color: #ffffff; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold; /* Negrito */
+    text-align: center;
+}
+
+.green10-rectangle {
+    width: 70px; /* Largura do retângulo */
+    height: 20px; /* Altura do retângulo */
+    border-radius: 15px; /* Bordas arredondadas */
+    background-color: #48b554; /* Amarelo */
+    color: #ffffff; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold; /* Negrito */
+    text-align: center;
+}
+
+.greenusb-rectangle {
+    width: 70px; /* Largura do retângulo */
+    height: 20px; /* Altura do retângulo */
+    border-radius: 15px; /* Bordas arredondadas */
+    background-color: #48b554; /* Amarelo */
+    color: #ffffff; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold; /* Negrito */
+    text-align: center;
+}
+
+.yellowusb-rectangle {
+    width: 70px; /* Largura do retângulo */
+    height: 20px; /* Altura do retângulo */
+    border-radius: 15px; /* Bordas arredondadas */
+    background-color: #EB741F; /* Amarelo */
+    color: #ffffff; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold; /* Negrito */
+    text-align: center;
+}
+
+.gigafast-rectangle {
+    width: 80px; /* Largura do retângulo */
+    height: 20px; /* Altura do retângulo */
+    border-radius: 15px; /* Bordas arredondadas */
+    background-color: #48b554; /* Amarelo */
+    color: #ffffff; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold; /* Negrito */
+    text-align: center;
+}
+
+.gpon-rectangle {
+    width: 80px; /* Largura do retângulo */
+    height: 20px; /* Altura do retângulo */
+    border-radius: 15px; /* Bordas arredondadas */
+    background-color: #21495A; /* Amarelo */
+    color: #ffffff; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold; /* Negrito */
+    text-align: center;
+}
+
+.epon-rectangle {
+    width: 80px; /* Largura do retângulo */
+    height: 20px; /* Altura do retângulo */
+    border-radius: 15px; /* Bordas arredondadas */
+    background-color: #27bdbe; /* Amarelo */
+    color: #ffffff; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold; /* Negrito */
+    text-align: center;
+}
+
+.sfp-rectangle {
+    width: 80px; /* Largura do retângulo */
+    height: 20px; /* Altura do retângulo */
+    border-radius: 15px; /* Bordas arredondadas */
+    background-color: #ed2e2e; /* Amarelo */
+    color: #ffffff; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold; /* Negrito */
+    text-align: center;
+}
+
+.xfp-rectangle {
+    width: 80px; /* Largura do retângulo */
+    height: 20px; /* Altura do retângulo */
+    border-radius: 15px; /* Bordas arredondadas */
+    background-color: #A05213; /* Amarelo */
+    color: #ffffff; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold; /* Negrito */
+    text-align: center;
+}
+
+.sfpmais-rectangle {
+    width: 80px; /* Largura do retângulo */
+    height: 20px; /* Altura do retângulo */
+    border-radius: 15px; /* Bordas arredondadas */
+    background-color: #ff2ca4; /* Amarelo */
+    color: #ffffff; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold; /* Negrito */
+    text-align: center;
+}
+
+.xgspon-rectangle {
+    width: 80px; /* Largura do retângulo */
+    height: 20px; /* Altura do retângulo */
+    border-radius: 15px; /* Bordas arredondadas */
+    background-color: #7c006d; /* Amarelo */
+    color: #ffffff; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold; /* Negrito */
+    text-align: center;
 }
