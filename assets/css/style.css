@@ -369,6 +369,14 @@ a.saiba-mais:hover {
     width: 200px;
 }
 
+.modelorac {
+    text-align: left; /* Alinha o texto à esquerda */
+    width: 350px;
+}
+/* Regra específica para a coluna com a classe .modelorac */
+td.modelorac, th.modelorac {
+    text-align: left !important;
+}
 .interface {
     text-align: center; /* Alinha o texto da coluna "Modelo" à esquerda */
     width: 200px;
@@ -377,9 +385,11 @@ a.saiba-mais:hover {
 th.modelo {
     text-align: left; /* Alinha o texto do cabeçalho da coluna "Modelo" à esquerda */
 }
+
 td:not(.modelo), th:not(.modelo) {
     text-align: center; /* Centraliza o texto das outras células e cabeçalhos */
 }
+
 .abertura {
     text-align: center; /* Alinha o texto da coluna "Modelo" à esquerda */
     width: 150px;
@@ -441,18 +451,40 @@ td:not(.modelo), th:not(.modelo) {
     cursor: pointer;
     border-radius: 5px;
 }
-
+.info-buttonleg {
+    background: linear-gradient(45deg, #203164, #00A335); /* De 45 graus de #4CAF50 para #8BC34A */
+    border: none;
+    color: white;
+    padding: 0px 5px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 5px;
+}
+.tooltiptextleg {
+    width: 160px;
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+.tooltipleg-container {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
 /* Estilos para o botão */
 .info-button-curio {
     background: linear-gradient(45deg, #bfae11, #49d611); /* De 45 graus de #4CAF50 para #8BC34A */
     border: none;
     color: white;
-    padding: 0px 5px;
+    padding: 0px 6px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 3px;
     cursor: pointer;
     border-radius: 5px;
 }
