@@ -412,7 +412,22 @@ td:not(.modelo), th:not(.modelo) {
 
 /* Estilos para o botão */
 .info-button {
-    background-color: #4CAF50; /* Verde */
+    background: linear-gradient(45deg, #203164, #00A335); /* De 45 graus de #4CAF50 para #8BC34A */
+    border: none;
+    color: white;
+    padding: 0px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Estilos para o botão */
+.info-button-curio {
+    background: linear-gradient(45deg, #bfae11, #49d611); /* De 45 graus de #4CAF50 para #8BC34A */
     border: none;
     color: white;
     padding: 0px 5px;

@@ -118,19 +118,18 @@
 			</div>
 		</nav>
 
-			
-		<div class="main text-center">
-			<div class="row" style="margin-left: 0.1px;">
-				<nav class="w-100 navbar navbar-expand navbar-light border position-fixed" style="z-index: 999; background-color: #f8f9fa;">
-					<div class="d-flex flex-row">
-						<div class="">
-							<a class="sidebar-toggle d-flex">
-								<i class="hamburger align-self-center"></i>
-							</a>
+			<div class="main text-center">
+				<div class="row" style="margin-left: 0.1px;">
+					<nav class="w-100 navbar navbar-expand navbar-light border position-fixed" style="z-index: 999; background-color: #f8f9fa;">
+						<div class="d-flex flex-row">
+							<div class="">
+								<a class="sidebar-toggle d-flex" id="sidebarToggle">
+									<i class="hamburger align-self-center"></i>
+								</a>
+							</div>
 						</div>
-					</div>
-				</nav>
-			</div>
+					</nav>
+				</div>
 
 			
 			<main class="content">	
@@ -535,7 +534,11 @@
 			<tr>
 				<td class="modelo" style="text-decoration: underline; font-weight: bold;">
 					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
-					SR1041E</td>
+					SR1041E
+					<div class="qwert">
+						<button class="info-button">F</button>
+						<span class="tooltiptext">Parceria FiberHome | Intelbras</span>
+					</div>
                 <td>Giga</td>
 				<td>120m²</td>
 				<td>6,18m</td>
@@ -1146,7 +1149,7 @@
 			<img src="./assets/img/icons/amarelo.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
 			APC 5A Giga 
 			<div class="qwert">
-				<button class="info-button">?</button>
+				<button class="info-button-curio">?</button>
 				<span class="tooltiptext">Rádio não acompanha antena interna, é necessário ter uma antena externa.</span>
 			</div>
 		</td>	
@@ -1264,7 +1267,7 @@
 			<img src="./assets/img/icons/vermelho.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
 			WOG 212
 			<div class="qwert">
-				<button class="info-button">?</button>
+				<button class="info-button-curio">?</button>
 				<span class="tooltiptext">Rádio 2.4Ghz.</span>
 			</div>
 		</td>	
@@ -1310,7 +1313,7 @@
 					<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
 					ONT HG6145D2
 					<div class="qwert">
-						<button class="info-button">?</button>
+						<button class="info-button">F</button>
 						<span class="tooltiptext">Parceria FiberHome | Intelbras</span>
 					</div>
 				</td>	
@@ -1335,7 +1338,7 @@
 				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
 				ONT HG6145F
 				<div class="qwert">
-					<button class="info-button">?</button>
+					<button class="info-button">F</button>
 					<span class="tooltiptext">Parceria FiberHome | Intelbras</span>
 				</div>
 			</td>	
@@ -1361,7 +1364,7 @@
 				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
 				ONT HG6145F3
 				<div class="qwert">
-					<button class="info-button">?</button>
+					<button class="info-button">F</button>
 					<span class="tooltiptext">Parceria FiberHome | Intelbras</span>
 				</div>
 			</td>	
@@ -1512,7 +1515,7 @@
 				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
 				ONU 110B
 				<div class="qwert">
-					<button class="info-button">?</button>
+					<button class="info-button-curio">?</button>
 					<span class="tooltiptext">Não possuí rede wireless.</span>
 				</div>
 			</td>	
@@ -1537,7 +1540,7 @@
 				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
 				ONU R1
 				<div class="qwert">
-					<button class="info-button">?</button>
+					<button class="info-button-curio">?</button>
 					<span class="tooltiptext">Não possuí rede wireless.</span>
 				</div>
 			</td>	
@@ -1624,7 +1627,7 @@
 				<img src="./assets/img/icons/vermelho.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
 				ONU 110
 				<div class="qwert">
-					<button class="info-button">?</button>
+					<button class="info-button-curio">?</button>
 					<span class="tooltiptext">Não possuí rede wireless.</span>
 				</div>
 			</td>	
@@ -1670,7 +1673,7 @@
 				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
 				GPON
 				<div class="qwert">
-					<button class="info-button">i</button>
+					<button class="info-button">F</button>
 					<span class="tooltiptext">Parceria FiberHome | Intelbras</span>
 				</div>
 			</td>	
@@ -1693,7 +1696,7 @@
 				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
 				GPON & XGS-PON
 				<div class="qwert">
-					<button class="info-button">?</button>
+					<button class="info-button">F</button>
 					<span class="tooltiptext">Parceria FiberHome | Intelbras</span>
 				</div>
 			</td>	
@@ -1754,7 +1757,7 @@
 				<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
 				KGSD 2110 A/B
 				<div class="qwert">
-					<button class="info-button">?</button>
+					<button class="info-button-curio">?</button>
 					<span class="tooltiptext">Este módulo deve ser usado em pares, ou seja, em uma extremidade utiliza-se o modelo A e na outra extremidade o modelo B.</span>
 				</div>
 			</td>	
@@ -1932,6 +1935,12 @@
 			// Mostrar a tabela específica
 			document.getElementById(tableId).style.display = 'block';
 		}
+
+		$(document).ready(function() {
+            $('#sidebarToggle').click(function() {
+                $('#sidebar').toggleClass('collapsed');
+                });
+        });
 		</script>
 
 <h3><td><img src="./assets/img/icons/verde.png" style="width: 25px;"></td>Produto em linha.</h3>
