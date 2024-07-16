@@ -254,9 +254,12 @@ table {
     box-shadow: 0 2px 35px rgba(0, 0, 0, 0.1);
     border-collapse: collapse; /* Remove espaçamento entre bordas das células */
     width: 100%; /* Ajuste a largura da tabela conforme necessário */
+
+
 }
 table, th, td {
     border: 3px solid #cccccc00;
+    border-radius: 8px
 }
 
 th {
@@ -268,6 +271,14 @@ th {
     height: 50px; /* Define a altura dos cabeçalhos da tabela */
 
 }
+
+td {
+    padding: 0; /* Remove o padding padrão das células */
+    font-size: 15px;
+    color: #3e5055 ;
+    vertical-align: -webkit-baseline-middle; /* Centraliza verticalmente o conteúdo da célula */
+}
+
 tr:nth-child(even) {
     background-color: #E6F7EB;
 }
@@ -277,12 +288,7 @@ tr:nth-child(odd) {
 tr:hover {
     background-color: #C5E9D2;
 }
-td {
-    padding: 0; /* Remove o padding padrão das células */
-    font-size: 15px;
-    color: #3e5055 ;
-    vertical-align: -webkit-baseline-middle; /* Centraliza verticalmente o conteúdo da célula */
-}
+
 a.saiba-mais {
     display: inline-block;
     padding: 2px 20px;
@@ -291,7 +297,7 @@ a.saiba-mais {
     color: white;
     background-color: #00A335;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s;
