@@ -1,3 +1,3 @@
-# FAQ Intelbras Redes 
+# Intelbras Redes 
 
-Contem materiais técnicos sobre a unidade de redes
+Contem materiais e informações técnicas sobre a unidade de redes.
