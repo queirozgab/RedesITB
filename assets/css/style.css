@@ -377,6 +377,17 @@ a.saiba-mais:hover {
 td.modelorac, th.modelorac {
     text-align: left !important;
 }
+
+.modelospli {
+    text-align: left; /* Alinha o texto à esquerda */
+    width: 200px;
+    vertical-align: middle;
+}
+/* Regra específica para a coluna com a classe .modelorac */
+td.modelospli, th.modelospli {
+    text-align: left !important;
+}
+
 .interface {
     text-align: center; /* Alinha o texto da coluna "Modelo" à esquerda */
     width: 200px;
