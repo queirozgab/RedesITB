@@ -377,7 +377,16 @@ a.saiba-mais:hover {
 td.modelorac, th.modelorac {
     text-align: left !important;
 }
-
+.conec {
+    text-align: left; /* Alinha o texto à esquerda */
+    width: 300px;
+    vertical-align: -webkit-baseline-middle;
+}
+/* Regra específica para a coluna com a classe .modelorac */
+td.conec, th.conec {
+    text-align: left !important;
+    vertical-align: -webkit-baseline-middle;
+}
 .modelospli {
     text-align: left; /* Alinha o texto à esquerda */
     width: 200px;
