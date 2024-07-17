@@ -276,7 +276,7 @@ td {
     padding: 0; /* Remove o padding padrão das células */
     font-size: 15px;
     color: #3e5055 ;
-    vertical-align: -webkit-baseline-middle; /* Centraliza verticalmente o conteúdo da célula */
+    vertical-align: middle; /* Centraliza verticalmente o conteúdo da célula */
 }
 
 tr:nth-child(even) {
@@ -290,8 +290,8 @@ tr:hover {
 }
 
 a.saiba-mais {
-    display: inline-block;
-    padding: 2px 20px;
+    display: block; /* Usar block para garantir que o botão ocupe toda a largura */
+    padding: 10px 20px;
     font-size: 14px;
     font-weight: bold;
     color: white;
@@ -300,31 +300,42 @@ a.saiba-mais {
     border-radius: 7px;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
+
 a.saiba-mais:hover {
     background-color: #007A25;
+    transform: translateY(-2px);
 }
+
+a.saiba-mais:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS para a célula */
+td.pagina-coluna {
+    padding: 0; /* Remove o padding da célula */
+    width: 150px; /* Define uma largura fixa para a célula */
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
 
-  
-    th, td {
-        padding: 10px;
-        font-size: 12px;
-        border: 1px solid black; /* Borda das células */
-        padding: 5px; /* Adiciona algum espaço interno nas células */
+
+th, td {
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid black; /* Borda das células */
+    padding: 5px; /* Adiciona algum espaço interno nas células */
     }
-    a.saiba-mais {
-        padding: 8px 16px;
-        font-size: 12px;
-    }
+
 }
-    .hidden {
+.hidden {
     display: none;
 }
-
-
 
 
 
@@ -368,7 +379,9 @@ a.saiba-mais:hover {
     text-align: left; /* Alinha o texto da coluna "Modelo" à esquerda */
     width: 200px;
 }
-
+.pag {
+    width: 150px;
+}
 .modelorac {
     text-align: left; /* Alinha o texto à esquerda */
     width: 350px;
@@ -380,13 +393,14 @@ td.modelorac, th.modelorac {
 .conec {
     text-align: left; /* Alinha o texto à esquerda */
     width: 300px;
-    vertical-align: -webkit-baseline-middle;
+    vertical-align: middle;
 }
 /* Regra específica para a coluna com a classe .modelorac */
 td.conec, th.conec {
     text-align: left !important;
-    vertical-align: -webkit-baseline-middle;
+    vertical-align: middle;
 }
+
 .modelospli {
     text-align: left; /* Alinha o texto à esquerda */
     width: 200px;
@@ -450,6 +464,11 @@ td:not(.modelo), th:not(.modelo) {
     border-width: 5px;
     border-style: solid;
     border-color: black transparent transparent transparent;
+}
+
+.qwert:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
 
 .qwert:hover .tooltiptext {
