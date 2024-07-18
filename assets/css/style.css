@@ -237,15 +237,24 @@ h4 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 25px;
-    font-family: 'MuseoSans-300.otf', sans-serif; /* Aplica a fonte local */
+    font-family: 'museo500', sans-serif; /* Aplica a fonte local */
 
 }
 
 @font-face {
     font-family: 'MinhaFonte';
-    src: url('/workspaces/queirozgab.github.io/assets/fonts/MuseoSans-300.otf') format('truetype'); /* Ajuste o caminho e formato conforme necessário */
+    src: url('/workspaces/queirozgab.github.io/assets/fonts/MuseoSans-300.otf') format('opentype'); /* Ajuste o caminho e formato conforme necessário */
 }
 
+@font-face {
+    font-family: 'Museo';
+    src: url('/workspaces/queirozgab.github.io/assets/fonts/MuseoSans.otf') format('opentype'); /* Ajuste o caminho e formato conforme necessário */
+}
+
+@font-face {
+    font-family: 'Museo500';
+    src: url('/workspaces/queirozgab.github.io/assets/fonts/MUSEOSANS_500_ITALIC.OTF') format('opentype'); /* Ajuste o caminho e formato conforme necessário */
+}
 
 table {
     border-spacing: 15px; /* Define o espaçamento entre as colunas */
