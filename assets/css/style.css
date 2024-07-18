@@ -717,30 +717,77 @@ td:not(.modelo), th:not(.modelo) {
     text-align: center;
 }
 
+/* Estilos para o campo de pesquisa */
 .search-container {
     margin-bottom: 20px;
+    text-align: center; /* Centraliza o conteúdo dentro do container */
 }
 
 .search-container input[type=text] {
-    padding: 10px;
+    padding: 12px; /* Aumenta um pouco o padding para melhorar o espaçamento */
     margin-right: 10px;
     width: 300px;
     box-sizing: border-box;
+    border: 1px solid #ccc; /* Adiciona uma borda para destacar o campo */
+    border-radius: 4px; /* Arredonda os cantos do campo */
+    font-size: 14px; /* Define um tamanho de fonte adequado */
 }
 
 .search-container button {
-    padding: 10px;
+    padding: 12px; /* Aumenta um pouco o padding para melhorar a usabilidade */
     background-color: #48b554;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 10px; /* Arredonda os cantos do botão */
+    transition: background-color 0.3s; /* Adiciona uma transição suave na cor de fundo */
 }
 
 .search-container button:hover {
-    background-color: #257b30;
+    background-color: #257b30; /* Cor mais escura ao passar o mouse para um visual mais destacado */
 }
 
+/* Estilos para o acordeão */
 .accordion-item {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 2px; /* Aumenta a margem entre os itens do acordeão */
+    border: 1px solid #96e69f;
+    border-radius: 5px;
+}
+
+.accordion-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 12px; /* Aumenta o padding para melhorar a usabilidade */
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Adiciona uma transição suave na cor de fundo */
+    color: #50788a; /* Cor do texto nos botões do acordeão */
+
+}
+
+.accordion-button:hover {
+    background-color: #e9ecef; /* Cor mais clara ao passar o mouse para destacar */
+}
+
+.accordion-collapse {
+    padding: 10px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 para vídeos responsivos */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
