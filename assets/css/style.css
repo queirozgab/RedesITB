@@ -716,3 +716,31 @@ td:not(.modelo), th:not(.modelo) {
     font-weight: bold; /* Negrito */
     text-align: center;
 }
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-container input[type=text] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.search-container button {
+    padding: 10px;
+    background-color: #48b554;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #257b30;
+}
+
+.accordion-item {
+    display: block;
+    margin-bottom: 10px;
+}
