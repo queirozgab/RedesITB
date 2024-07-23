@@ -840,3 +840,7 @@ td:not(.modelo), th:not(.modelo) {
     top: 50px;
     left: 50px;
   }
+
+  .hidden-text {
+    display: none;
+}
