@@ -847,3 +847,17 @@ td:not(.modelo), th:not(.modelo) {
   .hidden-text {
     display: none;
 }
+
+.botao-pequeno {
+    padding: 5px 10px; /* Ajusta o tamanho do botão */
+    font-size: 12px; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Borda do botão */
+    border-radius: 4px; /* Cantos arredondados */
+    background-color: #f0f0f0; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    cursor: pointer; /* Cursor em forma de mão */
+}
+
+.botao-pequeno:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+}
