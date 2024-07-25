@@ -398,6 +398,8 @@ th, td {
 .modelo {
     text-align: left; /* Alinha o texto da coluna "Modelo" à esquerda */
     width: 200px;
+    white-space: nowrap; /* Evita a quebra de linha */
+
 }
 .pag {
     width: 150px;
@@ -547,6 +549,19 @@ td:not(.modelo), th:not(.modelo) {
     cursor: pointer;
     border-radius: 5px;
 }
+.info-button-proj {
+    background: linear-gradient(45deg, #49d611, #d6114c); /* De 45 graus de #4CAF50 para #8BC34A */
+    border: none;
+    color: white;
+    padding: 0px 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 3px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
 .info-button:hover {
     background-color: #45a049; /* Verde mais escuro */
@@ -643,7 +658,19 @@ td:not(.modelo), th:not(.modelo) {
     font-weight: bold; /* Negrito */
     text-align: center;
 }
-
+.proj-rectangle {
+    width: 80px; /* Largura do retângulo */
+    height: 20px; /* Altura do retângulo */
+    border-radius: 15px; /* Bordas arredondadas */
+    background-color: #48b554; /* Amarelo */
+    color: #ffffff; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold; /* Negrito */
+    text-align: center;
+}
 .gpon-rectangle {
     width: 80px; /* Largura do retângulo */
     height: 20px; /* Altura do retângulo */
