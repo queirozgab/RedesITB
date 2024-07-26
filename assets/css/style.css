@@ -192,14 +192,14 @@ a.sidebar-link:hover {
     font-family: Arial, sans-serif; /* Fonte */
     padding: 5px; /* Espaçamento interno */
   }
-  
+
   /* Estilizando as opções do menu */
   #id_do_menu option {
     padding: 5px; /* Espaçamento entre as opções */
     background-color: #fff; /* Cor de fundo das opções */
     color: #000; /* Cor do texto das opções */
   }
-  
+
   /* Estilizando a opção selecionada */
   #id_do_menu option:selected {
     background-color: #eee; /* Cor de fundo da opção selecionada */
@@ -273,7 +273,6 @@ table, th, td {
     border: 3px solid #cccccc00;
     border-radius: 8px
 }
-
 th {
     background-color: #00A335;
     color: white;
@@ -921,4 +920,8 @@ td:not(.modelo), th:not(.modelo) {
 #tabelaProdutos {
     border-collapse: collapse;
     width: 100%;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
