@@ -927,3 +927,19 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
+.card {
+  border: 1px solid #e3e6f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.card h5 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.pt-4, .pb-4 {
+  padding-top: 1.5rem!important;
+  padding-bottom: 1.5rem!important;
+}
