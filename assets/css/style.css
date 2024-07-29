@@ -474,7 +474,9 @@ td:not(.modelo), th:not(.modelo) {
     margin-left: -80px;
     opacity: 0;
     transition: opacity 0.3s;
-}
+    white-space: normal; /* Permite a quebra de linha */
+
+  }
 
 .qwert .tooltiptext::after {
     content: "";
