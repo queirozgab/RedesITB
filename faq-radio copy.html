@@ -204,7 +204,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const initialLoad = document.querySelectorAll('#videoAccordion iframe.lazyload');
     initialLoad.forEach((iframe, index) => {
-        if (index < 10) { // Carrega os primeiros 3 vídeos automaticamente
+        if (index < 100) { // Carrega os primeiros 3 vídeos automaticamente
             iframe.src = iframe.getAttribute('data-src');
         }
     });
