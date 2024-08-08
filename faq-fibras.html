@@ -144,37 +144,212 @@
 					</div>
 				</nav>
 			</div>
-			<main class="content">
+			<main class="content">	
                 <section id="faq-5g">
                     <!-- accordion -->
                     <div class="accordion w-100 mt-5">
                         <!-- item -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button id="Inicializacao" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse" aria-expanded="false" aria-controls="collapseOne">
-                                    Dúvidas Frequentes
-                                </button>
-                            </h2>
-                                <div id="InicializacaoCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
-                                    <div class="accordion-body">
-										<p class="text-justify"> ESCREVA SOBRE O CONTEUDO</p>
-                                        <div class="embed-responsive video-container">
-                                            <iframe class="embed-responsive-item" src="COLOQUE O LINK" width="100%" height="auto" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
 
-						<div class="imagem">
-							<img src=".\assets\img\png\construction.svg" style="width: 800px;">
+
+		<!-- Menu de pesquisa -->
+		<div class="search-container">
+			<input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="searchVideos()">
+			<button type="button" onclick="searchVideos()">Pesquisar</button>
+		</div>
+
+		<!-- Acordeão de vídeos -->
+		<div id="videoAccordion">
+   
+						<!-- Conteúdo do submenu -->
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button id="Inicializacao1" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse1" aria-expanded="false" aria-controls="InicializacaoCollapse1">
+								Como fixar IP na WAN nos rádios da família WOM
+							</button>
+						</h2>
+						<div id="InicializacaoCollapse1" class="accordion-collapse collapse" aria-labelledby="Inicializacao1" data-mdb-parent="#submenuFora">
+							<div class="accordion-body">
+								<div class="embed-responsive video-container">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=itwzxu7rIqk&list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=36" width="100%" height="auto" allowfullscreen></iframe>
+								</div>
+							</div>
 						</div>
-                </main>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button id="Inicializacao2" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse2" aria-expanded="false" aria-controls="InicializacaoCollapse2">
+								Como fixar o Data Rate nos rádios da família WOM
+							</button>
+						</h2>
+						<div id="InicializacaoCollapse2" class="accordion-collapse collapse" aria-labelledby="Inicializacao2" data-mdb-parent="#submenuFora">
+							<div class="accordion-body">
+								<div class="embed-responsive video-container">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=JuNQZtaRe4w&list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=37" width="100%" height="auto" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button id="Inicializacao3" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse3" aria-expanded="false" aria-controls="InicializacaoCollapse3">
+								Como configurar uma DMZ nos rádios da família WOM
+							</button>
+						</h2>
+						<div id="InicializacaoCollapse3" class="accordion-collapse collapse" aria-labelledby="Inicializacao3" data-mdb-parent="#submenuFora">
+							<div class="accordion-body">
+								<div class="embed-responsive video-container">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=N-ag4mJ6Q10&list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=39&t=8s" width="100%" height="auto" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button id="Inicializacao4" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse4" aria-expanded="false" aria-controls="InicializacaoCollapse4">
+								Como alterar a potência de TX nos rádios da família WOM
+							</button>
+						</h2>
+						<div id="InicializacaoCollapse4" class="accordion-collapse collapse" aria-labelledby="Inicializacao4" data-mdb-parent="#submenuFora">
+							<div class="accordion-body">
+								<div class="embed-responsive video-container">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=hpFNwyTs6sg&list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=40" width="100%" height="auto" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button id="Inicializacao5" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse5" aria-expanded="false" aria-controls="InicializacaoCollapse5">
+								Como configurar o controle por IP nos rádios da família WOM
+							</button>
+						</h2>
+						<div id="InicializacaoCollapse5" class="accordion-collapse collapse" aria-labelledby="Inicializacao5" data-mdb-parent="#submenuFora">
+							<div class="accordion-body">
+								<div class="embed-responsive video-container">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=Q6TTWvVK1ac&list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=41&t=13s" width="100%" height="auto" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button id="Inicializacao6" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse6" aria-expanded="false" aria-controls="InicializacaoCollapse5">
+								Como alterar o IP da LAN dos rádios da família WOM 
+							</button>
+						</h2>
+						<div id="InicializacaoCollapse6" class="accordion-collapse collapse" aria-labelledby="Inicializacao6" data-mdb-parent="#submenuFora">
+							<div class="accordion-body">
+								<div class="embed-responsive video-container">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=EtxihZE1YMs&list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=43" width="100%" height="auto" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button id="Inicializacao7" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse7" aria-expanded="false" aria-controls="InicializacaoCollapse5">
+								Como configurar família WOM como bridge ponto a ponto
+							</button>
+						</h2>
+						<div id="InicializacaoCollapse7" class="accordion-collapse collapse" aria-labelledby="Inicializacao7" data-mdb-parent="#submenuFora">
+							<div class="accordion-body">
+								<div class="embed-responsive video-container">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=q5RimswQ_UE&list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=80&t=11s" width="100%" height="auto" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button id="Inicializacao8" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse8" aria-expanded="false" aria-controls="InicializacaoCollapse5">
+								Como configurar redirecionamento de portas da família WOM 
+							</button>
+						</h2>
+						<div id="InicializacaoCollapse8" class="accordion-collapse collapse" aria-labelledby="Inicializacao8" data-mdb-parent="#submenuFora">
+							<div class="accordion-body">
+								<div class="embed-responsive video-container">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=EtxihZE1YMs&list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=43" width="100%" height="auto" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button id="Inicializacao9" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse8" aria-expanded="false" aria-controls="InicializacaoCollapse5">
+								Como configurar família APC como bridge ponto a ponto
+							</button>
+						</h2>
+						<div id="InicializacaoCollapse9" class="accordion-collapse collapse" aria-labelledby="Inicializacao9" data-mdb-parent="#submenuFora">
+							<div class="accordion-body">
+								<div class="embed-responsive video-container">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=P8Zka2M_XzU&list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=82&t=2s" width="100%" height="auto" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button id="Inicializacao10" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse10" aria-expanded="false" aria-controls="InicializacaoCollapse5">
+								Como configurar a atualização automática na família APC
+							</button>
+						</h2>
+						<div id="InicializacaoCollapse10" class="accordion-collapse collapse" aria-labelledby="Inicializacao10" data-mdb-parent="#submenuFora">
+							<div class="accordion-body">
+								<div class="embed-responsive video-container">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=gd1ZEvxl2IM&list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=59" width="100%" height="auto" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button id="Inicializacao11" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse11" aria-expanded="false" aria-controls="InicializacaoCollapse5">
+								Como instalar o Kit conexão sem fio APC 5A 15
+							</button>
+						</h2>
+						<div id="InicializacaoCollapse11" class="accordion-collapse collapse" aria-labelledby="Inicializacao11" data-mdb-parent="#submenuFora">
+							<div class="accordion-body">
+								<div class="embed-responsive video-container">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=4tt4CrMa1ow&list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=69" width="100%" height="auto" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button id="Inicializacao12" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse12" aria-expanded="false" aria-controls="InicializacaoCollapse5">
+								Principais características da família APC 5A
+							</button>
+						</h2>
+						<div id="InicializacaoCollapse12" class="accordion-collapse collapse" aria-labelledby="Inicializacao12" data-mdb-parent="#submenuFora">
+							<div class="accordion-body">
+								<div class="embed-responsive video-container">
+									<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=u6lGUKNweb8&list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=81" width="100%" height="auto" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<script src="/workspaces/queirozgab.github.io/cabosopticios.html"></script> <!-- Arquivo de scripts JavaScript -->
+
+				</main>
 				<footer class="footer border footer-shadow">
 					<div class="container-fluid">
 						<div class="row text-muted">
 							<div class="col text-center">
 								<p class="mb-0">
-									<a href="http://www.intelbras.com" class="text-muted" target="_blank"><strong>Intelbras</strong></a> &copy;
+									<a href="http://www.intelbras.com" class="text-muted" target="_blank"><strong>Intelbras</strong></a>
 								</p>
 							</div>
 						</div>
@@ -183,13 +358,34 @@
 			</div>
 		</div>
 		<script>
-
+					
 			$(document).ready(function() {
 				$('#sidebarToggle').click(function() {
 					$('#sidebar').toggleClass('collapsed');
 					});
 			});
 
+			function searchVideos() {
+    var input, filter, accordion, items, title, i, txtValue;
+    input = document.getElementById('searchInput');
+    filter = input.value.toUpperCase();
+    accordion = document.getElementById('videoAccordion');
+    items = accordion.getElementsByClassName('accordion-item');
+
+    for (i = 0; i < items.length; i++) {
+        title = items[i].getElementsByTagName('button')[0];
+        txtValue = title.textContent || title.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            items[i].style.display = '';
+        } else {
+            items[i].style.display = 'none';
+        }
+    }
+}
+
+
+
 			</script>
 	</body>
 	</html>
+	
