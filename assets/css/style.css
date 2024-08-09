@@ -951,3 +951,27 @@ table {
         padding: 0.75rem;
     }
 }
+.filtro-categorias {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os botões quebrem linha se necessário */
+    justify-content: flex-start; /* Alinha os botões à esquerda */
+}
+
+.filtro-categorias button {
+    margin-right: 10px;
+    margin-bottom: 10px; /* Adiciona espaçamento inferior para botões em linhas diferentes */
+    padding: 10px 20px;
+    background-color: #6990A7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filtro-categorias button:hover {
+    background-color: #31586C;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+}
