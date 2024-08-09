@@ -162,13 +162,15 @@
 
 <!-- Acordeão de vídeos -->
 <div id="videoAccordion">
+    <button class="toggle-button" onclick="toggleFiltro()">Filtrar Vídeos</button>
 
     <div class="filtro-categorias">
         <button onclick="filtrarVideos('categoria-configuracao')">Configurações</button>
         <button onclick="filtrarVideos('categoria-boas-praticas')">Boas Práticas</button>
         <button onclick="filtrarVideos('')">Mostrar Todos</button>
     </div>
-   
+</div>
+
 						<!-- Conteúdo do submenu -->
 						<div class="accordion custom-accordion">
 							<div class="accordion-item categoria-configuracao">
@@ -667,16 +669,26 @@ function searchVideos() {
     }
 }
 
-function filtrarVideos(categoria) {
-    var items = document.getElementsByClassName('accordion-item');
-    for (var i = 0; i < items.length; i++) {
-        if (categoria === '' || items[i].classList.contains(categoria)) {
-            items[i].style.display = 'block';
-        } else {
-            items[i].style.display = 'none';
+function toggleFiltro() {
+            const filtro = document.querySelector('.filtro-categorias');
+            if (filtro.style.display === 'none' || filtro.style.display === '') {
+                filtro.style.display = 'block'; // Exibe o filtro
+            } else {
+                filtro.style.display = 'none'; // Oculta o filtro
+            }
         }
-    }
-}
+
+        function filtrarVideos(categoria) {
+            var items = document.getElementsByClassName('accordion-item');
+            for (var i = 0; i < items.length; i++) {
+                if (categoria === '' || items[i].classList.contains(categoria)) {
+                    items[i].style.display = 'block';
+                } else {
+                    items[i].style.display = 'none';
+                }
+            }
+        }
+    
 </script>
 
 

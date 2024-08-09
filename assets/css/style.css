@@ -952,7 +952,7 @@ table {
     }
 }
 .filtro-categorias {
-    display: flex;
+    display: none;
     flex-wrap: wrap; /* Permite que os botões quebrem linha se necessário */
     justify-content: flex-start; /* Alinha os botões à esquerda */
 }
@@ -971,6 +971,25 @@ table {
 .filtro-categorias button:hover {
     background-color: #31586C;
 }
+
+.toggle-button {
+    background-color: #3a6f8f;
+    color: #fff;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    justify-content: flex-start; /* Alinha os botões à esquerda */
+}
+
+.toggle-button:hover {
+    background-color: #31586C;
+}        
 
 .accordion-item {
     margin-bottom: 15px;
