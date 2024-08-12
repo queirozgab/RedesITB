@@ -189,9 +189,10 @@ a.sidebar-link:hover {
     background-color: #eee; /* Cor de fundo da opção selecionada */
   }
 
-.search-container {
-  display: flex; /* Enable flexbox layout */
-  align-items: center; /* Align items vertically */
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 #id_do_menu {
@@ -740,11 +741,6 @@ td:not(.modelo), th:not(.modelo) {
     text-align: center;
 }
 
-/* Estilos para o campo de pesquisa */
-.search-container {
-    margin-bottom: 20px;
-    text-align: center; /* Centraliza o conteúdo dentro do container */
-}
 
 .search-container input[type=text] {
     padding: 12px; /* Aumenta um pouco o padding para melhorar o espaçamento */
@@ -765,14 +761,9 @@ td:not(.modelo), th:not(.modelo) {
     border-radius: 10px; /* Arredonda os cantos do botão */
     transition: background-color 0.3s; /* Adiciona uma transição suave na cor de fundo */
 }
-
 .search-container button:hover {
     background-color: #257b30; /* Cor mais escura ao passar o mouse para um visual mais destacado */
 }
-
-
-
-
 .cable {
     position: relative;
     width: 300px;
@@ -951,46 +942,54 @@ table {
         padding: 0.75rem;
     }
 }
-.filtro-categorias {
-    display: none;
-    flex-wrap: wrap; /* Permite que os botões quebrem linha se necessário */
-    justify-content: flex-start; /* Alinha os botões à esquerda */
-}
-
-.filtro-categorias button {
-    margin-right: 10px;
-    margin-bottom: 10px; /* Adiciona espaçamento inferior para botões em linhas diferentes */
-    padding: 10px 20px;
-    background-color: #6990A7;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.filtro-categorias button:hover {
-    background-color: #31586C;
-}
-
 .toggle-button {
-    background-color: #3a6f8f;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #50788a;
     color: #fff;
-    padding: 10px 15px;
-    margin-right: 5px;
+    padding: 8px 16px;
     border: none;
-    border-radius: 3px;
     cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
     transition: background-color 0.3s ease;
-    display: inline-block;
-    justify-content: flex-start; /* Alinha os botões à esquerda */
 }
 
 .toggle-button:hover {
-    background-color: #31586C;
-}        
+    background-color: #1f80ad;
+}
 
-.accordion-item {
-    margin-bottom: 15px;
+.filtro-categorias {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    display: none; /* Inicialmente oculto */
+}
+
+.filtro-categorias button,
+#toggleFiltro {
+    background-color: #507888;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filtro-categorias button:hover,
+#toggleFiltro:hover {
+    background-color: #103543;
+}
+
+.filtro-categorias.show {
+    display: flex; /* Mostra os botões em linha */
+}
+
+.filtro-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    gap: 10px; /* Espaço entre o botão Filtrar e os botões ocultos */
+}
+
+#toggleFiltro {
+    margin-right: 10px; /* Distância entre o botão de toggle e os demais botões */
 }
