@@ -187,11 +187,33 @@
 		</div>
 		<script>
 
-			$(document).ready(function() {
-				$('#sidebarToggle').click(function() {
-					$('#sidebar').toggleClass('collapsed');
-					});
-			});
+let currentCategoryFilter = '';
+
+function applyFilters() {
+	let searchValue = document.getElementById('searchInput').value.toUpperCase();
+	let items = document.getElementsByClassName('accordion-item');
+
+	for (let i = 0; i < items.length; i++) {
+		let title = items[i].querySelector('button').innerText.toUpperCase();
+		let matchesSearch = title.indexOf(searchValue) > -1;
+		let matchesCategory = currentCategoryFilter === '' || items[i].classList.contains(currentCategoryFilter);
+
+		if (matchesSearch && matchesCategory) {
+			items[i].style.display = 'block';
+		} else {
+			items[i].style.display = 'none';
+		}
+	}
+}
+
+function toggleFiltro() {
+	document.querySelector('.filtro-categorias').classList.toggle('show');
+}
+
+function setCategoryFilter(category) {
+	currentCategoryFilter = category;
+	applyFilters();
+}
 
 			</script>
 	</body>

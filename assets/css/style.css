@@ -939,7 +939,7 @@ table {
 }
 
 .filtro-categorias {
-    display: flex;
+    display: none;
     flex-direction: row;
     gap: 10px;
     display: none; /* Inicialmente oculto */
@@ -961,7 +961,7 @@ table {
 }
 
 .filtro-categorias.show {
-    display: flex; /* Mostra os botões em linha */
+    display: block; /* Mostra os botões em linha */
 }
 
 .filtro-container {

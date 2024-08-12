@@ -156,122 +156,91 @@
 
 
 		<!-- Menu de pesquisa -->
-		<div class="search-container">
-			<input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="searchVideos()">
-			<button type="button" onclick="searchVideos()">Pesquisar</button>
-		</div>
+<div class="search-container">
+    <div class="input-button-group">
+        <input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="searchVideos()">
+        <button type="button" onclick="searchVideos()">Pesquisar</button>
+    </div>
 
-
-			<div id="videoAccordion">
-				<!-- Conteúdo do submenu -->
-				<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button id="Inicializacao2" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse2" aria-expanded="false" aria-controls="InicializacaoCollapse2" aria-label="Como configurar VPN PPTP no R3005G">
-									Como configurar VPN PPTP no R3005G
-									<span class="hidden-text">R3005G VPN PPTP</span>
-								</button>
-							</h2>
-							<div id="InicializacaoCollapse2" class="accordion-collapse collapse" aria-labelledby="Inicializacao2" data-mdb-parent="#videoAccordion">
-								<div class="accordion-body">
-									<div class="embed-responsive video-container">
-										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5KkCrZKRIj0?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=7&t=28s" width="100%" height="auto" allowfullscreen></iframe>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button id="Inicializacao3" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse3" aria-expanded="false" aria-controls="InicializacaoCollapse1" aria-label="Como configurar balanceamento de carga (LoadBalance) no R3005G">
-									Como configurar balanceamento de carga (LoadBalance) no R3005G
-									<span class="hidden-text">R3005G balanceamento de carga LoadBalance Load Balance</span>
-								</button>
-							</h2>
-							<div id="InicializacaoCollapse3" class="accordion-collapse collapse" aria-labelledby="Inicializacao3" data-mdb-parent="#videoAccordion">
-								<div class="accordion-body">
-									<div class="embed-responsive video-container">
-										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mc4heLHcscI?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=8&t=2s" width="100%" height="auto" allowfullscreen></iframe>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button id="Inicializacao4" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse4" aria-expanded="false" aria-controls="InicializacaoCollapse2" aria-label="Como configurar PPPoE no roteador de acesso R3005G">
-									Como configurar PPPoE no roteador de acesso R3005G
-									<span class="hidden-text">R3005G PPPoE</span>
-								</button>
-							</h2>
-							<div id="InicializacaoCollapse4" class="accordion-collapse collapse" aria-labelledby="Inicializacao4" data-mdb-parent="#videoAccordion">
-								<div class="accordion-body">
-									<div class="embed-responsive video-container">
-								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Bw95awHFEb0?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=9&t=3s" width="100%" height="auto" allowfullscreen></iframe>
+	<div id="videoAccordion">
+		<div class="filtro-container">
+			<button id="toggleFiltro" onclick="toggleFiltro()">Filtrar</button>
+			<div class="filtro-categorias">
+				<button onclick="filtrarVideos('categoria-configuracao')">Configurações</button>
+				<button onclick="filtrarVideos('categoria-tecnologias')">Tecnologias</button>
+				<button onclick="filtrarVideos('categoria-comercial')">Comercial</button>
+				<button onclick="filtrarVideos('categoria-boas-praticas')">Boas Práticas</button>
+				<button onclick="filtrarVideos('')">Mostrar Todos</button>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="accordion-item">
+<div class="accordion-item categoria-boas-praticas">
 	<h2 class="accordion-header">
-		<button id="Inicializacao5" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse5" aria-expanded="false" aria-controls="InicializacaoCollapse3" aria-label="Configurações iniciais do roteador de acesso R3005G">
-			Configurações iniciais do roteador de acesso R3005G
-			<span class="hidden-text">Configurações iniciais do roteador de acesso R3005G vlan</span>
+		<button id="Inicializacao1" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse1" aria-expanded="false" aria-controls="InicializacaoCollapse1" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+			Dicas de redes para CFTV – Escolha do switch de rede 
 		</button>
 	</h2>
-	<div id="InicializacaoCollapse5" class="accordion-collapse collapse" aria-labelledby="Inicializacao5" data-mdb-parent="#videoAccordion">
+	<div id="InicializacaoCollapse1" class="accordion-collapse collapse" aria-labelledby="Inicializacao1" data-mdb-parent="#videoAccordion">
 		<div class="accordion-body">
 			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bYaceWiurOM?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=10&t=11s" width="100%" height="auto" allowfullscreen></iframe>
-      </div>
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=zvxcM4idUC4" width="100%" height="auto" allowfullscreen></iframe>
+			</div>
 		</div>
 	</div>
 </div>
-				<div class="accordion-item">
-					<h2 class="accordion-header">
-						<button id="Inicializacao6" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse6" aria-expanded="false" aria-controls="InicializacaoCollapse3" aria-label="Configurações iniciais do roteador de acesso R3005G">
-							Configurando Open VPN com o Roteador R3005G Intelbras
-							<span class="hidden-text">Configurando Open VPN com o Roteador R3005G Intelbras</span>
-						</button>
-					</h2>
-					<div id="InicializacaoCollapse6" class="accordion-collapse collapse" aria-labelledby="Inicializacao6" data-mdb-parent="#videoAccordion">
-						<div class="accordion-body">
-							<div class="embed-responsive video-container">
-								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lHKHMO-qKI8?t=1s" width="100%" height="auto" allowfullscreen></iframe>
+
+
+
+
+
+
+                </main>
+				<footer class="footer border footer-shadow">
+					<div class="container-fluid">
+						<div class="row text-muted">
+							<div class="col text-center">
+								<p class="mb-0">
+									<a href="http://www.intelbras.com" class="text-muted" target="_blank"><strong>Intelbras</strong></a> &copy;
+								</p>
 							</div>
 						</div>
 					</div>
-				</div>
+				</footer>
 			</div>
+		</div>
+		<script>
 
 
-				<script>
+let currentCategoryFilter = '';
 
+function applyFilters() {
+	let searchValue = document.getElementById('searchInput').value.toUpperCase();
+	let items = document.getElementsByClassName('accordion-item');
 
-					$(document).ready(function() {
-				$('#sidebarToggle').click(function() {
-					$('#sidebar').toggleClass('collapsed');
-					});
-			});
+	for (let i = 0; i < items.length; i++) {
+		let title = items[i].querySelector('button').innerText.toUpperCase();
+		let matchesSearch = title.indexOf(searchValue) > -1;
+		let matchesCategory = currentCategoryFilter === '' || items[i].classList.contains(currentCategoryFilter);
 
-			function searchVideos() {
-    var input, filter, accordion, items, title, i, txtValue;
-    input = document.getElementById('searchInput');
-    filter = input.value.toUpperCase();
-    accordion = document.getElementById('videoAccordion');
-    items = accordion.getElementsByClassName('accordion-item');
-
-    for (i = 0; i < items.length; i++) {
-        title = items[i].getElementsByTagName('button')[0];
-        txtValue = title.textContent || title.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            items[i].style.display = '';
-        } else {
-            items[i].style.display = 'none';
-        }
-    }
+		if (matchesSearch && matchesCategory) {
+			items[i].style.display = 'block';
+		} else {
+			items[i].style.display = 'none';
+		}
+	}
 }
 
-					</script>
+function toggleFiltro() {
+	document.querySelector('.filtro-categorias').classList.toggle('show');
+}
+
+function setCategoryFilter(category) {
+	currentCategoryFilter = category;
+	applyFilters();
+}
+
+			</script>
 	</body>
 	</html>

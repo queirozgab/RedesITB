@@ -835,45 +835,32 @@
 			</div>
 		</div>
 	<script>
-function searchVideos() {
-    var input, filter, accordion, iframes, title, i;
-    input = document.getElementById('searchInput');
-    filter = input.value.toUpperCase();
-    accordion = document.getElementById('videoAccordion');
-    var items = accordion.getElementsByClassName('accordion-item');
+    let currentCategoryFilter = '';
 
-    for (i = 0; i < items.length; i++) {
-        title = items[i].querySelector('button').innerText;
-        if (title.toUpperCase().indexOf(filter) > -1) {
-            items[i].style.display = '';
-        } else {
-            items[i].style.display = 'none';
-        }
-    }
+function applyFilters() {
+	let searchValue = document.getElementById('searchInput').value.toUpperCase();
+	let items = document.getElementsByClassName('accordion-item');
+
+	for (let i = 0; i < items.length; i++) {
+		let title = items[i].querySelector('button').innerText.toUpperCase();
+		let matchesSearch = title.indexOf(searchValue) > -1;
+		let matchesCategory = currentCategoryFilter === '' || items[i].classList.contains(currentCategoryFilter);
+
+		if (matchesSearch && matchesCategory) {
+			items[i].style.display = 'block';
+		} else {
+			items[i].style.display = 'none';
+		}
+	}
 }
 
 function toggleFiltro() {
-            const filtro = document.querySelector('.filtro-categorias');
-            if (filtro.style.display === 'none' || filtro.style.display === '') {
-                filtro.style.display = 'block'; // Exibe o filtro
-            } else {
-                filtro.style.display = 'none'; // Oculta o filtro
-            }
-        }
+	document.querySelector('.filtro-categorias').classList.toggle('show');
+}
 
-        function filtrarVideos(categoria) {
-            var items = document.getElementsByClassName('accordion-item');
-            for (var i = 0; i < items.length; i++) {
-                if (categoria === '' || items[i].classList.contains(categoria)) {
-                    items[i].style.display = 'block';
-                } else {
-                    items[i].style.display = 'none';
-                }
-            }
-        }
-		function toggleFiltro() {
-    var filtroCategorias = document.querySelector('.filtro-categorias');
-    filtroCategorias.classList.toggle('show');
+function setCategoryFilter(category) {
+	currentCategoryFilter = category;
+	applyFilters();
 }
 
 </script>

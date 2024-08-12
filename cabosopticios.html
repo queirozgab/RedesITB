@@ -154,18 +154,31 @@
                         <!-- item -->
 
 
-		<!-- Menu de pesquisa -->
 		<div class="search-container">
-			<input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="searchVideos()">
-			<button type="button" onclick="searchVideos()">Pesquisar</button>
+			<div class="input-button-group">
+				<input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="applyFilters()">
+				<button type="button" onclick="applyFilters()">Pesquisar</button>
+			</div>
 		</div>
+		<div id="videoAccordion">
+			<div class="filtro-container">
+				<button id="toggleFiltro" onclick="toggleFiltro()">Filtrar</button>
+				<div class="filtro-categorias">
+					<button onclick="setCategoryFilter('categoria-configuracao')">Configurações</button>
+					<button onclick="setCategoryFilter('categoria-tecnologias')">Tecnologias</button>
+					<button onclick="setCategoryFilter('categoria-comercial')">Comercial</button>
+					<button onclick="setCategoryFilter('categoria-boas-praticas')">Boas Práticas</button>
+					<button onclick="setCategoryFilter('')">Mostrar Todos</button>
+				</div>
+			</div>
+
 
 		<!-- Acordeão de vídeos -->
 		<div id="videoAccordion">
    
 						<!-- Conteúdo do submenu -->
-					<div class="accordion-item">
-						<h2 class="accordion-header">
+						<div class="accordion-item categoria-configuracao">
+							<h2 class="accordion-header">
 							<button id="Inicializacao1" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse1" aria-expanded="false" aria-controls="InicializacaoCollapse1">
 								Dicas sobre Cabo Drop
 							</button>
@@ -179,7 +192,7 @@
 						</div>
 					</div>
 
-					<div class="accordion-item">
+					<div class="accordion-item categoria-tecnologias">
 						<h2 class="accordion-header">
 							<button id="Inicializacao2" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse2" aria-expanded="false" aria-controls="InicializacaoCollapse2">
 								Tecnologia XGSPON
@@ -193,7 +206,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="accordion-item">
+					<!-- <div class="accordion-item">
 						<h2 class="accordion-header">
 							<button id="Inicializacao3" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse3" aria-expanded="false" aria-controls="InicializacaoCollapse3">
 								Diferenças entre cabos de fibra AS e ASU
@@ -236,11 +249,9 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 
 				</div>
-				<script src="/workspaces/queirozgab.github.io/cabosopticios.html"></script> <!-- Arquivo de scripts JavaScript -->
-
 				</main>
 				<footer class="footer border footer-shadow">
 					<div class="container-fluid">
@@ -256,31 +267,33 @@
 			</div>
 		</div>
 		<script>
-					
-			$(document).ready(function() {
-				$('#sidebarToggle').click(function() {
-					$('#sidebar').toggleClass('collapsed');
-					});
-			});
+    let currentCategoryFilter = '';
 
-			function searchVideos() {
-    var input, filter, accordion, items, title, i, txtValue;
-    input = document.getElementById('searchInput');
-    filter = input.value.toUpperCase();
-    accordion = document.getElementById('videoAccordion');
-    items = accordion.getElementsByClassName('accordion-item');
+function applyFilters() {
+	let searchValue = document.getElementById('searchInput').value.toUpperCase();
+	let items = document.getElementsByClassName('accordion-item');
 
-    for (i = 0; i < items.length; i++) {
-        title = items[i].getElementsByTagName('button')[0];
-        txtValue = title.textContent || title.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            items[i].style.display = '';
-        } else {
-            items[i].style.display = 'none';
-        }
-    }
+	for (let i = 0; i < items.length; i++) {
+		let title = items[i].querySelector('button').innerText.toUpperCase();
+		let matchesSearch = title.indexOf(searchValue) > -1;
+		let matchesCategory = currentCategoryFilter === '' || items[i].classList.contains(currentCategoryFilter);
+
+		if (matchesSearch && matchesCategory) {
+			items[i].style.display = 'block';
+		} else {
+			items[i].style.display = 'none';
+		}
+	}
 }
 
+function toggleFiltro() {
+	document.querySelector('.filtro-categorias').classList.toggle('show');
+}
+
+function setCategoryFilter(category) {
+	currentCategoryFilter = category;
+	applyFilters();
+}
 
 
 			</script>
