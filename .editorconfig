@@ -7,3 +7,14 @@ indent_size = 2
 end_of_line = lf
 trim_trailing_whitespace = true
 insert_final_newline = true
+{
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "arrowParens": "avoid"
+}
