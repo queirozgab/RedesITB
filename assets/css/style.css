@@ -184,7 +184,7 @@ a.sidebar-link:hover {
   .search-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start; /* Alinha itens à esquerda */
 }
 
 #id_do_menu {
@@ -796,8 +796,8 @@ td:not(.modelo), th:not(.modelo) {
 }
 
 .botao-filtro {
-    padding: 11px 15px;
-    font-size: 13px;
+    padding: 7px 10px;
+    font-size: 11px;
     border: 1px solid #50788a;
     border-radius: 25px;
     background-color: #f8f9fa;
@@ -929,7 +929,7 @@ table {
     background-color: #50788a;
     color: #fff;
     padding: 8px 16px;
-    border: none;
+    border: #103543;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -947,17 +947,19 @@ table {
 
 .filtro-categorias button,
 #toggleFiltro {
-    background-color: #507888;
-    color: #fff;
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #fff; /* Fundo branco para contraste */
+    color: #50788a; /* Cor do texto */
+    padding: 8px 16px; /* Espaçamento interno */
+    border: 2px solid #50788a; /* Borda com cor para combinar com o texto */
+    border-radius: 30px; /* Arredondamento suave dos cantos */
+    cursor: pointer; /* Cursor de ponteiro para indicar que é clicável */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para mudanças de cor */
 }
 
 .filtro-categorias button:hover,
 #toggleFiltro:hover {
-    background-color: #103543;
+    background-color: #50788a; /* Fundo muda para a cor da borda */
+    color: #fff; /* Texto branco para contraste com o fundo */
 }
 
 .filtro-categorias.show {
