@@ -155,27 +155,28 @@
                         <!-- item -->
 
 
-		<!-- Menu de pesquisa -->
-<div class="search-container">
-    <div class="input-button-group">
-        <input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="searchVideos()">
-        <button type="button" onclick="searchVideos()">Pesquisar</button>
-    </div>
+	<!-- Menu de pesquisa -->
 
+	<div class="search-container">
+		<div class="input-button-group">
+			<input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="applyFilters()">
+			<button type="button" onclick="applyFilters()">Pesquisar</button>
+		</div>
+	</div>
 	<div id="videoAccordion">
 		<div class="filtro-container">
 			<button id="toggleFiltro" onclick="toggleFiltro()">Filtrar</button>
 			<div class="filtro-categorias">
-				<button onclick="filtrarVideos('categoria-configuracao')">Configurações</button>
-				<button onclick="filtrarVideos('categoria-tecnologias')">Tecnologias</button>
-				<button onclick="filtrarVideos('categoria-comercial')">Comercial</button>
-				<button onclick="filtrarVideos('categoria-boas-praticas')">Boas Práticas</button>
-				<button onclick="filtrarVideos('')">Mostrar Todos</button>
+				<button onclick="setCategoryFilter('categoria-configuracao')">Configurações</button>
+				<!-- <button onclick="setCategoryFilter('categoria-tecnologias')">Tecnologias</button> -->
+				<button onclick="setCategoryFilter('categoria-comercial')">Comercial</button>
+				<!-- <button onclick="setCategoryFilter('categoria-boas-praticas')">Boas Práticas</button> -->
+				<button onclick="setCategoryFilter('')">Mostrar Todos</button>
 			</div>
 		</div>
-	</div>
-</div>
-<div id="videoAccordion">
+	<!-- Acordeão de vídeos -->
+	<div id="videoAccordion">
+<!-- Acordeão de vídeos -->
 
 <div class="accordion-item categoria-comercial">
 	<h2 class="accordion-header">
@@ -186,7 +187,7 @@
 	<div id="InicializacaoCollapse1" class="accordion-collapse collapse" aria-labelledby="Inicializacao1" data-mdb-parent="#videoAccordion">
 		<div class="accordion-body">
 			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=99U__iD06Sc&t=6s" width="100%" height="auto" allowfullscreen></iframe>
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/99U__iD06Sc?start=6" width="100%" height="auto" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
@@ -200,7 +201,7 @@
 	<div id="InicializacaoCollapse2" class="accordion-collapse collapse" aria-labelledby="Inicializacao2" data-mdb-parent="#videoAccordion">
 		<div class="accordion-body">
 			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=j2IvPoR11JY" width="100%" height="auto" allowfullscreen></iframe>
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/j2IvPoR11JY" width="100%" height="auto" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
@@ -214,7 +215,7 @@
 	<div id="InicializacaoCollapse3" class="accordion-collapse collapse" aria-labelledby="Inicializacao3" data-mdb-parent="#videoAccordion">
 		<div class="accordion-body">
 			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=mc4heLHcscI&t=68s" width="100%" height="auto" allowfullscreen></iframe>
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mc4heLHcscI?start=68" width="100%" height="auto" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
@@ -228,7 +229,7 @@
 	<div id="InicializacaoCollapse4" class="accordion-collapse collapse" aria-labelledby="Inicializacao4" data-mdb-parent="#videoAccordion">
 		<div class="accordion-body">
 			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=lHKHMO-qKI8&t=1s" width="100%" height="auto" allowfullscreen></iframe>
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lHKHMO-qKI8?start=1" width="100%" height="auto" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
@@ -241,7 +242,7 @@
 	<div id="InicializacaoCollapse5" class="accordion-collapse collapse" aria-labelledby="Inicializacao5" data-mdb-parent="#videoAccordion">
 		<div class="accordion-body">
 			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=bYaceWiurOM&t=11s" width="100%" height="auto" allowfullscreen></iframe>
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bYaceWiurOM?start=11" width="100%" height="auto" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
@@ -255,7 +256,7 @@
 	<div id="InicializacaoCollapse6" class="accordion-collapse collapse" aria-labelledby="Inicializacao6" data-mdb-parent="#videoAccordion">
 		<div class="accordion-body">
 			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=5KkCrZKRIj0" width="100%" height="auto" allowfullscreen></iframe>
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5KkCrZKRIj0" width="100%" height="auto" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
@@ -268,7 +269,7 @@
 	<div id="InicializacaoCollapse7" class="accordion-collapse collapse" aria-labelledby="Inicializacao7" data-mdb-parent="#videoAccordion">
 		<div class="accordion-body">
 			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=Bw95awHFEb0&t=10s" width="100%" height="auto" allowfullscreen></iframe>
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Bw95awHFEb0?start=10" width="100%" height="auto" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
@@ -283,7 +284,7 @@
 	<div id="InicializacaoCollapse8" class="accordion-collapse collapse" aria-labelledby="Inicializacao8" data-mdb-parent="#videoAccordion">
 		<div class="accordion-body">
 			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=P6SET1K8aNM" width="100%" height="auto" allowfullscreen></iframe>
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/P6SET1K8aNM" width="100%" height="auto" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
@@ -305,36 +306,33 @@
 			</div>
 		</div>
 		<script>
-
-
-let currentCategoryFilter = '';
-
-function applyFilters() {
-	let searchValue = document.getElementById('searchInput').value.toUpperCase();
-	let items = document.getElementsByClassName('accordion-item');
-
-	for (let i = 0; i < items.length; i++) {
-		let title = items[i].querySelector('button').innerText.toUpperCase();
-		let matchesSearch = title.indexOf(searchValue) > -1;
-		let matchesCategory = currentCategoryFilter === '' || items[i].classList.contains(currentCategoryFilter);
-
-		if (matchesSearch && matchesCategory) {
-			items[i].style.display = 'block';
-		} else {
-			items[i].style.display = 'none';
-		}
-	}
-}
-
-function toggleFiltro() {
-	document.querySelector('.filtro-categorias').classList.toggle('show');
-}
-
-function setCategoryFilter(category) {
-	currentCategoryFilter = category;
-	applyFilters();
-}
-
-			</script>
+			let currentCategoryFilter = '';
+		   
+		   function applyFilters() {
+			   let searchValue = document.getElementById('searchInput').value.toUpperCase();
+			   let items = document.getElementsByClassName('accordion-item');
+		   
+			   for (let i = 0; i < items.length; i++) {
+				   let title = items[i].querySelector('button').innerText.toUpperCase();
+				   let matchesSearch = title.indexOf(searchValue) > -1;
+				   let matchesCategory = currentCategoryFilter === '' || items[i].classList.contains(currentCategoryFilter);
+		   
+				   if (matchesSearch && matchesCategory) {
+					   items[i].style.display = 'block';
+				   } else {
+					   items[i].style.display = 'none';
+				   }
+			   }
+		   }
+		   
+		   function toggleFiltro() {
+			   document.querySelector('.filtro-categorias').classList.toggle('show');
+		   }
+		   
+		   function setCategoryFilter(category) {
+			   currentCategoryFilter = category;
+			   applyFilters();
+		   }
+		   </script>
 	</body>
 	</html>

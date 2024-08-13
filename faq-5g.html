@@ -151,49 +151,99 @@
                 <section id="faq-5g">
                     <!-- accordion -->
                     <div class="accordion w-100 mt-5">
-            
-		<!-- Menu de pesquisa -->
-<div class="search-container">
-    <div class="input-button-group">
-        <input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="searchVideos()">
-        <button type="button" onclick="searchVideos()">Pesquisar</button>
-    </div>
+   	<!-- Menu de pesquisa -->
 
+	<div class="search-container">
+		<div class="input-button-group">
+			<input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="applyFilters()">
+			<button type="button" onclick="applyFilters()">Pesquisar</button>
+		</div>
+	</div>
 	<div id="videoAccordion">
 		<div class="filtro-container">
 			<button id="toggleFiltro" onclick="toggleFiltro()">Filtrar</button>
 			<div class="filtro-categorias">
-				<button onclick="filtrarVideos('categoria-configuracao')">Configurações</button>
-				<button onclick="filtrarVideos('categoria-tecnologias')">Tecnologias</button>
-				<button onclick="filtrarVideos('categoria-comercial')">Comercial</button>
-				<button onclick="filtrarVideos('categoria-boas-praticas')">Boas Práticas</button>
-				<button onclick="filtrarVideos('')">Mostrar Todos</button>
+				<button onclick="setCategoryFilter('categoria-configuracao')">Configurações</button>
+				<!-- <button onclick="setCategoryFilter('categoria-tecnologias')">Tecnologias</button> -->
+				<button onclick="setCategoryFilter('categoria-comercial')">Comercial</button>
+				<!-- <button onclick="setCategoryFilter('categoria-boas-praticas')">Boas Práticas</button> -->
+				<button onclick="setCategoryFilter('')">Mostrar Todos</button>
 			</div>
 		</div>
-	</div>
-</div>
-<div id="videoAccordion">
+	<!-- Acordeão de vídeos -->
+	<div id="videoAccordion">
+<!-- Acordeão de vídeos -->
 
-<div class="accordion-item categoria-boas-praticas">
+<div class="accordion-item categoria-comercial">
 	<h2 class="accordion-header">
 		<button id="Inicializacao1" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse1" aria-expanded="false" aria-controls="InicializacaoCollapse1" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Dicas de redes para CFTV – Escolha do switch de rede 
+			Conheça o primeiro Roteador 5G do Brasil, o Intelbras GX 3000
 		</button>
 	</h2>
 	<div id="InicializacaoCollapse1" class="accordion-collapse collapse" aria-labelledby="Inicializacao1" data-mdb-parent="#videoAccordion">
 		<div class="accordion-body">
 			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=zvxcM4idUC4" width="100%" height="auto" allowfullscreen></iframe>
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/unO6nSL0GMw" width="100%" height="auto" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="accordion-item categoria-comercial">
+	<h2 class="accordion-header">
+		<button id="Inicializacao2" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse2" aria-expanded="false" aria-controls="InicializacaoCollapse2" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+			Roteador 5G Intelbras GX 3000 com plano de internet Supernova
+		</button>
+	</h2>
+	<div id="InicializacaoCollapse2" class="accordion-collapse collapse" aria-labelledby="Inicializacao2" data-mdb-parent="#videoAccordion">
+		<div class="accordion-body">
+			<div class="embed-responsive video-container">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/siK2VXJLgFE" width="100%" height="auto" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
 </div>
 
-
-
-
-
-
+<div class="accordion-item categoria-configuracao">
+	<h2 class="accordion-header">
+		<button id="Inicializacao4" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse4" aria-expanded="false" aria-controls="InicializacaoCollapse4" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+			Extensores Mesh IH3000 Intelbras
+		</button>
+	</h2>
+	<div id="InicializacaoCollapse4" class="accordion-collapse collapse" aria-labelledby="Inicializacao4" data-mdb-parent="#videoAccordion">
+		<div class="accordion-body">
+			<div class="embed-responsive video-container">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OEsHjyrRtCU?start=3" width="100%" height="auto" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="accordion-item categoria-configuracao">
+	<h2 class="accordion-header">
+		<button id="Inicializacao5" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse5" aria-expanded="false" aria-controls="InicializacaoCollapse5" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+			Conheça o primeiro Roteador 5G do Brasil, o Intelbras GX 3000
+		</button>
+	</h2>
+	<div id="InicializacaoCollapse5" class="accordion-collapse collapse" aria-labelledby="Inicializacao5" data-mdb-parent="#videoAccordion">
+		<div class="accordion-body">
+			<div class="embed-responsive video-container">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/unO6nSL0GMw?list=PLds5na9TX3-L1v_F_ZnmyeFM-owM6BIfS" width="100%" height="auto" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="accordion-item categoria-configuracao">
+	<h2 class="accordion-header">
+		<button id="Inicializacao6" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse6" aria-expanded="false" aria-controls="InicializacaoCollapse6" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+			Desmistificando: 5G X 5GHz - quais as diferenças?		</button>
+	</h2>
+	<div id="InicializacaoCollapse6" class="accordion-collapse collapse" aria-labelledby="Inicializacao6" data-mdb-parent="#videoAccordion">
+		<div class="accordion-body">
+			<div class="embed-responsive video-container">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Z9ADKctCYFo" width="100%" height="auto" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
                 </main>
 				<footer class="footer border footer-shadow">
 					<div class="container-fluid">
@@ -209,36 +259,33 @@
 			</div>
 		</div>
 		<script>
-
-
-let currentCategoryFilter = '';
-
-function applyFilters() {
-	let searchValue = document.getElementById('searchInput').value.toUpperCase();
-	let items = document.getElementsByClassName('accordion-item');
-
-	for (let i = 0; i < items.length; i++) {
-		let title = items[i].querySelector('button').innerText.toUpperCase();
-		let matchesSearch = title.indexOf(searchValue) > -1;
-		let matchesCategory = currentCategoryFilter === '' || items[i].classList.contains(currentCategoryFilter);
-
-		if (matchesSearch && matchesCategory) {
-			items[i].style.display = 'block';
-		} else {
-			items[i].style.display = 'none';
-		}
-	}
-}
-
-function toggleFiltro() {
-	document.querySelector('.filtro-categorias').classList.toggle('show');
-}
-
-function setCategoryFilter(category) {
-	currentCategoryFilter = category;
-	applyFilters();
-}
-
-			</script>
+			let currentCategoryFilter = '';
+		   
+		   function applyFilters() {
+			   let searchValue = document.getElementById('searchInput').value.toUpperCase();
+			   let items = document.getElementsByClassName('accordion-item');
+		   
+			   for (let i = 0; i < items.length; i++) {
+				   let title = items[i].querySelector('button').innerText.toUpperCase();
+				   let matchesSearch = title.indexOf(searchValue) > -1;
+				   let matchesCategory = currentCategoryFilter === '' || items[i].classList.contains(currentCategoryFilter);
+		   
+				   if (matchesSearch && matchesCategory) {
+					   items[i].style.display = 'block';
+				   } else {
+					   items[i].style.display = 'none';
+				   }
+			   }
+		   }
+		   
+		   function toggleFiltro() {
+			   document.querySelector('.filtro-categorias').classList.toggle('show');
+		   }
+		   
+		   function setCategoryFilter(category) {
+			   currentCategoryFilter = category;
+			   applyFilters();
+		   }
+		   </script>
 	</body>
 	</html>
