@@ -154,23 +154,23 @@
 
 <!-- Menu de pesquisa -->
 <div class="search-container">
-    <div class="input-button-group">
-        <input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="searchVideos()">
-        <button type="button" onclick="searchVideos()">Pesquisar</button>
-    </div>
-
-	<div id="videoAccordion">
-		<div class="filtro-container">
-			<button id="toggleFiltro" onclick="toggleFiltro()">Filtrar</button>
-			<div class="filtro-categorias">
-				<button onclick="filtrarVideos('categoria-configuracao')">Configurações</button>
-				<button onclick="filtrarVideos('categoria-tecnologias')">Tecnologias</button>
-				<button onclick="filtrarVideos('categoria-comercial')">Comercial</button>
-				<button onclick="filtrarVideos('')">Mostrar Todos</button>
-			</div>
-		</div>
+	<div class="input-button-group">
+		<input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="applyFilters()">
+		<button type="button" onclick="applyFilters()">Pesquisar</button>
 	</div>
 </div>
+<div id="videoAccordion">
+	<div class="filtro-container">
+		<button id="toggleFiltro" onclick="toggleFiltro()">Filtrar</button>
+		<div class="filtro-categorias">
+			<button onclick="setCategoryFilter('categoria-configuracao')">Configurações</button>
+			<button onclick="setCategoryFilter('categoria-tecnologias')">Tecnologias</button>
+			<button onclick="setCategoryFilter('categoria-comercial')">Comercial</button>
+			<!-- <button onclick="setCategoryFilter('categoria-boas-praticas')">Boas Práticas</button> -->
+			<button onclick="setCategoryFilter('')">Mostrar Todos</button>
+		</div>
+	</div>
+	<div id="videoAccordion">
 
 				<div class="accordion-item categoria-configuracao">
 					<h2 class="accordion-header">

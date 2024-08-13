@@ -153,28 +153,29 @@
                     <div class="accordion w-100 mt-5">
                         <!-- item -->
 
+	<!-- Menu de pesquisa -->
 
-<!-- Menu de pesquisa -->
-<div class="search-container">
-    <div class="input-button-group">
-        <input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="searchVideos()">
-        <button type="button" onclick="searchVideos()">Pesquisar</button>
-    </div>
-
+	<div class="search-container">
+		<div class="input-button-group">
+			<input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="applyFilters()">
+			<button type="button" onclick="applyFilters()">Pesquisar</button>
+		</div>
+	</div>
 	<div id="videoAccordion">
 		<div class="filtro-container">
 			<button id="toggleFiltro" onclick="toggleFiltro()">Filtrar</button>
 			<div class="filtro-categorias">
-				<button onclick="filtrarVideos('categoria-configuracao')">Configurações</button>
-				<button onclick="filtrarVideos('categoria-boas-praticas')">Boas Práticas</button>
-				<button onclick="filtrarVideos('categoria-comercial')">Comercial</button>
-				<button onclick="filtrarVideos('')">Mostrar Todos</button>
+				<!-- <button onclick="setCategoryFilter('categoria-configuracao')">Configurações</button> -->
+				<button onclick="setCategoryFilter('categoria-tecnologias')">Tecnologias</button>
+				<button onclick="setCategoryFilter('categoria-comercial')">Comercial</button>
+				<button onclick="setCategoryFilter('categoria-boas-praticas')">Boas Práticas</button>
+				<button onclick="setCategoryFilter('')">Mostrar Todos</button>
 			</div>
 		</div>
-	</div>
-</div>
 
 
+	<!-- Acordeão de vídeos -->
+	<div id="videoAccordion">
 <!-- Acordeão de vídeos -->
 
 
@@ -649,7 +650,7 @@
 		</div>
 		
 <script>
-    let currentCategoryFilter = '';
+ let currentCategoryFilter = '';
 
 function applyFilters() {
 	let searchValue = document.getElementById('searchInput').value.toUpperCase();
