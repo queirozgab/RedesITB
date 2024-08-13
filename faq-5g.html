@@ -151,26 +151,49 @@
                 <section id="faq-5g">
                     <!-- accordion -->
                     <div class="accordion w-100 mt-5">
-                        <!-- item -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button id="Inicializacao" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse" aria-expanded="false" aria-controls="collapseOne">
-                                    Dúvidas Frequentes
-                                </button>
-                            </h2>
-                                <div id="InicializacaoCollapse" class="accordion-collapse collapse" aria-labelledby="headingOne" data-mdb-parent="#basicAccordion">
-                                    <div class="accordion-body">
-										<p class="text-justify"> ESCREVA SOBRE O CONTEUDO</p>
-                                        <div class="embed-responsive video-container">
-                                            <iframe class="embed-responsive-item" src="COLOQUE O LINK" width="100%" height="auto" allowfullscreen></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
+            
+		<!-- Menu de pesquisa -->
+<div class="search-container">
+    <div class="input-button-group">
+        <input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="searchVideos()">
+        <button type="button" onclick="searchVideos()">Pesquisar</button>
+    </div>
 
-						<div class="imagem">
-							<img src=".\assets\img\png\construction.svg" style="width: 800px;">
-						</div>
+	<div id="videoAccordion">
+		<div class="filtro-container">
+			<button id="toggleFiltro" onclick="toggleFiltro()">Filtrar</button>
+			<div class="filtro-categorias">
+				<button onclick="filtrarVideos('categoria-configuracao')">Configurações</button>
+				<button onclick="filtrarVideos('categoria-tecnologias')">Tecnologias</button>
+				<button onclick="filtrarVideos('categoria-comercial')">Comercial</button>
+				<button onclick="filtrarVideos('categoria-boas-praticas')">Boas Práticas</button>
+				<button onclick="filtrarVideos('')">Mostrar Todos</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="videoAccordion">
+
+<div class="accordion-item categoria-boas-praticas">
+	<h2 class="accordion-header">
+		<button id="Inicializacao1" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse1" aria-expanded="false" aria-controls="InicializacaoCollapse1" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+			Dicas de redes para CFTV – Escolha do switch de rede 
+		</button>
+	</h2>
+	<div id="InicializacaoCollapse1" class="accordion-collapse collapse" aria-labelledby="Inicializacao1" data-mdb-parent="#videoAccordion">
+		<div class="accordion-body">
+			<div class="embed-responsive video-container">
+				<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=zvxcM4idUC4" width="100%" height="auto" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
                 </main>
 				<footer class="footer border footer-shadow">
 					<div class="container-fluid">
@@ -186,6 +209,7 @@
 			</div>
 		</div>
 		<script>
+
 
 let currentCategoryFilter = '';
 
