@@ -814,6 +814,14 @@ td:not(.modelo), th:not(.modelo) {
     transform: translateY(-3px);
 }
 
+.botao-filtro.ativo {
+    background-color: #50788a; /* Cor de fundo para o botão ativo */
+    color: #ffffff; /* Cor do texto para o botão ativo */
+    border-color: #1f80ad; /* Alterar cor da borda quando ativo */
+    transform: scale(1.05); /* Leve aumento para destacar */
+}
+
+
 #filtros {
     opacity: 0;
     height: 0;

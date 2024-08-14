@@ -2226,18 +2226,18 @@
     </div>
 		<div id="table8" class="hidden">
 
-			   <!-- Botão para exibir/ocultar os filtros -->
-			   <button class="botao-filtro" onclick="toggleFiltros()">Filtro</button>
+			  <!-- Botão para exibir/ocultar os filtros -->
+<button class="botao-filtro" onclick="toggleFiltros()">Filtro</button>
 
-			   <!-- Seção de filtros -->
-			   <div id="filtros" class="escondido">
-				   <button class="botao-filtro" onclick="filtrarTabela('PoE')">Mostrar PoE</button>
-				   <button class="botao-filtro" onclick="filtrarTabela('Não PoE')">Mostrar Não PoE</button>
-				   <button class="botao-filtro" onclick="filtrarTabela('Gerenciável')">Mostrar Gerenciável</button>
-				   <button class="botao-filtro" onclick="filtrarTabela('Não Gerenciável')">Mostrar Não Gerenciável</button>
-				   <button class="botao-filtro" onclick="filtrarTabela('Compra exclusivamente via registro de projeto.')">Compra exclusivamente via registro de projeto.</button>
-				   <button class="botao-filtro" onclick="filtrarTabela('')">Mostrar Todos</button>
-			   </div>
+<!-- Seção de filtros -->
+<div id="filtros" class="escondido">
+    <button class="botao-filtro" onclick="toggleFiltro('PoE')">Mostrar PoE</button>
+    <button class="botao-filtro" onclick="toggleFiltro('Não PoE')">Mostrar Não PoE</button>
+    <button class="botao-filtro" onclick="toggleFiltro('Gerenciável')">Mostrar Gerenciável</button>
+    <button class="botao-filtro" onclick="toggleFiltro('Não Gerenciável')">Mostrar Não Gerenciável</button>
+    <button class="botao-filtro" onclick="toggleFiltro('Compra exclusivamente via registro de projeto.')">Compra exclusivamente via registro de projeto.</button>
+    <button class="botao-filtro" onclick="resetFiltros()">Mostrar Todos</button>
+</div>
 
 			<table  border="1" id="tabelaProdutos">
 			<tr>
@@ -5139,41 +5139,104 @@
                 });
         });
 
-		function toggleFiltros() {
-            var filtros = document.getElementById('filtros');
-            if (filtros.classList.contains('escondido')) {
-                filtros.classList.remove('escondido');
-                filtros.classList.add('mostrar');
-            } else {
-                filtros.classList.remove('mostrar');
-                filtros.classList.add('escondido');
-            }
+
+    // Filtros
+
+		var filtrosAtivos = [];
+
+function toggleFiltros() {
+    var filtros = document.getElementById('filtros');
+    if (filtros.classList.contains('escondido')) {
+        filtros.classList.remove('escondido');
+        filtros.classList.add('mostrar');
+    } else {
+        filtros.classList.remove('mostrar');
+        filtros.classList.add('escondido');
+    }
+}
+
+function toggleFiltro(categoria) {
+    var botao = document.querySelector(`button[onclick="toggleFiltro('${categoria}')"]`);
+    var index = filtrosAtivos.indexOf(categoria);
+    
+    // Bloqueia a seleção simultânea de "PoE" e "Não PoE"
+    if ((categoria === 'PoE' && filtrosAtivos.includes('Não PoE')) ||
+        (categoria === 'Não PoE' && filtrosAtivos.includes('PoE'))) {
+        alert('Você não pode selecionar "Mostrar PoE" e "Mostrar Não PoE" ao mesmo tempo.');
+        return;
+    }
+    
+    // Bloqueia a seleção simultânea de "Gerenciável" e "Não Gerenciável"
+    if ((categoria === 'Gerenciável' && filtrosAtivos.includes('Não Gerenciável')) ||
+        (categoria === 'Não Gerenciável' && filtrosAtivos.includes('Gerenciável'))) {
+        alert('Você não pode selecionar "Mostrar Gerenciável" e "Mostrar Não Gerenciável" ao mesmo tempo.');
+        return;
+    }
+
+    if (index > -1) {
+        // Se o filtro já está ativo, removê-lo
+        filtrosAtivos.splice(index, 1);
+        botao.classList.remove('ativo');
+    } else {
+        // Caso contrário, adicionar o filtro
+        filtrosAtivos.push(categoria);
+        botao.classList.add('ativo');
+    }
+
+    filtrarTabela();
+}
+
+function resetFiltros() {
+    filtrosAtivos = [];
+    var botoes = document.querySelectorAll('.botao-filtro');
+    botoes.forEach(function(botao) {
+        botao.classList.remove('ativo');
+    });
+    filtrarTabela();
+}
+
+function filtrarTabela() {
+    var tabela = document.getElementById('tabelaProdutos');
+    var linhas = tabela.getElementsByTagName('tr');
+
+    for (var i = 1; i < linhas.length; i++) {
+        var colunaGerenciavel = linhas[i].getElementsByTagName('td')[3];
+        var colunaPoE = linhas[i].getElementsByTagName('td')[4];
+        var colunaProjeto = linhas[i].getElementsByClassName('qwert')[0];
+
+        var gerenciavelAlt = colunaGerenciavel.getElementsByTagName('img')[0].alt;
+        var poeAlt = colunaPoE.getElementsByTagName('img')[0].alt;
+        var temProjeto = colunaProjeto && colunaProjeto.querySelector('.info-button-proj') !== null;
+
+        // Condição inicial é que o produto seja mostrado
+        var mostrar = true;
+
+        // Verifica cada filtro ativo
+        if (filtrosAtivos.includes('Gerenciável') && gerenciavelAlt !== 'Gerenciável') {
+            mostrar = false;
+        }
+        if (filtrosAtivos.includes('Não Gerenciável') && gerenciavelAlt !== 'Não Gerenciável') {
+            mostrar = false;
+        }
+        if (filtrosAtivos.includes('PoE') && poeAlt !== 'PoE') {
+            mostrar = false;
+        }
+        if (filtrosAtivos.includes('Não PoE') && poeAlt !== 'Não PoE') {
+            mostrar = false;
+        }
+        if (filtrosAtivos.includes('Compra exclusivamente via registro de projeto.') && !temProjeto) {
+            mostrar = false;
         }
 
-		function filtrarTabela(categoria) {
-			var tabela = document.getElementById('tabelaProdutos');
-			var linhas = tabela.getElementsByTagName('tr');
-			for (var i = 1; i < linhas.length; i++) {
-				var colunaGerenciavel = linhas[i].getElementsByTagName('td')[3];
-				var colunaPoE = linhas[i].getElementsByTagName('td')[4];
-				var colunaProjeto = linhas[i].getElementsByClassName('qwert')[0]; // Seleciona o primeiro elemento com a classe 'qwert'
+        // Define a visibilidade da linha
+        if (mostrar) {
+            linhas[i].style.display = '';
+        } else {
+            linhas[i].style.display = 'none';
+        }
+    }
+}
 
-				var gerenciavelAlt = colunaGerenciavel.getElementsByTagName('img')[0].alt;
-				var poeAlt = colunaPoE.getElementsByTagName('img')[0].alt;
-				var temProjeto = colunaProjeto && colunaProjeto.querySelector('.info-button-proj') !== null;
-
-				if (categoria === '' ||
-					(categoria === 'Gerenciável' && gerenciavelAlt === 'Gerenciável') ||
-					(categoria === 'Não Gerenciável' && gerenciavelAlt === 'Não Gerenciável') ||
-					(categoria === 'PoE' && poeAlt === 'PoE') ||
-					(categoria === 'Não PoE' && poeAlt === 'Não PoE') ||
-					(categoria === 'Compra exclusivamente via registro de projeto.' && temProjeto)) {
-					linhas[i].style.display = '';
-				} else {
-					linhas[i].style.display = 'none';
-				}
-			}
-		}
 
 
 
