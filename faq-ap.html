@@ -8,14 +8,17 @@
 	<meta name="description" content="Redes ITB">
 	<meta name="author" content="Intelbras">
 
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 	<link href="https://fonts.cdnfonts.com/css/nunito-sans" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="shortcut icon" href="assets/img/icons/icon-48x48.png" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" />
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 	<title>Redes</title>
 
@@ -136,7 +139,8 @@
 
 		<div class="main text-center">
 			<div class="row" style="margin-left: 0.1px;">
-				<nav class="w-100 navbar navbar-expand navbar-light border position-fixed" style="z-index: 999; background-color: #f8f9fa;">
+				<nav class="w-100 navbar navbar-expand navbar-light border position-fixed"
+					style="z-index: 999; background-color: #f8f9fa;">
 					<div class="d-flex flex-row">
 						<div class="">
 							<a class="sidebar-toggle d-flex" id="sidebarToggle">
@@ -147,400 +151,547 @@
 				</nav>
 			</div>
 
-			<main class="content">	
-                <section id="faq-5g">
-                    <!-- accordion -->
-                    <div class="accordion w-100 mt-5">
-                        <!-- item -->
+			<main class="content">
+				<section id="faq-5g">
+					<!-- accordion -->
+					<div class="accordion w-100 mt-5">
+						<!-- item -->
 
-	<!-- Menu de pesquisa -->
+						<!-- Menu de pesquisa -->
 
-	<div class="search-container">
-		<div class="input-button-group">
-			<input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="applyFilters()">
-			<button type="button" onclick="applyFilters()">Pesquisar</button>
-		</div>
-	</div>
-	<div id="videoAccordion">
-		<div class="filtro-container">
-			<button id="toggleFiltro" onclick="toggleFiltro()">Filtrar</button>
-			<div class="filtro-categorias">
-				<button onclick="setCategoryFilter('categoria-configuracao')">Configurações</button>
-				<button onclick="setCategoryFilter('categoria-tecnologias')">Tecnologias</button>
-				<button onclick="setCategoryFilter('categoria-comercial')">Comercial</button>
-				<button onclick="setCategoryFilter('categoria-boas-praticas')">Boas Práticas</button>
-				<button onclick="setCategoryFilter('')">Mostrar Todos</button>
-			</div>
-		</div>
-
-
-	<!-- Acordeão de vídeos -->
-	<div id="videoAccordion">
-
-<!-- Conteúdo do submenu -->
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao1" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse1" aria-expanded="false" aria-controls="InicializacaoCollapse1" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Como realizar a instalação e login API nos roteadores corporativos
-			<span class="hidden-text">AP 1800 AX AP 3000 AX OUTDOOR AP 3000 AX API</span>
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse1" class="accordion-collapse collapse" aria-labelledby="Inicializacao1" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4jwYDNhzmqc?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=4&t=22s" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao6" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse6" aria-expanded="false" aria-controls="InicializacaoCollapse6" aria-label="Como configurar controle de banda roteadores corporativos ZeusOS-v3">
-			Como configurar controle de banda roteadores corporativos ZeusOS-v3
-			<span class="hidden-text">Como configurar controle de banda roteadores corporativos ZeusOS-v3 AP 360 310 1350 1250 1750 1210</span>
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse6" class="accordion-collapse collapse" aria-labelledby="Inicializacao6" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JI4krZrmXzw?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=11" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao7" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse7" aria-expanded="false" aria-controls="InicializacaoCollapse7" aria-label="Como configurar roteadores ZeusOS V4 (Modo Bridge)">
-			Como configurar roteadores ZeusOS V4 (Modo Bridge)
-			<span class="hidden-text">Como configurar roteadores ZeusOS V4 (Modo Bridge) AP 1800 AX 3000 Outdoor</span>
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse7" class="accordion-collapse collapse" aria-labelledby="Inicializacao7" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JI4krZrmXzw?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=11" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao8" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse8" aria-expanded="false" aria-controls="InicializacaoCollapse8" aria-label="Configurações iniciais no software de roteador empresarial InMaster">
-			Configurações iniciais no software de roteador empresarial InMaster
-			<span class="hidden-text">Configurações iniciais no software de roteador empresarial InMaster</span>
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse8" class="accordion-collapse collapse" aria-labelledby="Inicializacao8" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v7gc4M4Q8Fc?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=15" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao9" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse9" aria-expanded="false" aria-controls="InicializacaoCollapse9" aria-label="Como atualizar roteadores corporativos ZeusOS-v3">
-			Como atualizar roteadores corporativos ZeusOS-v3
-			<span class="hidden-text">Como atualizar roteadores corporativos ZeusOS-v3 AP 360 310 1350 1250 1750 1210</span>
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse9" class="accordion-collapse collapse" aria-labelledby="Inicializacao9" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jekUfwxa0dk?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=24" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao10" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse10" aria-expanded="false" aria-controls="InicializacaoCollapse10" aria-label="Como descobrir o endereço IP através do ResetTool">
-			Como descobrir o endereço IP através do ResetTool
-			<span class="hidden-text">Como descobrir o endereço IP através do ResetTool</span>
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse10" class="accordion-collapse collapse" aria-labelledby="Inicializacao10" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lAHRvvNHJv4?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=30" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao11" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse11" aria-expanded="false" aria-controls="InicializacaoCollapse11" aria-label="Como acessar a interface Web dos Access Point">
-			Como acessar a interface Web dos Access Point
-			<span class="hidden-text">Como acessar a interface Web dos Access Point AP 360 310 1350 1250 1750 1210</span>
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse11" class="accordion-collapse collapse" aria-labelledby="Inicializacao11" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rcutnwf9reQ?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=31" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao12" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse12" aria-expanded="false" aria-controls="InicializacaoCollapse12" aria-label="Como configurar Splash Page nos roteadores corporativos ZeusOS">
-			Como configurar Splash Page nos roteadores corporativos ZeusOS
-			<span class="hidden-text">Como configurar Splash Page nos roteadores corporativos ZeusOS AP 360 310 1350 1250 1750 1210</span>
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse12" class="accordion-collapse collapse" aria-labelledby="Inicializacao12" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ByzE3Mar6VA?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=69" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao13" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse13" aria-expanded="false" aria-controls="InicializacaoCollapse13" aria-label="Como configurar roteadores corporativos ZeusOS como repetidor de sinal">
-			Como configurar roteadores corporativos ZeusOS como repetidor de sinal
-			<span class="hidden-text">Como configurar o AP 310 e 360 como repetidor de sinal AP 360 310 1350 1250 1750 1210</span>
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse13" class="accordion-collapse collapse" aria-labelledby="Inicializacao13" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ba0ibEDqAbk?start=1" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao14" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse14" aria-expanded="false" aria-controls="InicializacaoCollapse14" aria-label="Como configurar roteadores corporativos ZeusOS como access point">
-			Como configurar roteadores corporativos ZeusOS como access point
-			<span class="hidden-text">Como configurar roteadores corporativos ZeusOS como access point AP 360 310 1350 1250 1750 1210</span>
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse14" class="accordion-collapse collapse" aria-labelledby="Inicializacao14" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3vQumcAuJIo" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao15" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse15" aria-expanded="false" aria-controls="InicializacaoCollapse15" aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
-			Como configurar o ACL nos roteadores corporativos ZeusOS
-			<span class="hidden-text">Como configurar o ACL nos roteadores corporativos ZeusOS AP 360 310 1350 1250 1750 1210</span>
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse15" class="accordion-collapse collapse" aria-labelledby="Inicializacao15" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FUJs6fFh01s" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao16" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse16" aria-expanded="false" aria-controls="InicializacaoCollapse16" aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
-			Webinar 802.11ac 
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse16" class="accordion-collapse collapse" aria-labelledby="Inicializacao16" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/s8fOtC77Bmg" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-tecnologias">
-	<h2 class="accordion-header">
-		<button id="Inicializacao26" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse26" aria-expanded="false" aria-controls="InicializacaoCollapse26" aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
-			A alimentação do POE gera interferência no NVR?
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse26" class="accordion-collapse collapse" aria-labelledby="Inicializacao26" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2Sl6QeTmnVA" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-tecnologias">
-	<h2 class="accordion-header">
-		<button id="Inicializacao17" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse17" aria-expanded="false" aria-controls="InicializacaoCollapse17" aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
-			PoE: um grande aliado das redes IP
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse17" class="accordion-collapse collapse" aria-labelledby="Inicializacao17" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FUJs6fFh01s" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-comercial">
-	<h2 class="accordion-header">
-		<button id="Inicializacao18" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse18" aria-expanded="false" aria-controls="InicializacaoCollapse18" aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
-			Conheça o AP 1250 AC Outdoor Intelbras
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse18" class="accordion-collapse collapse" aria-labelledby="Inicializacao18" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/c6pmmOgzaek?start=13" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-boas-praticas">
-	<h2 class="accordion-header">
-		<button id="Inicializacao19" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse19" aria-expanded="false" aria-controls="InicializacaoCollapse19" aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
-			Como montar uma rede Wi-Fi empresarial
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse19" class="accordion-collapse collapse" aria-labelledby="Inicializacao19" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ICBWFtjabTg" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-comercial">
-	<h2 class="accordion-header">
-		<button id="Inicializacao20" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse20" aria-expanded="false" aria-controls="InicializacaoCollapse20" aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
-			Conheça 3 funções dos Access Points Intelbras
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse20" class="accordion-collapse collapse" aria-labelledby="Inicializacao20" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eSiB3TjcR2s" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-comercial">
-	<h2 class="accordion-header">
-		<button id="Inicializacao21" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse21" aria-expanded="false" aria-controls="InicializacaoCollapse21" aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
-			Os novos APs AX Intelbras estão chegando
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse21" class="accordion-collapse collapse" aria-labelledby="Inicializacao21" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XG0_6klLrwY" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-comercial">
-	<h2 class="accordion-header">
-		<button id="Inicializacao22" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse22" aria-expanded="false" aria-controls="InicializacaoCollapse22" aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
-			Wi-Fi 6: a nova era da conexão sem fio
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse22" class="accordion-collapse collapse" aria-labelledby="Inicializacao22" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fgBnDVnjxsk?start=34" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-comercial">
-	<h2 class="accordion-header">
-		<button id="Inicializacao23" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse23" aria-expanded="false" aria-controls="InicializacaoCollapse23" aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
-			Roteador/Access Point Intelbras com tecnologia Wi-Fi 6
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse23" class="accordion-collapse collapse" aria-labelledby="Inicializacao23" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kzmmobLD76g" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-comercial">
-	<h2 class="accordion-header">
-		<button id="Inicializacao24" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse24" aria-expanded="false" aria-controls="InicializacaoCollapse24" aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
-			Roteador/Access Point AP 3000 AX com tecnologia Wi-Fi 6
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse24" class="accordion-collapse collapse" aria-labelledby="Inicializacao24" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/I_LyBl_DAyg" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-boas-praticas">
-	<h2 class="accordion-header">
-		<button id="Inicializacao25" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse25" aria-expanded="false" aria-controls="InicializacaoCollapse25" aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
-			Access Points Empresariais X Roteadores residenciais, como escolher o correto para seu projeto
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse25" class="accordion-collapse collapse" aria-labelledby="Inicializacao25" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vKCPjhpsdnU" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
+						<div class="search-container">
+							<div class="input-button-group">
+								<input type="text" id="searchInput" placeholder="Pesquisar vídeos..."
+									oninput="applyFilters()">
+								<button type="button" onclick="applyFilters()">Pesquisar</button>
+							</div>
+						</div>
+						<div id="videoAccordion">
+							<div class="filtro-container">
+								<button id="toggleFiltro" onclick="toggleFiltro()">Filtrar</button>
+								<div class="filtro-categorias">
+									<button onclick="setCategoryFilter('categoria-configuracao')">Configurações</button>
+									<button onclick="setCategoryFilter('categoria-tecnologias')">Tecnologias</button>
+									<button onclick="setCategoryFilter('categoria-comercial')">Comercial</button>
+									<button onclick="setCategoryFilter('categoria-boas-praticas')">Boas
+										Práticas</button>
+									<button onclick="setCategoryFilter('')">Mostrar Todos</button>
+								</div>
+							</div>
 
 
+							<!-- Acordeão de vídeos -->
+							<div id="videoAccordion">
+
+								<!-- Conteúdo do submenu -->
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao1" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse1"
+											aria-expanded="false" aria-controls="InicializacaoCollapse1"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Como realizar a instalação e login API nos roteadores corporativos
+											<span class="hidden-text">AP 1800 AX AP 3000 AX OUTDOOR AP 3000 AX
+												API</span>
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse1" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao1" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/4jwYDNhzmqc?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=4&t=22s"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao6" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse6"
+											aria-expanded="false" aria-controls="InicializacaoCollapse6"
+											aria-label="Como configurar controle de banda roteadores corporativos ZeusOS-v3">
+											Como configurar controle de banda roteadores corporativos ZeusOS-v3
+											<span class="hidden-text">Como configurar controle de banda roteadores
+												corporativos ZeusOS-v3 AP 360 310 1350 1250 1750 1210</span>
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse6" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao6" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/JI4krZrmXzw?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=11"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao7" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse7"
+											aria-expanded="false" aria-controls="InicializacaoCollapse7"
+											aria-label="Como configurar roteadores ZeusOS V4 (Modo Bridge)">
+											Como configurar roteadores ZeusOS V4 (Modo Bridge)
+											<span class="hidden-text">Como configurar roteadores ZeusOS V4 (Modo Bridge)
+												AP 1800 AX 3000 Outdoor</span>
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse7" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao7" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/JI4krZrmXzw?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=11"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao8" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse8"
+											aria-expanded="false" aria-controls="InicializacaoCollapse8"
+											aria-label="Configurações iniciais no software de roteador empresarial InMaster">
+											Configurações iniciais no software de roteador empresarial InMaster
+											<span class="hidden-text">Configurações iniciais no software de roteador
+												empresarial InMaster</span>
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse8" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao8" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/v7gc4M4Q8Fc?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=15"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao9" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse9"
+											aria-expanded="false" aria-controls="InicializacaoCollapse9"
+											aria-label="Como atualizar roteadores corporativos ZeusOS-v3">
+											Como atualizar roteadores corporativos ZeusOS-v3
+											<span class="hidden-text">Como atualizar roteadores corporativos ZeusOS-v3
+												AP 360 310 1350 1250 1750 1210</span>
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse9" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao9" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/jekUfwxa0dk?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=24"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao10" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse10"
+											aria-expanded="false" aria-controls="InicializacaoCollapse10"
+											aria-label="Como descobrir o endereço IP através do ResetTool">
+											Como descobrir o endereço IP através do ResetTool
+											<span class="hidden-text">Como descobrir o endereço IP através do
+												ResetTool</span>
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse10" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao10" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/lAHRvvNHJv4?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=30"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao11" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse11"
+											aria-expanded="false" aria-controls="InicializacaoCollapse11"
+											aria-label="Como acessar a interface Web dos Access Point">
+											Como acessar a interface Web dos Access Point
+											<span class="hidden-text">Como acessar a interface Web dos Access Point AP
+												360 310 1350 1250 1750 1210</span>
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse11" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao11" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/rcutnwf9reQ?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=31"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao12" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse12"
+											aria-expanded="false" aria-controls="InicializacaoCollapse12"
+											aria-label="Como configurar Splash Page nos roteadores corporativos ZeusOS">
+											Como configurar Splash Page nos roteadores corporativos ZeusOS
+											<span class="hidden-text">Como configurar Splash Page nos roteadores
+												corporativos ZeusOS AP 360 310 1350 1250 1750 1210</span>
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse12" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao12" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/ByzE3Mar6VA?list=PLds5na9TX3-K02y3iF4Xi4-MlCkH6Nv8T&index=69"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao13" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse13"
+											aria-expanded="false" aria-controls="InicializacaoCollapse13"
+											aria-label="Como configurar roteadores corporativos ZeusOS como repetidor de sinal">
+											Como configurar roteadores corporativos ZeusOS como repetidor de sinal
+											<span class="hidden-text">Como configurar o AP 310 e 360 como repetidor de
+												sinal AP 360 310 1350 1250 1750 1210</span>
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse13" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao13" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/Ba0ibEDqAbk?start=1" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao14" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse14"
+											aria-expanded="false" aria-controls="InicializacaoCollapse14"
+											aria-label="Como configurar roteadores corporativos ZeusOS como access point">
+											Como configurar roteadores corporativos ZeusOS como access point
+											<span class="hidden-text">Como configurar roteadores corporativos ZeusOS
+												como access point AP 360 310 1350 1250 1750 1210</span>
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse14" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao14" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/3vQumcAuJIo" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao15" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse15"
+											aria-expanded="false" aria-controls="InicializacaoCollapse15"
+											aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
+											Como configurar o ACL nos roteadores corporativos ZeusOS
+											<span class="hidden-text">Como configurar o ACL nos roteadores corporativos
+												ZeusOS AP 360 310 1350 1250 1750 1210</span>
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse15" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao15" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/FUJs6fFh01s" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao16" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse16"
+											aria-expanded="false" aria-controls="InicializacaoCollapse16"
+											aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
+											Webinar 802.11ac
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse16" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao16" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/s8fOtC77Bmg" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-tecnologias">
+									<h2 class="accordion-header">
+										<button id="Inicializacao26" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse26"
+											aria-expanded="false" aria-controls="InicializacaoCollapse26"
+											aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
+											A alimentação do POE gera interferência no NVR?
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse26" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao26" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/2Sl6QeTmnVA" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-tecnologias">
+									<h2 class="accordion-header">
+										<button id="Inicializacao17" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse17"
+											aria-expanded="false" aria-controls="InicializacaoCollapse17"
+											aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
+											PoE: um grande aliado das redes IP
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse17" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao17" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/FUJs6fFh01s" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-comercial">
+									<h2 class="accordion-header">
+										<button id="Inicializacao18" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse18"
+											aria-expanded="false" aria-controls="InicializacaoCollapse18"
+											aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
+											Conheça o AP 1250 AC Outdoor Intelbras
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse18" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao18" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/c6pmmOgzaek?start=13"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-boas-praticas">
+									<h2 class="accordion-header">
+										<button id="Inicializacao19" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse19"
+											aria-expanded="false" aria-controls="InicializacaoCollapse19"
+											aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
+											Como montar uma rede Wi-Fi empresarial
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse19" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao19" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/ICBWFtjabTg" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-comercial">
+									<h2 class="accordion-header">
+										<button id="Inicializacao20" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse20"
+											aria-expanded="false" aria-controls="InicializacaoCollapse20"
+											aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
+											Conheça 3 funções dos Access Points Intelbras
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse20" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao20" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/eSiB3TjcR2s" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-comercial">
+									<h2 class="accordion-header">
+										<button id="Inicializacao21" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse21"
+											aria-expanded="false" aria-controls="InicializacaoCollapse21"
+											aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
+											Os novos APs AX Intelbras estão chegando
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse21" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao21" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/XG0_6klLrwY" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-comercial">
+									<h2 class="accordion-header">
+										<button id="Inicializacao22" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse22"
+											aria-expanded="false" aria-controls="InicializacaoCollapse22"
+											aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
+											Wi-Fi 6: a nova era da conexão sem fio
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse22" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao22" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/fgBnDVnjxsk?start=34"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-comercial">
+									<h2 class="accordion-header">
+										<button id="Inicializacao23" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse23"
+											aria-expanded="false" aria-controls="InicializacaoCollapse23"
+											aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
+											Roteador/Access Point Intelbras com tecnologia Wi-Fi 6
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse23" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao23" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/kzmmobLD76g" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-comercial">
+									<h2 class="accordion-header">
+										<button id="Inicializacao24" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse24"
+											aria-expanded="false" aria-controls="InicializacaoCollapse24"
+											aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
+											Roteador/Access Point AP 3000 AX com tecnologia Wi-Fi 6
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse24" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao24" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/I_LyBl_DAyg" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-boas-praticas">
+									<h2 class="accordion-header">
+										<button id="Inicializacao25" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse25"
+											aria-expanded="false" aria-controls="InicializacaoCollapse25"
+											aria-label="Como configurar o ACL nos roteadores corporativos ZeusOS">
+											Access Points Empresariais X Roteadores residenciais, como escolher o
+											correto para seu projeto
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse25" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao25" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/vKCPjhpsdnU" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
 
 
 
 
 
-		<script>
-  let currentCategoryFilter = '';
 
-function applyFilters() {
-	let searchValue = document.getElementById('searchInput').value.toUpperCase();
-	let items = document.getElementsByClassName('accordion-item');
 
-	for (let i = 0; i < items.length; i++) {
-		let title = items[i].querySelector('button').innerText.toUpperCase();
-		let matchesSearch = title.indexOf(searchValue) > -1;
-		let matchesCategory = currentCategoryFilter === '' || items[i].classList.contains(currentCategoryFilter);
+								<script>
+									let currentCategoryFilter = '';
 
-		if (matchesSearch && matchesCategory) {
-			items[i].style.display = 'block';
-		} else {
-			items[i].style.display = 'none';
-		}
-	}
-}
+									function applyFilters() {
+										let searchValue = document.getElementById('searchInput').value.toUpperCase();
+										let items = document.getElementsByClassName('accordion-item');
 
-function toggleFiltro() {
-	document.querySelector('.filtro-categorias').classList.toggle('show');
-}
+										for (let i = 0; i < items.length; i++) {
+											let title = items[i].querySelector('button').innerText.toUpperCase();
+											let matchesSearch = title.indexOf(searchValue) > -1;
+											let matchesCategory = currentCategoryFilter === '' || items[i].classList.contains(currentCategoryFilter);
 
-function setCategoryFilter(category) {
-	currentCategoryFilter = category;
-	applyFilters();
-}
+											if (matchesSearch && matchesCategory) {
+												items[i].style.display = 'block';
+											} else {
+												items[i].style.display = 'none';
+											}
+										}
+									}
 
-	</script>
-	</body>
-	</html>
+									function toggleFiltro() {
+										document.querySelector('.filtro-categorias').classList.toggle('show');
+									}
+
+									function setCategoryFilter(category) {
+										currentCategoryFilter = category;
+										applyFilters();
+									}
+
+								</script>
+</body>
+
+</html>

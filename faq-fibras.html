@@ -8,14 +8,17 @@
 	<meta name="description" content="Redes ITB">
 	<meta name="author" content="Intelbras">
 
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 	<link href="https://fonts.cdnfonts.com/css/nunito-sans" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="shortcut icon" href="assets/img/icons/icon-48x48.png" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+		crossorigin="anonymous" />
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 	<title>Redes</title>
 
@@ -24,6 +27,7 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 	<div class="wrapper">
 		<nav id="sidebar" class="sidebar text-dark">
@@ -95,7 +99,8 @@
 							</div>
 							<span class="align-middle">5G</span>
 						</a>
-					</li><li class="sidebar-item">
+					</li>
+					<li class="sidebar-item">
 						<a class="sidebar-link" href="./faq-r3005.html">
 							<div class="icon-container">
 								<img src="./assets/img/icons/switch.png" style="width: 35px;">
@@ -134,7 +139,8 @@
 
 		<div class="main text-center">
 			<div class="row" style="margin-left: 0.1px;">
-				<nav class="w-100 navbar navbar-expand navbar-light border position-fixed" style="z-index: 999; background-color: #f8f9fa;">
+				<nav class="w-100 navbar navbar-expand navbar-light border position-fixed"
+					style="z-index: 999; background-color: #f8f9fa;">
 					<div class="d-flex flex-row">
 						<div class="">
 							<a class="sidebar-toggle d-flex" id="sidebarToggle">
@@ -145,383 +151,513 @@
 				</nav>
 			</div>
 			<main class="content">
-                <section id="faq-5g">
-                    <!-- accordion -->
-                    <div class="accordion w-100 mt-5">
-                        <!-- item -->
+				<section id="faq-5g">
+					<!-- accordion -->
+					<div class="accordion w-100 mt-5">
+						<!-- item -->
 
-<!-- Menu de pesquisa -->
+						<!-- Menu de pesquisa -->
 
-<div class="search-container">
-	<div class="input-button-group">
-		<input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="applyFilters()">
-		<button type="button" onclick="applyFilters()">Pesquisar</button>
-	</div>
-</div>
-<div id="videoAccordion">
-	<div class="filtro-container">
-		<button id="toggleFiltro" onclick="toggleFiltro()">Filtrar</button>
-		<div class="filtro-categorias">
-			<button onclick="setCategoryFilter('categoria-configuracao')">Configurações</button>
-			<!-- <button onclick="setCategoryFilter('categoria-tecnologias')">Tecnologias</button> -->
-			<button onclick="setCategoryFilter('categoria-comercial')">Comercial</button>
-			<button onclick="setCategoryFilter('categoria-boas-praticas')">Boas Práticas</button>
-			<button onclick="setCategoryFilter('')">Mostrar Todos</button>
-		</div>
-	</div>
-<!-- Acordeão de vídeos -->
-<div id="videoAccordion">
-
-<div class="accordion-item categoria-boas-praticas">
-	<h2 class="accordion-header">
-		<button id="Inicializacao1" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse1" aria-expanded="false" aria-controls="InicializacaoCollapse1" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			ONU ou ONT - Qual é a melhor escolha para o provedor de internet.
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse1" class="accordion-collapse collapse" aria-labelledby="Inicializacao1" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aBb867LYjqg" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao2" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse2" aria-expanded="false" aria-controls="InicializacaoCollapse2" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Como adicionar nós Inmesh na ONT 121ac e ONT 120ac
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse2" class="accordion-collapse collapse" aria-labelledby="Inicializacao2" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BPrSojujLYw?start=1" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-comercial">
-	<h2 class="accordion-header">
-		<button id="Inicializacao3" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse3" aria-expanded="false" aria-controls="InicializacaoCollapse3" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Fibra óptica + Alimentação PoE com a ONT 140PoE		</button>
-	</h2>
-	<div id="InicializacaoCollapse3" class="accordion-collapse collapse" aria-labelledby="Inicializacao3" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/F3mEmCOH3bg" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-comercial">
-	<h2 class="accordion-header">
-		<button id="Inicializacao4" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse4" aria-expanded="false" aria-controls="InicializacaoCollapse4" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Conheça a ONT WiFiber 121 AC Intelbras
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse4" class="accordion-collapse collapse" aria-labelledby="Inicializacao4" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MC2YE8UPnvM" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-comercial">
-	<h2 class="accordion-header">
-		<button id="Inicializacao5" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse5" aria-expanded="false" aria-controls="InicializacaoCollapse5" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Provedor de Internet - Conheça a nova ONT 1200R
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse5" class="accordion-collapse collapse" aria-labelledby="Inicializacao5" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/36wWy8dFjCg" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao6" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse6" aria-expanded="false" aria-controls="InicializacaoCollapse6" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Ativação de clientes com ONU R1 Intelbras, passo a passo
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse6" class="accordion-collapse collapse" aria-labelledby="Inicializacao6" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YAgMkTt9gSA?start=2" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="accordion-item categoria-tecnologias>
-	<h2 class="accordion-header">
-		<button id="Inicializacao7" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse7" aria-expanded="false" aria-controls="InicializacaoCollapse7" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Por que o sinal na ONU sempre é negativo?
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse7" class="accordion-collapse collapse" aria-labelledby="Inicializacao7" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pooU5RlK05U" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-comercial">
-	<h2 class="accordion-header">
-		<button id="Inicializacao8" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse8" aria-expanded="false" aria-controls="InicializacaoCollapse8" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			ONU 110B: excelente custo-benefício		</button>
-	</h2>
-	<div id="InicializacaoCollapse8" class="accordion-collapse collapse" aria-labelledby="Inicializacao8" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lNdP7C1TAYY" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao9" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse9" aria-expanded="false" aria-controls="InicializacaoCollapse9" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Como ativar clientes na OLT G16
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse9" class="accordion-collapse collapse" aria-labelledby="Inicializacao9" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TQwIzmzlseY?list=PLds5na9TX3-JcVXHSlN5PwG123Yo_u55G" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao10" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse10" aria-expanded="false" aria-controls="InicializacaoCollapse10" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Atualizar Firmware das ONUs remotamente pela OLT G16
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse10" class="accordion-collapse collapse" aria-labelledby="Inicializacao10" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/O-cHwBq2uYM?list=PLds5na9TX3-JcVXHSlN5PwG123Yo_u55G&index=2" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao11" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse11" aria-expanded="false" aria-controls="InicializacaoCollapse11" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Ativação automática de ONUs na OLT G16
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse11" class="accordion-collapse collapse" aria-labelledby="Inicializacao11" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SD_ff5O5grg?list=PLds5na9TX3-JcVXHSlN5PwG123Yo_u55G&index=3" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao12" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse12" aria-expanded="false" aria-controls="InicializacaoCollapse12" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Backup e restauração das configurações da OLT G16 Intelbras
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse12" class="accordion-collapse collapse" aria-labelledby="Inicializacao12" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cLY4WIEsaJs?list=PLds5na9TX3-JcVXHSlN5PwG123Yo_u55G&index=4" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao13" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse13" aria-expanded="false" aria-controls="InicializacaoCollapse13" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Gerenciando acessos e permissões na OLT G16 Intelbras
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse13" class="accordion-collapse collapse" aria-labelledby="Inicializacao13" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1GyjOsk4ufk?list=PLds5na9TX3-JcVXHSlN5PwG123Yo_u55G&index=5" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao14" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse14" aria-expanded="false" aria-controls="InicializacaoCollapse14" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Adicionando IP às interfaces VLAN da OLT G16
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse14" class="accordion-collapse collapse" aria-labelledby="Inicializacao14" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fIh94oO4GAQ?list=PLds5na9TX3-JcVXHSlN5PwG123Yo_u55G&index=6" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao15" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse15" aria-expanded="false" aria-controls="InicializacaoCollapse15" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Conversor de configurações OLT 8820i para OLT G16
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse15" class="accordion-collapse collapse" aria-labelledby="Inicializacao15" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/u2tARQfyzDw?list=PLds5na9TX3-JcVXHSlN5PwG123Yo_u55G&index=7" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao16" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse16" aria-expanded="false" aria-controls="InicializacaoCollapse16" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Como adicionar uma ONU na OLT 8820 i
-		</button>
-	</h2>
-	<div id="InicializacaoCollapse16" class="accordion-collapse collapse" aria-labelledby="Inicializacao16" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nEmvQVN1fvM" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao17" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse17" aria-expanded="false" aria-controls="InicializacaoCollapse17" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Como atualizar o firmware via TFTP na OLT 8820 i		</button>
-	</h2>
-	<div id="InicializacaoCollapse17" class="accordion-collapse collapse" aria-labelledby="Inicializacao17" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4Qg56Ks3dIo" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao18" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse18" aria-expanded="false" aria-controls="InicializacaoCollapse18" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Como criar uma bridge uplink na OLT 8820 i		</button>
-	</h2>
-	<div id="InicializacaoCollapse18" class="accordion-collapse collapse" aria-labelledby="Inicializacao18" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/l4h4AJ02dMs" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao19" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse19" aria-expanded="false" aria-controls="InicializacaoCollapse19" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Como criar uma bridge downlink na OLT 8820 i		</button>
-	</h2>
-	<div id="InicializacaoCollapse19" class="accordion-collapse collapse" aria-labelledby="Inicializacao19" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VGa4_STmBaU" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="accordion-item categoria-configuracao">
-	<h2 class="accordion-header">
-		<button id="Inicializacao20" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse20" aria-expanded="false" aria-controls="InicializacaoCollapse20" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Configuração de VLANs nas OLTs GPON Intelbras pelo SIG </button>
-	</h2>
-	<div id="InicializacaoCollapse20" class="accordion-collapse collapse" aria-labelledby="Inicializacao20" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ujki7CCYG8k?start=5" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="accordion-item categoria-comercial">
-	<h2 class="accordion-header">
-		<button id="Inicializacao21" class="accordion-button collapsed" type="button" data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse21" aria-expanded="false" aria-controls="InicializacaoCollapse21" aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
-			Conheça a OLT G08, a concentrador de Interfaces de dados da Intelbras
- </button>
-	</h2>
-	<div id="InicializacaoCollapse21" class="accordion-collapse collapse" aria-labelledby="Inicializacao21" data-mdb-parent="#videoAccordion">
-		<div class="accordion-body">
-			<div class="embed-responsive video-container">
-				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gZrp6i_e1tU" width="100%" height="auto" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </main>
-				<footer class="footer border footer-shadow">
-					<div class="container-fluid">
-						<div class="row text-muted">
-							<div class="col text-center">
-								<p class="mb-0">
-									<a href="http://www.intelbras.com" class="text-muted" target="_blank"><strong>Intelbras</strong></a> &copy;
-								</p>
+						<div class="search-container">
+							<div class="input-button-group">
+								<input type="text" id="searchInput" placeholder="Pesquisar vídeos..."
+									oninput="applyFilters()">
+								<button type="button" onclick="applyFilters()">Pesquisar</button>
 							</div>
 						</div>
+						<div id="videoAccordion">
+							<div class="filtro-container">
+								<button id="toggleFiltro" onclick="toggleFiltro()">Filtrar</button>
+								<div class="filtro-categorias">
+									<button onclick="setCategoryFilter('categoria-configuracao')">Configurações</button>
+									<!-- <button onclick="setCategoryFilter('categoria-tecnologias')">Tecnologias</button> -->
+									<button onclick="setCategoryFilter('categoria-comercial')">Comercial</button>
+									<button onclick="setCategoryFilter('categoria-boas-praticas')">Boas
+										Práticas</button>
+									<button onclick="setCategoryFilter('')">Mostrar Todos</button>
+								</div>
+							</div>
+							<!-- Acordeão de vídeos -->
+							<div id="videoAccordion">
+
+								<div class="accordion-item categoria-boas-praticas">
+									<h2 class="accordion-header">
+										<button id="Inicializacao1" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse1"
+											aria-expanded="false" aria-controls="InicializacaoCollapse1"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											ONU ou ONT - Qual é a melhor escolha para o provedor de internet.
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse1" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao1" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/aBb867LYjqg" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao2" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse2"
+											aria-expanded="false" aria-controls="InicializacaoCollapse2"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Como adicionar nós Inmesh na ONT 121ac e ONT 120ac
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse2" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao2" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/BPrSojujLYw?start=1" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-comercial">
+									<h2 class="accordion-header">
+										<button id="Inicializacao3" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse3"
+											aria-expanded="false" aria-controls="InicializacaoCollapse3"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Fibra óptica + Alimentação PoE com a ONT 140PoE </button>
+									</h2>
+									<div id="InicializacaoCollapse3" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao3" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/F3mEmCOH3bg" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-comercial">
+									<h2 class="accordion-header">
+										<button id="Inicializacao4" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse4"
+											aria-expanded="false" aria-controls="InicializacaoCollapse4"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Conheça a ONT WiFiber 121 AC Intelbras
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse4" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao4" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/MC2YE8UPnvM" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-comercial">
+									<h2 class="accordion-header">
+										<button id="Inicializacao5" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse5"
+											aria-expanded="false" aria-controls="InicializacaoCollapse5"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Provedor de Internet - Conheça a nova ONT 1200R
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse5" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao5" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/36wWy8dFjCg" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao6" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse6"
+											aria-expanded="false" aria-controls="InicializacaoCollapse6"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Ativação de clientes com ONU R1 Intelbras, passo a passo
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse6" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao6" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/YAgMkTt9gSA?start=2" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item categoria-tecnologias>
+	<h2 class=" accordion-header">
+									<button id="Inicializacao7" class="accordion-button collapsed" type="button"
+										data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse7"
+										aria-expanded="false" aria-controls="InicializacaoCollapse7"
+										aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+										Por que o sinal na ONU sempre é negativo?
+									</button>
+									</h2>
+									<div id="InicializacaoCollapse7" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao7" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/pooU5RlK05U" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-comercial">
+									<h2 class="accordion-header">
+										<button id="Inicializacao8" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse8"
+											aria-expanded="false" aria-controls="InicializacaoCollapse8"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											ONU 110B: excelente custo-benefício </button>
+									</h2>
+									<div id="InicializacaoCollapse8" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao8" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/lNdP7C1TAYY" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao9" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse9"
+											aria-expanded="false" aria-controls="InicializacaoCollapse9"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Como ativar clientes na OLT G16
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse9" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao9" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/TQwIzmzlseY?list=PLds5na9TX3-JcVXHSlN5PwG123Yo_u55G"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao10" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse10"
+											aria-expanded="false" aria-controls="InicializacaoCollapse10"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Atualizar Firmware das ONUs remotamente pela OLT G16
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse10" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao10" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/O-cHwBq2uYM?list=PLds5na9TX3-JcVXHSlN5PwG123Yo_u55G&index=2"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao11" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse11"
+											aria-expanded="false" aria-controls="InicializacaoCollapse11"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Ativação automática de ONUs na OLT G16
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse11" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao11" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/SD_ff5O5grg?list=PLds5na9TX3-JcVXHSlN5PwG123Yo_u55G&index=3"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao12" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse12"
+											aria-expanded="false" aria-controls="InicializacaoCollapse12"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Backup e restauração das configurações da OLT G16 Intelbras
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse12" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao12" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/cLY4WIEsaJs?list=PLds5na9TX3-JcVXHSlN5PwG123Yo_u55G&index=4"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao13" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse13"
+											aria-expanded="false" aria-controls="InicializacaoCollapse13"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Gerenciando acessos e permissões na OLT G16 Intelbras
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse13" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao13" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/1GyjOsk4ufk?list=PLds5na9TX3-JcVXHSlN5PwG123Yo_u55G&index=5"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao14" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse14"
+											aria-expanded="false" aria-controls="InicializacaoCollapse14"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Adicionando IP às interfaces VLAN da OLT G16
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse14" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao14" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/fIh94oO4GAQ?list=PLds5na9TX3-JcVXHSlN5PwG123Yo_u55G&index=6"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao15" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse15"
+											aria-expanded="false" aria-controls="InicializacaoCollapse15"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Conversor de configurações OLT 8820i para OLT G16
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse15" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao15" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/u2tARQfyzDw?list=PLds5na9TX3-JcVXHSlN5PwG123Yo_u55G&index=7"
+													width="100%" height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao16" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse16"
+											aria-expanded="false" aria-controls="InicializacaoCollapse16"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Como adicionar uma ONU na OLT 8820 i
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse16" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao16" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/nEmvQVN1fvM" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao17" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse17"
+											aria-expanded="false" aria-controls="InicializacaoCollapse17"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Como atualizar o firmware via TFTP na OLT 8820 i </button>
+									</h2>
+									<div id="InicializacaoCollapse17" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao17" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/4Qg56Ks3dIo" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao18" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse18"
+											aria-expanded="false" aria-controls="InicializacaoCollapse18"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Como criar uma bridge uplink na OLT 8820 i </button>
+									</h2>
+									<div id="InicializacaoCollapse18" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao18" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/l4h4AJ02dMs" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao19" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse19"
+											aria-expanded="false" aria-controls="InicializacaoCollapse19"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Como criar uma bridge downlink na OLT 8820 i </button>
+									</h2>
+									<div id="InicializacaoCollapse19" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao19" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/VGa4_STmBaU" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="accordion-item categoria-configuracao">
+									<h2 class="accordion-header">
+										<button id="Inicializacao20" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse20"
+											aria-expanded="false" aria-controls="InicializacaoCollapse20"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Configuração de VLANs nas OLTs GPON Intelbras pelo SIG </button>
+									</h2>
+									<div id="InicializacaoCollapse20" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao20" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/ujki7CCYG8k?start=5" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item categoria-comercial">
+									<h2 class="accordion-header">
+										<button id="Inicializacao21" class="accordion-button collapsed" type="button"
+											data-mdb-toggle="collapse" data-mdb-target="#InicializacaoCollapse21"
+											aria-expanded="false" aria-controls="InicializacaoCollapse21"
+											aria-label="Como instalar APP Meu Wi-Fi Intelbras | W6 1500 - W5 1200GS - W5 2100G - W5 1200G - W5 1200F - W4 300F - TWIBI FORCE AX - TWIBI FORCE PLUG - GF 1200F">
+											Conheça a OLT G08, a concentrador de Interfaces de dados da Intelbras
+										</button>
+									</h2>
+									<div id="InicializacaoCollapse21" class="accordion-collapse collapse"
+										aria-labelledby="Inicializacao21" data-mdb-parent="#videoAccordion">
+										<div class="accordion-body">
+											<div class="embed-responsive video-container">
+												<iframe class="embed-responsive-item"
+													src="https://www.youtube.com/embed/gZrp6i_e1tU" width="100%"
+													height="auto" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</main>
+			<footer class="footer border footer-shadow">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col text-center">
+							<p class="mb-0">
+								<a href="http://www.intelbras.com" class="text-muted"
+									target="_blank"><strong>Intelbras</strong></a> &copy;
+							</p>
+						</div>
 					</div>
-				</footer>
-			</div>
+				</div>
+			</footer>
 		</div>
-		<script>
- let currentCategoryFilter = '';
+	</div>
+	<script>
+		let currentCategoryFilter = '';
 
-function applyFilters() {
-	let searchValue = document.getElementById('searchInput').value.toUpperCase();
-	let items = document.getElementsByClassName('accordion-item');
+		function applyFilters() {
+			let searchValue = document.getElementById('searchInput').value.toUpperCase();
+			let items = document.getElementsByClassName('accordion-item');
 
-	for (let i = 0; i < items.length; i++) {
-		let title = items[i].querySelector('button').innerText.toUpperCase();
-		let matchesSearch = title.indexOf(searchValue) > -1;
-		let matchesCategory = currentCategoryFilter === '' || items[i].classList.contains(currentCategoryFilter);
+			for (let i = 0; i < items.length; i++) {
+				let title = items[i].querySelector('button').innerText.toUpperCase();
+				let matchesSearch = title.indexOf(searchValue) > -1;
+				let matchesCategory = currentCategoryFilter === '' || items[i].classList.contains(currentCategoryFilter);
 
-		if (matchesSearch && matchesCategory) {
-			items[i].style.display = 'block';
-		} else {
-			items[i].style.display = 'none';
+				if (matchesSearch && matchesCategory) {
+					items[i].style.display = 'block';
+				} else {
+					items[i].style.display = 'none';
+				}
+			}
 		}
-	}
-}
 
-function toggleFiltro() {
-	document.querySelector('.filtro-categorias').classList.toggle('show');
-}
+		function toggleFiltro() {
+			document.querySelector('.filtro-categorias').classList.toggle('show');
+		}
 
-function setCategoryFilter(category) {
-	currentCategoryFilter = category;
-	applyFilters();
-}
+		function setCategoryFilter(category) {
+			currentCategoryFilter = category;
+			applyFilters();
+		}
 
-			</script>
-	</body>
-	</html>
+	</script>
+</body>
+
+</html>
