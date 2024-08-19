@@ -184,7 +184,7 @@
 
 
 <div id="table1" class="hidden">
-	<div class="search-container">
+	<div class="search-filter-container">
 		<input type="text" id="searchInput1" placeholder="Pesquisar por modelo..." onkeyup="searchTable1()" class="search-input" />
 	</div>
 	<table border="1">
@@ -619,7 +619,10 @@
 			</table>
 		</div>
 		<div id="table2" class="hidden">
-			<table border="1">
+			<div class="search-filter-container">
+				<input type="text" id="searchInput2" placeholder="Pesquisar por modelo..." onkeyup="searchTable2()" class="search-input" />
+			</div>
+				<table border="1">
 				<tr>
 					<th>Modelo</th>
 					<th>Interface</th>
@@ -1255,6 +1258,9 @@
 			</table>
 		</div>
 		<div id="table3" class="hidden">
+				<div class="search-filter-container">
+					<input type="text" id="searchInput3" placeholder="Pesquisar por modelo..." onkeyup="searchTable3()" class="search-input" />
+				</div>
 			<table border="1">
 				<tr>
 					<th>Modelo</th>
@@ -1634,6 +1640,9 @@
 			</table>
 		</div>
 		<div id="table4" class="hidden">
+			<div class="search-filter-container">
+				<input type="text" id="searchInput4" placeholder="Pesquisar por modelo..." onkeyup="searchTable4()" class="search-input" />
+			</div>
 			<table border="1">
 				<tr>
 					<th>Modelo</th>
@@ -2088,6 +2097,9 @@
 			</table>
 		</div>
 		<div id="table5" class="hidden">
+				<div class="search-filter-container">
+					<input type="text" id="searchInput5" placeholder="Pesquisar por modelo..." onkeyup="searchTable5()" class="search-input" />
+				</div>
 			<table border="1">
 				<tr>
 					<th>Modelo</th>
@@ -2365,6 +2377,9 @@
 			</table>
 		</div>
 		<div id="table6" class="hidden">
+				<div class="search-filter-container">
+					<input type="text" id="searchInput6" placeholder="Pesquisar por modelo..." onkeyup="searchTable6()" class="search-input" />
+				</div>
 			<table border="1">
 				<tr>
 					<th>Modelo</th>
@@ -4748,6 +4763,9 @@
 			</table>
 		</div>
 		<div id="table9" class="hidden">
+			<div class="search-filter-container">
+				<input type="text" id="searchInput9" placeholder="Pesquisar por modelo..." onkeyup="searchTable9()" class="search-input" />
+			</div>
 			<table border="1">
 				<tr>
 					<th>Modelo</th>
@@ -5150,6 +5168,9 @@
 			</table>
 		</div>
 		<div id="table10" class="hidden">
+			<div class="search-filter-container">
+				<input type="text" id="searchInput10" placeholder="Pesquisar por modelo..." onkeyup="searchTable10()" class="search-input" />
+			</div>
 			<table border="1">
 				<tr>
 					<th>Modelo</th>
@@ -5880,6 +5901,9 @@
 		</div>
 
 		<div id="table11" class="hidden">
+			<div class="search-filter-container">
+				<input type="text" id="searchInput11" placeholder="Pesquisar por modelo..." onkeyup="searchTable11()" class="search-input" />
+			</div>
 			<table border="1">
 
 				<tr>
@@ -6144,6 +6168,7 @@
 				</tr>
 			</table>
 		</div>
+
 		<div id="table13" class="hidden">
 			<table border="1">
 				<tr>
@@ -6158,16 +6183,16 @@
 					<th class="pagina-coluna">Página</th>
 				</tr>
 				<tr>
-					<td class="modelospli" rowspan="5"
-						style="text-decoration: underline; font-weight: bold;">
-						<img src="./assets/img/icons/verde.png" alt="Icon"
-							style="width: 20px; height: 20px; margin-left: 5px;">
-						XFS 121 / XFS 122 / XFS 141 / XFS 142 / XFS 181 / XFS 182 / XFS 1161 / XFS
-						1162 / XFS 1321 / XFS 1322
-						<div class="qwert">
-							<button class="info-button-curio">?</button>
-							<span class="tooltiptext">Não consideradas as perdas dos
-								conectores.</span>
+					<td class="modelospli" rowspan="5" style="text-decoration: underline; font-weight: bold;">
+						<div class="modelo-content">
+							<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+							<span class="modelo-texto">
+								XFS 121 
+							</span>
+							<div class="qwert">
+								<button class="info-button-curio">?</button>
+								<span class="tooltiptext">Não consideradas as perdas dos conectores.</span>
+							</div>
 						</div>
 					</td>
 					<td>1 × 2</td>
@@ -6178,8 +6203,75 @@
 					<td>UPC ou APC</td>
 					<td>1 Ano</td>
 					<td class="pagina-coluna">
-						<a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a>
+						<a href="https://www.intelbras.com/pt-br/splitter-optico-1x2-com-conector-scupc-balanceado-xfs-121" class="saiba-mais">Saiba mais</a></td>
 				</tr>
+				
+				<tr>
+					<td class="modelospli" rowspan="5" style="text-decoration: underline; font-weight: bold;">
+						<div class="modelo-content">
+							<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+							<span class="modelo-texto">
+								XFS 141
+							</span>
+							<div class="qwert">
+								<button class="info-button-curio">?</button>
+								<span class="tooltiptext">Não consideradas as perdas dos conectores.</span>
+							</div>
+						</div>
+					</td>
+					<td>1 × 4</td>
+					<td>1260 a 1650 nm</td>
+					<td>≤ 7,3 dB</td>
+					<td>-5 °C a 75 °C</td>
+					<td>SC</td>
+					<td>UPC ou APC</td>
+					<td>1 Ano</td>
+					<td><a href="https://www.intelbras.com/pt-br/splitter-optico-1x4-com-conector-scupc-balanceado-xfs-141" class="saiba-mais">Saiba mais</a>
+					</td>
+					</td>
+				</tr>
+
+			
+			</table>
+		</div>
+		<!-- <div id="table13" class="hidden">
+			<table border="1">
+				<tr>
+					<th>Modelo</th>
+					<th>1 x .</th>
+					<th>Comprimento de onda</th>
+					<th>Perda de inserção*</th>
+					<th>Temperatura de operação</th>
+					<th>Tipo do conector</th>
+					<th>Polimento</th>
+					<th>Garantia</th>
+					<th class="pagina-coluna">Página</th>
+				</tr>
+					<tr>
+						<td class="modelospli" rowspan="5" style="text-decoration: underline; font-weight: bold;">
+							<div class="modelo-content">
+								<img src="./assets/img/icons/verde.png" alt="Icon" style="width: 20px; height: 20px; margin-left: 5px;">
+								<span class="modelo-texto">
+									XFS 121 / XFS 122 / XFS 141 / XFS 142 / XFS 181 / XFS 182 / XFS 1161 / XFS 1162 / XFS 1321 / XFS 1322
+								</span>
+								<div class="qwert">
+									<button class="info-button-curio">?</button>
+									<span class="tooltiptext">Não consideradas as perdas dos conectores.</span>
+								</div>
+							</div>
+						</td>
+						<td>1 × 2</td>
+						<td>1260 a 1650 nm</td>
+						<td>≤ 4,0 dB</td>
+						<td>-5 °C a 75 °C</td>
+						<td>SC</td>
+						<td>UPC ou APC</td>
+						<td>1 Ano</td>
+						<td class="pagina-coluna">
+							<a href="https://www.intelbras.com/pt-br/" class="saiba-mais">Saiba mais</a>
+						</td>
+					</tr>
+					
 				<tr>
 					<td>1 × 4</td>
 					<td>1260 a 1650 nm</td>
@@ -6283,7 +6375,7 @@
 					</td>
 				</tr>
 			</table>
-		</div>
+		</div> -->
 		<div id="table14" class="hidden">
 			<table border="1">
 				<tr>
@@ -6868,6 +6960,258 @@ function searchTable1() {
         const input = document.getElementById("searchInput1");
         const filter = input.value.toLowerCase();
         const table = document.querySelector("#table1 table");
+        const tr = table.getElementsByTagName("tr");
+
+        // Itera por todas as linhas da tabela, exceto o cabeçalho
+        for (let i = 1; i < tr.length; i++) {
+            const td = tr[i].getElementsByTagName("td");
+            let found = false;
+
+            // Itera por todas as células da linha atual
+            for (let j = 0; j < td.length; j++) {
+                if (td[j]) {
+                    const txtValue = td[j].textContent || td[j].innerText;
+                    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                        found = true;
+                        break;
+                    }
+                }
+            }
+
+            // Mostra ou esconde a linha com base na pesquisa
+            if (found) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+	function searchTable2() {
+        // Obtém o valor do input de pesquisa
+        const input = document.getElementById("searchInput2");
+        const filter = input.value.toLowerCase();
+        const table = document.querySelector("#table2 table");
+        const tr = table.getElementsByTagName("tr");
+
+        // Itera por todas as linhas da tabela, exceto o cabeçalho
+        for (let i = 1; i < tr.length; i++) {
+            const td = tr[i].getElementsByTagName("td");
+            let found = false;
+
+            // Itera por todas as células da linha atual
+            for (let j = 0; j < td.length; j++) {
+                if (td[j]) {
+                    const txtValue = td[j].textContent || td[j].innerText;
+                    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                        found = true;
+                        break;
+                    }
+                }
+            }
+
+            // Mostra ou esconde a linha com base na pesquisa
+            if (found) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+	function searchTable3() {
+        // Obtém o valor do input de pesquisa
+        const input = document.getElementById("searchInput3");
+        const filter = input.value.toLowerCase();
+        const table = document.querySelector("#table3 table");
+        const tr = table.getElementsByTagName("tr");
+
+        // Itera por todas as linhas da tabela, exceto o cabeçalho
+        for (let i = 1; i < tr.length; i++) {
+            const td = tr[i].getElementsByTagName("td");
+            let found = false;
+
+            // Itera por todas as células da linha atual
+            for (let j = 0; j < td.length; j++) {
+                if (td[j]) {
+                    const txtValue = td[j].textContent || td[j].innerText;
+                    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                        found = true;
+                        break;
+                    }
+                }
+            }
+
+            // Mostra ou esconde a linha com base na pesquisa
+            if (found) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+
+	function searchTable4() {
+        // Obtém o valor do input de pesquisa
+        const input = document.getElementById("searchInput4");
+        const filter = input.value.toLowerCase();
+        const table = document.querySelector("#table4 table");
+        const tr = table.getElementsByTagName("tr");
+
+        // Itera por todas as linhas da tabela, exceto o cabeçalho
+        for (let i = 1; i < tr.length; i++) {
+            const td = tr[i].getElementsByTagName("td");
+            let found = false;
+
+            // Itera por todas as células da linha atual
+            for (let j = 0; j < td.length; j++) {
+                if (td[j]) {
+                    const txtValue = td[j].textContent || td[j].innerText;
+                    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                        found = true;
+                        break;
+                    }
+                }
+            }
+
+            // Mostra ou esconde a linha com base na pesquisa
+            if (found) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+	function searchTable5() {
+        // Obtém o valor do input de pesquisa
+        const input = document.getElementById("searchInput5");
+        const filter = input.value.toLowerCase();
+        const table = document.querySelector("#table5 table");
+        const tr = table.getElementsByTagName("tr");
+
+        // Itera por todas as linhas da tabela, exceto o cabeçalho
+        for (let i = 1; i < tr.length; i++) {
+            const td = tr[i].getElementsByTagName("td");
+            let found = false;
+
+            // Itera por todas as células da linha atual
+            for (let j = 0; j < td.length; j++) {
+                if (td[j]) {
+                    const txtValue = td[j].textContent || td[j].innerText;
+                    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                        found = true;
+                        break;
+                    }
+                }
+            }
+
+            // Mostra ou esconde a linha com base na pesquisa
+            if (found) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+	function searchTable6() {
+        // Obtém o valor do input de pesquisa
+        const input = document.getElementById("searchInput6");
+        const filter = input.value.toLowerCase();
+        const table = document.querySelector("#table6 table");
+        const tr = table.getElementsByTagName("tr");
+
+        // Itera por todas as linhas da tabela, exceto o cabeçalho
+        for (let i = 1; i < tr.length; i++) {
+            const td = tr[i].getElementsByTagName("td");
+            let found = false;
+
+            // Itera por todas as células da linha atual
+            for (let j = 0; j < td.length; j++) {
+                if (td[j]) {
+                    const txtValue = td[j].textContent || td[j].innerText;
+                    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                        found = true;
+                        break;
+                    }
+                }
+            }
+
+            // Mostra ou esconde a linha com base na pesquisa
+            if (found) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+
+	function searchTable9() {
+        // Obtém o valor do input de pesquisa
+        const input = document.getElementById("searchInput9");
+        const filter = input.value.toLowerCase();
+        const table = document.querySelector("#table9 table");
+        const tr = table.getElementsByTagName("tr");
+
+        // Itera por todas as linhas da tabela, exceto o cabeçalho
+        for (let i = 1; i < tr.length; i++) {
+            const td = tr[i].getElementsByTagName("td");
+            let found = false;
+
+            // Itera por todas as células da linha atual
+            for (let j = 0; j < td.length; j++) {
+                if (td[j]) {
+                    const txtValue = td[j].textContent || td[j].innerText;
+                    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                        found = true;
+                        break;
+                    }
+                }
+            }
+
+            // Mostra ou esconde a linha com base na pesquisa
+            if (found) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+
+	function searchTable10() {
+        // Obtém o valor do input de pesquisa
+        const input = document.getElementById("searchInput10");
+        const filter = input.value.toLowerCase();
+        const table = document.querySelector("#table10 table");
+        const tr = table.getElementsByTagName("tr");
+
+        // Itera por todas as linhas da tabela, exceto o cabeçalho
+        for (let i = 1; i < tr.length; i++) {
+            const td = tr[i].getElementsByTagName("td");
+            let found = false;
+
+            // Itera por todas as células da linha atual
+            for (let j = 0; j < td.length; j++) {
+                if (td[j]) {
+                    const txtValue = td[j].textContent || td[j].innerText;
+                    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                        found = true;
+                        break;
+                    }
+                }
+            }
+
+            // Mostra ou esconde a linha com base na pesquisa
+            if (found) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+
+	function searchTable11() {
+        // Obtém o valor do input de pesquisa
+        const input = document.getElementById("searchInput11");
+        const filter = input.value.toLowerCase();
+        const table = document.querySelector("#table11 table");
         const tr = table.getElementsByTagName("tr");
 
         // Itera por todas as linhas da tabela, exceto o cabeçalho

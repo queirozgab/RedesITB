@@ -401,7 +401,7 @@ td.conec, th.conec {
 
 .modelospli {
     text-align: left; /* Alinha o texto à esquerda */
-    width: 200px;
+    width: 250px;
     vertical-align: middle;
 }
 /* Regra específica para a coluna com a classe .modelorac */
