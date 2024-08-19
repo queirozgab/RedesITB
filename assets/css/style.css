@@ -1010,3 +1010,25 @@ table {
     box-shadow: 0 0 5px rgba(31, 128, 173, 0.5); /* Sombra ao focar */
 }
 
+/* Exemplo de Flexbox */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Exemplo de Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+.scrollable-container {
+    width: 1560px;
+    height: 1200px;
+    overflow: hidden;
+}
+
+.scrollable-container:hover {
+    overflow: scroll; /* Aparece apenas ao passar o mouse */
+}

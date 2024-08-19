@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Redes ITB">
 	<meta name="author" content="Intelbras">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/workspaces/queirozgab.github.io/assets/style.css">
 	<link href="https://fonts.cdnfonts.com/css/nunito-sans" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet" />
@@ -181,8 +182,12 @@
 			}
 		</script>
 
-		<div id="table1" class="hidden">
-			<table border="1" style="border-radius: 10px; border-collapse: collapse;">
+
+<div id="table1" class="hidden">
+	<div class="search-container">
+		<input type="text" id="searchInput1" placeholder="Pesquisar por modelo..." onkeyup="searchTable1()" class="search-input" />
+	</div>
+	<table border="1">
 				<tr>
 					<th>Modelo</th>
 					<th>Interface</th>
@@ -3574,24 +3579,23 @@
 
 		<div id="table18" class="hidden">
 
-	<!-- Contêiner para alinhar o filtro à esquerda e a busca à direita -->
-	<div class="search-filter-container">
-		<div class="filter-buttons">
-			<button class="botao-filtro" onclick="toggleFiltros()">Filtro</button>
-		</div>
-		<input type="text" id="searchInput" placeholder="Pesquisar por modelo..." onkeyup="searchTable()" class="search-input" />
-	</div>
-
-	<!-- Seção de filtros -->
-	<div id="filtros" class="escondido">
-		<button class="botao-filtro" onclick="toggleFiltro('PoE')">Mostrar PoE</button>
-		<button class="botao-filtro" onclick="toggleFiltro('Não PoE')">Mostrar Não PoE</button>
-		<button class="botao-filtro" onclick="toggleFiltro('Gerenciável')">Mostrar Gerenciável</button>
-		<button class="botao-filtro" onclick="toggleFiltro('Não Gerenciável')">Mostrar Não Gerenciável</button>
-		<!-- <button class="botao-filtro" onclick="toggleFiltro('Compra exclusivamente via registro de projeto.')">Compra exclusivamente via registro de projeto.</button> -->
-		<button class="botao-filtro" onclick="resetFiltros()">Mostrar Todos</button>
-	</div>
-	<table border="1" id="tabelaProdutos">
+			<!-- Contêiner para alinhar o filtro à esquerda e a busca à direita -->
+			<div class="search-filter-container">
+				<div class="filter-buttons">
+					<button class="botao-filtro" onclick="toggleFiltros18()">Filtro</button>
+				</div>
+				<input type="text" id="searchInput18" placeholder="Pesquisar por modelo..." onkeyup="searchTable18()" class="search-input" />
+			</div>
+		
+			<!-- Seção de filtros -->
+			<div id="filtros18" class="escondido">
+				<button class="botao-filtro" onclick="toggleFiltro18('PoE')">Mostrar PoE</button>
+				<button class="botao-filtro" onclick="toggleFiltro18('Não PoE')">Mostrar Não PoE</button>
+				<button class="botao-filtro" onclick="toggleFiltro18('Gerenciável')">Mostrar Gerenciável</button>
+				<button class="botao-filtro" onclick="toggleFiltro18('Não Gerenciável')">Mostrar Não Gerenciável</button>
+				<button class="botao-filtro" onclick="resetFiltros18()">Mostrar Todos</button>
+			</div>
+			<table border="1" id="tabelaProdutos18">
 					<tr>
 						<th>Modelo</th>
 						<th>Interface</th>
@@ -6759,7 +6763,137 @@ function filtrarTabela() {
 	}
 }
 
+function searchTable18() {
+    var input = document.getElementById("searchInput18");
+    var filter = input.value.toLowerCase();
+    var table = document.getElementById("tabelaProdutos18");
+    var tr = table.getElementsByTagName("tr");
 
+    for (var i = 1; i < tr.length; i++) {
+        var td = tr[i].getElementsByTagName("td")[0]; // Coluna do Modelo
+        if (td) {
+            var txtValue = td.textContent || td.innerText;
+            tr[i].style.display = txtValue.toLowerCase().indexOf(filter) > -1 ? "" : "none";
+        }
+    }
+}
+
+function toggleFiltros18() {
+    var filtros = document.getElementById('filtros18');
+    if (filtros.classList.contains('escondido')) {
+        filtros.classList.remove('escondido');
+        filtros.classList.add('mostrar');
+    } else {
+        filtros.classList.remove('mostrar');
+        filtros.classList.add('escondido');
+    }
+}
+
+function toggleFiltro18(categoria) {
+    var botao = document.querySelector(`button[onclick="toggleFiltro18('${categoria}')"]`);
+    var index = filtrosAtivos.indexOf(categoria);
+
+    if ((categoria === 'PoE' && filtrosAtivos.includes('Não PoE')) ||
+        (categoria === 'Não PoE' && filtrosAtivos.includes('PoE'))) {
+        alert('Você não pode selecionar "Mostrar PoE" e "Mostrar Não PoE" ao mesmo tempo.');
+        return;
+    }
+
+    if ((categoria === 'Gerenciável' && filtrosAtivos.includes('Não Gerenciável')) ||
+        (categoria === 'Não Gerenciável' && filtrosAtivos.includes('Gerenciável'))) {
+        alert('Você não pode selecionar "Mostrar Gerenciável" e "Mostrar Não Gerenciável" ao mesmo tempo.');
+        return;
+    }
+
+    if (index > -1) {
+        filtrosAtivos.splice(index, 1);
+        botao.classList.remove('ativo');
+    } else {
+        filtrosAtivos.push(categoria);
+        botao.classList.add('ativo');
+    }
+
+    filtrarTabela18();
+}
+
+function resetFiltros18() {
+    filtrosAtivos = [];
+    var botoes = document.querySelectorAll('.botao-filtro');
+    botoes.forEach(function (botao) {
+        botao.classList.remove('ativo');
+    });
+    filtrarTabela18();
+}
+
+function filtrarTabela18() {
+    var tabela = document.getElementById('tabelaProdutos18');
+    var linhas = tabela.getElementsByTagName('tr');
+
+    for (var i = 1; i < linhas.length; i++) {
+        var colunaGerenciavel = linhas[i].getElementsByTagName('td')[3];
+        var colunaPoE = linhas[i].getElementsByTagName('td')[4];
+        var colunaProjeto = linhas[i].getElementsByClassName('qwert')[0];
+
+        var gerenciavelAlt = colunaGerenciavel.getElementsByTagName('img')[0].alt;
+        var poeAlt = colunaPoE.getElementsByTagName('img')[0].alt;
+        var temProjeto = colunaProjeto && colunaProjeto.querySelector('.info-button-proj') !== null;
+
+        var mostrar = true;
+
+        if (filtrosAtivos.includes('Gerenciável') && gerenciavelAlt !== 'Gerenciável') {
+            mostrar = false;
+        }
+        if (filtrosAtivos.includes('Não Gerenciável') && gerenciavelAlt !== 'Não Gerenciável') {
+            mostrar = false;
+        }
+        if (filtrosAtivos.includes('PoE') && poeAlt !== 'PoE') {
+            mostrar = false;
+        }
+        if (filtrosAtivos.includes('Não PoE') && poeAlt !== 'Não PoE') {
+            mostrar = false;
+        }
+        if (filtrosAtivos.includes('Compra exclusivamente via registro de projeto.') && !temProjeto) {
+            mostrar = false;
+        }
+
+        if (mostrar) {
+            linhas[i].style.display = '';
+        } else {
+            linhas[i].style.display = 'none';
+        }
+    }
+}
+function searchTable1() {
+        // Obtém o valor do input de pesquisa
+        const input = document.getElementById("searchInput1");
+        const filter = input.value.toLowerCase();
+        const table = document.querySelector("#table1 table");
+        const tr = table.getElementsByTagName("tr");
+
+        // Itera por todas as linhas da tabela, exceto o cabeçalho
+        for (let i = 1; i < tr.length; i++) {
+            const td = tr[i].getElementsByTagName("td");
+            let found = false;
+
+            // Itera por todas as células da linha atual
+            for (let j = 0; j < td.length; j++) {
+                if (td[j]) {
+                    const txtValue = td[j].textContent || td[j].innerText;
+                    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                        found = true;
+                        break;
+                    }
+                }
+            }
+
+            // Mostra ou esconde a linha com base na pesquisa
+            if (found) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
 
 
 </script>
