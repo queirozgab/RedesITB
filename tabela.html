@@ -2585,9 +2585,14 @@
 		</div>
 		<div id="table17" class="hidden">
 
-			<!-- Botão para exibir/ocultar os filtros -->
-			<button class="botao-filtro" onclick="toggleFiltros()">Filtro</button>
-
+			<!-- Contêiner para alinhar o filtro à esquerda e a busca à direita -->
+			<div class="search-filter-container">
+				<div class="filter-buttons">
+					<button class="botao-filtro" onclick="toggleFiltros()">Filtro</button>
+				</div>
+				<input type="text" id="searchInput" placeholder="Pesquisar por modelo..." onkeyup="searchTable()" class="search-input" />
+			</div>
+		
 			<!-- Seção de filtros -->
 			<div id="filtros" class="escondido">
 				<button class="botao-filtro" onclick="toggleFiltro('PoE')">Mostrar PoE</button>
@@ -2597,6 +2602,7 @@
 				<button class="botao-filtro" onclick="toggleFiltro('Compra exclusivamente via registro de projeto.')">Compra exclusivamente via registro de projeto.</button>
 				<button class="botao-filtro" onclick="resetFiltros()">Mostrar Todos</button>
 			</div>
+		
 
 			<table border="1" id="tabelaProdutos">
 				<tr>
@@ -2850,7 +2856,7 @@
 					<td>
 						<div class="qwert">
 							<button class="info-button-curio">?</button>
-							<span class="tooltiptext">6 Independentes (SPF+))</span>
+							<span class="tooltiptext">6 Independentes (SPF+)</span>
 							<img src="./assets/img/icons/check.png" alt="Possui SFP"
 								style="width: 15px;">
 						</div>
@@ -2885,7 +2891,7 @@
 					<td>
 						<div class="qwert">
 							<button class="info-button-curio">?</button>
-							<span class="tooltiptext">4 Independentes (SPF+))</span>
+							<span class="tooltiptext">4 Independentes (SPF+)</span>
 							<img src="./assets/img/icons/check.png" alt="Possui SFP"
 								style="width: 15px;">
 						</div>
@@ -2920,7 +2926,7 @@
 					<td>
 						<div class="qwert">
 							<button class="info-button-curio">?</button>
-							<span class="tooltiptext">6 Independentes (SPF+))</span>
+							<span class="tooltiptext">6 Independentes (SPF+)</span>
 							<img src="./assets/img/icons/check.png" alt="Possui SFP"
 								style="width: 15px;">
 						</div>
@@ -2955,7 +2961,7 @@
 					<td>
 						<div class="qwert">
 							<button class="info-button-curio">?</button>
-							<span class="tooltiptext">4 Independentes (SPF+))</span>
+							<span class="tooltiptext">4 Independentes (SPF+)</span>
 							<img src="./assets/img/icons/check.png" alt="Possui SFP"
 								style="width: 15px;">
 						</div>
@@ -2990,7 +2996,7 @@
 					<td>
 						<div class="qwert">
 							<button class="info-button-curio">?</button>
-							<span class="tooltiptext">2 Independentes (SPF+))</span>
+							<span class="tooltiptext">2 Independentes (SPF+)</span>
 							<img src="./assets/img/icons/check.png" alt="Possui SFP"
 								style="width: 15px;">
 						</div>
@@ -3026,7 +3032,7 @@
 					<td>
 						<div class="qwert">
 							<button class="info-button-curio">?</button>
-							<span class="tooltiptext">2 Independentes (SPF+))</span>
+							<span class="tooltiptext">2 Independentes (SPF+)</span>
 							<img src="./assets/img/icons/check.png" alt="Possui SFP"
 								style="width: 15px;">
 						</div>
@@ -3062,7 +3068,7 @@
 					<td>
 						<div class="qwert">
 							<button class="info-button-curio">?</button>
-							<span class="tooltiptext">2 Independentes (SPF+))</span>
+							<span class="tooltiptext">2 Independentes (SPF+)</span>
 							<img src="./assets/img/icons/check.png" alt="Possui SFP"
 								style="width: 15px;">
 						</div>
@@ -3099,7 +3105,7 @@
 					<td>
 						<div class="qwert">
 							<button class="info-button-curio">?</button>
-							<span class="tooltiptext">4 Independentes (SPF+))</span>
+							<span class="tooltiptext">4 Independentes (SPF+)</span>
 							<img src="./assets/img/icons/check.png" alt="Possui SFP"
 								style="width: 15px;">
 						</div>
@@ -3626,37 +3632,41 @@
 		</div>
 
 		<div id="table8" class="hidden">
-
-			<!-- Botão para exibir/ocultar os filtros -->
-			<button class="botao-filtro" onclick="toggleFiltros()">Filtro</button>
-
-			<!-- Seção de filtros -->
-			<div id="filtros" class="escondido">
-				<button class="botao-filtro" onclick="toggleFiltro('PoE')">Mostrar PoE</button>
-				<button class="botao-filtro" onclick="toggleFiltro('Não PoE')">Mostrar Não PoE</button>
-				<button class="botao-filtro" onclick="toggleFiltro('Gerenciável')">Mostrar Gerenciável</button>
-				<button class="botao-filtro" onclick="toggleFiltro('Não Gerenciável')">Mostrar Não Gerenciável</button>
-				<button class="botao-filtro" onclick="toggleFiltro('Compra exclusivamente via registro de projeto.')">Compra exclusivamente via registro de projeto.</button>
-				<button class="botao-filtro" onclick="resetFiltros()">Mostrar Todos</button>
-			</div>
-
-			<table border="1" id="tabelaProdutos">
-				<tr>
-					<th>Modelo</th>
-					<th>Interface</th>
-					<th>Qtde Portas</th>
-					<th>Gerenciável</th>
-					<th>PoE Ativo</th>
-					<th>Taxa de Encam. de Pacotes</th>
-					<th>Backplane</th>
-					<th>Possui SFP</th>
-					<th>PoE Extender</th>
-					<th>PoE Por Porta</th>
-					<th>PoE Total</th>
-					<th>Qos</th>
-					<th>Garantia</th>
-					<th class="pagina-coluna">Página</th>
-				</tr>
+				<!-- Contêiner para alinhar o filtro à esquerda e a busca à direita -->
+				<div class="search-filter-container">
+					<div class="filter-buttons">
+						<button class="botao-filtro" onclick="toggleFiltros()">Filtro</button>
+					</div>
+					<input type="text" id="searchInput" placeholder="Pesquisar por modelo..." onkeyup="searchTable()" class="search-input" />
+				</div>
+			
+				<!-- Seção de filtros -->
+				<div id="filtros" class="escondido">
+					<button class="botao-filtro" onclick="toggleFiltro('PoE')">Mostrar PoE</button>
+					<button class="botao-filtro" onclick="toggleFiltro('Não PoE')">Mostrar Não PoE</button>
+					<button class="botao-filtro" onclick="toggleFiltro('Gerenciável')">Mostrar Gerenciável</button>
+					<button class="botao-filtro" onclick="toggleFiltro('Não Gerenciável')">Mostrar Não Gerenciável</button>
+					<button class="botao-filtro" onclick="toggleFiltro('Compra exclusivamente via registro de projeto.')">Compra exclusivamente via registro de projeto.</button>
+					<button class="botao-filtro" onclick="resetFiltros()">Mostrar Todos</button>
+				</div>
+			
+				<table border="1" id="tabelaProdutos">
+					<tr>
+						<th>Modelo</th>
+						<th>Interface</th>
+						<th>Qtde Portas</th>
+						<th>Gerenciável</th>
+						<th>PoE Ativo</th>
+						<th>Taxa de Encam. de Pacotes</th>
+						<th>Backplane</th>
+						<th>Possui SFP</th>
+						<th>PoE Extender</th>
+						<th>PoE Por Porta</th>
+						<th>PoE Total</th>
+						<th>Qos</th>
+						<th>Garantia</th>
+						<th class="pagina-coluna">Página</th>
+					</tr>
 				<tr>
 					<td class="modelo" style="text-decoration: underline; font-weight: bold;">
 						<img src="./assets/img/icons/verde.png" alt="Icon"
@@ -4078,7 +4088,7 @@
 					<td>35 W</td>
 					<td>223 W</td>
 					<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>
-					<td>3 Ano</td>
+					<td>3 Anos</td>
 					<td><a href="https://www.intelbras.com/pt-br/switch-gerenciavel-48-portas-gigabit-poe-e-4-portas-sfp-s2352g-pb#beneficios"
 							class="saiba-mais">Saiba mais</a></td>
 				</tr>
@@ -4332,7 +4342,7 @@
 					<td><a href="https://www.intelbras.com/pt-br/switch-nao-gerenciavel-24-portas-gigabit-ethernet-s1124g"
 							class="saiba-mais">Saiba mais</a></td>
 				</tr>
-				<tr>
+			 	<tr>
 					<td class="modelo" style="text-decoration: underline; font-weight: bold;">
 						<img src="./assets/img/icons/amarelo.png" alt="Icon"
 							style="width: 20px; height: 20px; margin-left: 5px;">
@@ -4405,9 +4415,11 @@
 					<td>
 						<div class="qwert">
 							<button class="info-button-curio">?</button>
-							<span class="tooltiptext">1 Independente </span></td>
+							<span class="tooltiptext">1 Independente </span>
 							<img src="./assets/img/icons/check.png" alt="Possui SFP"
-								style="width: 15px;"></div></td>
+								style="width: 15px;">
+						</div>
+				</td>
 					<td><img src="./assets/img/icons/check.png" alt="Possui PoE Extender"
 							style="width: 15px;"></td>
 					<td>30 W</td>
@@ -4439,7 +4451,6 @@
 							<img src="./assets/img/icons/check.png" alt="Possui SFP"
 								style="width: 15px;">
 						</div>
-					</td>
 				</td>
 				<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>
 				<td>30 W</td>
@@ -4757,7 +4768,7 @@
 					<td>1 Ano</td>
 					<td><a href="https://www.intelbras.com/pt-br/switch-5-portas-fast-ethernet-com-4-portas-poe-sf-500-poe"
 							class="saiba-mais">Saiba mais</a></td>
-				</tr>
+				</tr> 
 				<tr>
 					<td class="modelo" style="text-decoration: underline; font-weight: bold;">
 						<img src="./assets/img/icons/vermelho.png" alt="Icon"
@@ -6681,7 +6692,25 @@
 
 <script>
 
+function searchTable() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("searchInput");
+    filter = input.value.toLowerCase();
+    table = document.getElementById("tabelaProdutos");
+    tr = table.getElementsByTagName("tr");
 
+    for (i = 1; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0]; // Coluna do Modelo
+        if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }       
+    }
+}
 
 function showTable(tableId) {
 	// Ocultar todas as tabelas

@@ -740,7 +740,7 @@ td:not(.modelo), th:not(.modelo) {
     width: 300px;
     box-sizing: border-box;
     border: 1px solid #ccc; /* Adiciona uma borda para destacar o campo */
-    border-radius: 4px; /* Arredonda os cantos do campo */
+    border-radius: 35px; /* Arredonda os cantos do campo */
     font-size: 14px; /* Define um tamanho de fonte adequado */
 }
 
@@ -984,3 +984,29 @@ table {
 #toggleFiltro {
     margin-right: 10px; /* Distância entre o botão de toggle e os demais botões */
 }
+.search-filter-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px; /* Espaço entre o contêiner e a tabela */
+}
+
+.filter-buttons {
+    flex-grow: 1; /* O filtro ocupa o máximo possível à esquerda */
+}
+
+.search-input {
+    flex-shrink: 0; /* O campo de busca permanece no tamanho original */
+    width: 200px; /* Ajuste a largura conforme necessário */
+    padding: 5px 10px; /* Espaçamento interno para o campo de busca */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 30px; /* Bordas arredondadas */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave para foco */
+}
+
+.search-input:focus {
+    border-color: #1f80ad;
+    outline: none;
+    box-shadow: 0 0 5px rgba(31, 128, 173, 0.5); /* Sombra ao focar */
+}
+
