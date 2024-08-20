@@ -2598,7 +2598,8 @@
 				<button class="botao-filtro" onclick="toggleFiltro('Não PoE')">Mostrar Não PoE</button>
 				<button class="botao-filtro" onclick="toggleFiltro('Gerenciável')">Mostrar Gerenciável</button>
 				<button class="botao-filtro" onclick="toggleFiltro('Não Gerenciável')">Mostrar Não Gerenciável</button>
-				<!-- <button class="botao-filtro" onclick="toggleFiltro('Compra exclusivamente via registro de projeto.')">Compra exclusivamente via registro de projeto.</button> -->
+				<button class="botao-filtro" onclick="toggleFiltro('Possui SFP')">Mostrar Possui SFP</button>
+				<button class="botao-filtro" onclick="toggleFiltro('Não Possui SFP')">Mostrar Não Possui SFP</button>
 				<button class="botao-filtro" onclick="resetFiltros()">Mostrar Todos</button>
 			</div>
 			<table border="1" id="tabelaProdutos">
@@ -2705,7 +2706,7 @@
 						<div class="qwert">
 							<button class="info-button-curio">?</button>
 							<span class="tooltiptext">4 Independente</span>
-							<img src="./assets/img/icons/x-removebg-preview.png" alt="Possui SFP"
+							<img src="./assets/img/icons/check.png" alt="Possui SFP"
 								style="width: 15px;">
 						</div>
 					</td>
@@ -3695,7 +3696,7 @@
 					<td><img src="./assets/img/icons/check.png" style="width: 15px;"></td>
 					<td>1 Ano</td>
 					<td><a href="https://www.intelbras.com/pt-br/switch-nao-gerenciavel-24-portas-gigabit-ethernet-s1124g"
-							class="saiba-mais">Saiba mais</a></td>
+							class="saiba-mais">Saiba mmmais</a></td>
 				</tr>
 				<tr>
 					<td class="modelo" style="text-decoration: underline; font-weight: bold;">
@@ -6757,6 +6758,12 @@ function toggleFiltro(categoria) {
 		return;
 	}
 
+	if ((categoria === 'Possui SFP' && filtrosAtivos.includes('Não Possui SFP')) ||
+        (categoria === 'Não Possui SFP' && filtrosAtivos.includes('Possui SFP'))) {
+        alert('Você não pode selecionar "Mostrar Possui SFP" e "Mostrar Não Possui SFP" ao mesmo tempo.');
+        return;
+    }
+
 	if (index > -1) {
 		// Se o filtro já está ativo, removê-lo
 		filtrosAtivos.splice(index, 1);
@@ -6787,8 +6794,9 @@ function filtrarTabela() {
 		var colunaGerenciavel = linhas[i].getElementsByTagName('td')[3];
 		var colunaPoE = linhas[i].getElementsByTagName('td')[4];
 		var colunaProjeto = linhas[i].getElementsByClassName('qwert')[0];
-		var colunaSFP = linhas[i].getElementsByTagName('td')[8];
+        var colunaSFP = linhas[i].getElementsByTagName('td')[7];  // Atualize o índice para a coluna correta
 
+		var sfpAlt = colunaSFP.getElementsByTagName('img')[0].alt;  // Corrige a verificação e índice da coluna SFP
 		var gerenciavelAlt = colunaGerenciavel.getElementsByTagName('img')[0].alt;
 		var poeAlt = colunaPoE.getElementsByTagName('img')[0].alt;
 		var temProjeto = colunaProjeto && colunaProjeto.querySelector('.info-button-proj') !== null;
@@ -6803,6 +6811,14 @@ function filtrarTabela() {
 		if (filtrosAtivos.includes('Não Gerenciável') && gerenciavelAlt !== 'Não Gerenciável') {
 			mostrar = false;
 		}
+		
+		if (filtrosAtivos.includes('Possui SFP') && sfpAlt !== 'Possui SFP') {  // Verificação SFP
+            mostrar = false;
+        }
+        if (filtrosAtivos.includes('Não Possui SFP') && sfpAlt !== 'Não Possui SFP') {  // Verificação SFP
+            mostrar = false;
+        }
+
 		if (filtrosAtivos.includes('PoE') && poeAlt !== 'PoE') {
 			mostrar = false;
 		}
@@ -6896,7 +6912,7 @@ function filtrarTabela18() {
     for (var i = 1; i < linhas.length; i++) {
         var colunaGerenciavel = linhas[i].getElementsByTagName('td')[3];
         var colunaPoE = linhas[i].getElementsByTagName('td')[4];
-        var colunaSFP = linhas[i].getElementsByTagName('td')[8];  // Atualize o índice para a coluna correta
+        var colunaSFP = linhas[i].getElementsByTagName('td')[7];  // Atualize o índice para a coluna correta
         var colunaProjeto = linhas[i].getElementsByClassName('qwert')[0];
 
         var gerenciavelAlt = colunaGerenciavel.getElementsByTagName('img')[0].alt;
