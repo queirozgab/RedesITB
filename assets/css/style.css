@@ -794,18 +794,24 @@ td:not(.modelo), th:not(.modelo) {
   .hidden-text {
     display: none;
 }
+/* Contêiner para centralizar os botões */
+#filtros18 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 10px; /* Espaçamento entre os botões */
+    padding: 10px; /* Espaçamento interno ao redor dos botões */
+}
 
 .botao-filtro {
-    padding: 7px 10px;
-    font-size: 11px;
+    padding: 7px 15px;
+    font-size: 12px;
     border: 1px solid #50788a;
     border-radius: 25px;
     background-color: #f8f9fa;
     color: #50788a;
     cursor: pointer;
-    margin: 5px;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    float: left;
 }
 
 .botao-filtro:hover {
@@ -815,18 +821,16 @@ td:not(.modelo), th:not(.modelo) {
 }
 
 .botao-filtro.ativo {
-    background-color: #50788a; /* Cor de fundo para o botão ativo */
-    color: #ffffff; /* Cor do texto para o botão ativo */
-    border-color: #1f80ad; /* Alterar cor da borda quando ativo */
-    transform: scale(1.05); /* Leve aumento para destacar */
+    background-color: #50788a;
+    color: #ffffff;
+    border-color: #1f80ad;
+    transform: scale(1.05);
 }
-
-
-#filtros {
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: opacity 0.5s ease, height 0.5s ease;
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
 }
 
 #filtros.mostrar {
@@ -986,30 +990,38 @@ table {
 }
 .search-filter-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px; /* Espaço entre o contêiner e a tabela */
+    gap: 15px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .filter-buttons {
-    flex-grow: 1; /* O filtro ocupa o máximo possível à esquerda */
+    display: flex;
+    gap: 10px;
 }
-
+.filter-buttons-container {
+    position: relative;
+}
 .search-input {
-    flex-shrink: 0; /* O campo de busca permanece no tamanho original */
-    width: 200px; /* Ajuste a largura conforme necessário */
-    padding: 5px 10px; /* Espaçamento interno para o campo de busca */
-    border: 1px solid #ccc; /* Borda padrão */
-    border-radius: 30px; /* Bordas arredondadas */
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave para foco */
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 25px;
+    border: 1px solid #50788a;
+    background-color: #ffffff;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    flex-grow: 1;
 }
 
 .search-input:focus {
     border-color: #1f80ad;
+    box-shadow: 0 0 5px rgba(31, 128, 173, 0.5);
     outline: none;
-    box-shadow: 0 0 5px rgba(31, 128, 173, 0.5); /* Sombra ao focar */
 }
-
 /* Exemplo de Flexbox */
 .container {
     display: flex;
