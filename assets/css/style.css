@@ -845,7 +845,9 @@ td:not(.modelo), th:not(.modelo) {
 .filtros.escondido {
     display: none;
 }
-
+.mostrar {
+	display: block;
+}
 .filtros.mostrar {
     display: block;
 }
