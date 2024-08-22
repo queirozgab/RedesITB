@@ -377,7 +377,6 @@ th, td {
     white-space: nowrap; /* Evita a quebra de linha */
 
 }
-
 .pag {
     width: 150px;
 }
@@ -841,15 +840,6 @@ td:not(.modelo), th:not(.modelo) {
 
 .escondido {
     display: none;
-}
-.filtros.escondido {
-    display: none;
-}
-.mostrar {
-	display: block;
-}
-.filtros.mostrar {
-    display: block;
 }
 
 #tabelaProdutos {

@@ -859,9 +859,25 @@
 
 		</div>
 		</div>
-		>>>>>>> f82ecd4251e4d3074eee50a2757399602e995f0d
 
 		<script>
+
+function showTable(tableId) {
+							// Ocultar todas as tabelas
+							document.querySelectorAll('.hidden').forEach(function (table) {
+								table.style.display = 'none';
+							});
+
+							// Mostrar a tabela específica
+							document.getElementById(tableId).style.display = 'block';
+						}
+
+						$(document).ready(function () {
+							$('#sidebarToggle').click(function () {
+								$('#sidebar').toggleClass('collapsed');
+							});
+						});
+
 			let currentCategoryFilter = '';
 
 			function applyFilters() {
