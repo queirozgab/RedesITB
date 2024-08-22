@@ -251,7 +251,7 @@ table, th, td {
     border-radius: 8px
 }
 th {
-    background-color: #00A335;
+    background-color: #50788A;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -263,10 +263,6 @@ th {
     transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
 }
 
-th:hover {
-    background-color: #007A28; /* Cor de fundo mais escura no hover */
-    color: #ffffff; /* Cor do texto no hover */
-}
 
 td {
     padding: 0; /* Remove o padding padrão das células */
@@ -276,29 +272,30 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: #E6F7EB;
+    background-color: #e2e9ed;
 }
 tr:nth-child(odd) {
     background-color: #FFFFFF;
 }
 tr:hover {
-    background-color: #C5E9D2;
+    background-color: #EBEEEE;
 }
 
 a.saiba-mais {
-    display: block; /* Usar block para garantir que o botão ocupe toda a largura */
-    padding: 10px 20px;
-    font-size: 14px;
+    display: block; /* Garantir que o botão ocupe toda a largura disponível */
+    padding: 8px 15px; /* Diminuir o padding para reduzir o tamanho do botão */
+    font-size: 12px; /* Reduzir o tamanho da fonte */
     font-weight: bold;
     color: white;
-    background-color: #00A335;
+    background-color: #00a335;
     border: none;
-    border-radius: 7px;
+    border-radius: 60px;
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    max-width: 200px; /* Limitar a largura máxima do botão */
+    margin: 0 auto; /* Centralizar o botão */
 }
 
 a.saiba-mais:hover {
@@ -310,6 +307,9 @@ a.saiba-mais:active {
     transform: translateY(0);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+
+
 
 /* CSS para a célula */
 td.pagina-coluna {
@@ -992,12 +992,33 @@ table {
     display: flex;
     align-items: center;
     gap: 15px;
-    background-color: #f1f1f1;
+    background-color: #e4e7e8; /* Cor de fundo harmoniosa com as cores principais */
     padding: 10px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.search-filter-container input[type="text"] {
+    background-color: #FFFFFF; /* Fundo do campo de pesquisa */
+    border: 2px solid #50788A; /* Borda em destaque */
+    padding: 8px;
+    border-radius: 10px;
+    color: #50788A; /* Cor do texto */
+}
+
+.search-filter-container button {
+    background-color: #00A335; /* Fundo do botão de pesquisa */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: #FFFFFF; /* Cor do texto no botão */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-filter-container button:hover {
+    background-color: #50788A; /* Alteração de cor ao passar o mouse */
+}
 
 .filter-buttons {
     display: flex;
