@@ -25,7 +25,7 @@ a.sidebar-link {
     }
 
     .filtro-categorias {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: stretch;
     }
 
@@ -802,9 +802,10 @@ td:not(.modelo), th:not(.modelo) {
     margin-right: 10px;
     width: 300px;
     box-sizing: border-box;
-    border: 1px solid #ccc; /* Adiciona uma borda para destacar o campo */
+    border: 2px solid #50788a; /* Adiciona uma borda para destacar o campo */
     border-radius: 35px; /* Arredonda os cantos do campo */
     font-size: 14px; /* Define um tamanho de fonte adequado */
+    
 }
 
 .search-container button {
@@ -815,6 +816,7 @@ td:not(.modelo), th:not(.modelo) {
     cursor: pointer;
     border-radius: 30px; /* Arredonda os cantos do botão */
     transition: background-color 0.3s; /* Adiciona uma transição suave na cor de fundo */
+    
 }
 .search-container button:hover {
     background-color: #257b30; /* Cor mais escura ao passar o mouse para um visual mais destacado */
@@ -952,9 +954,11 @@ table {
 .accordion-item {
     display: block;
     margin-bottom: 4px; /* Aumentei o espaço entre os itens */
+    margin-top: 4px;
     border: 1px solid #00a335; /* Verde Intelbras */
     border-radius: 5px;
     overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
+    
 }
 
 .accordion-button {
@@ -1019,9 +1023,9 @@ table {
 }
 
 .filtro-categorias {
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-flow: row-reverse nowrap;
     display: none; /* Inicialmente oculto */
+    align: top;
 }
 
 .filtro-categorias button,
@@ -1082,6 +1086,7 @@ table {
     color: #FFFFFF; /* Cor do texto no botão */
     cursor: pointer;
     transition: background-color 0.3s ease;
+
 }
 
 .search-filter-container button:hover {
