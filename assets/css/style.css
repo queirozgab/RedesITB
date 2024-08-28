@@ -1418,3 +1418,49 @@ table {
     overflow: scroll;
     /* Aparece apenas ao passar o mouse */
 }
+
+.wifi-standard::after {
+    content: " B/G/N";
+    display: inline-block; /* Faz a sigla se comportar como um bloco inline */
+    background-color: #006A88; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    font-size: 12px; /* Tamanho da fonte */
+    padding: 2px 8px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-left: 8px; /* Espaçamento à esquerda */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    text-transform: uppercase; /* Maiúsculas */
+    font-family: Arial, sans-serif; /* Fonte personalizada */
+  }
+  
+  .wifi-standardD::after {
+    content: " B/G/N/AC";
+    display: inline-block; /* Faz a sigla se comportar como um bloco inline */
+    background-color: #006A88; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    font-size: 12px; /* Tamanho da fonte */
+    padding: 2px 8px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-left: 8px; /* Espaçamento à esquerda */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    text-transform: uppercase; /* Maiúsculas */
+    font-family: Arial, sans-serif; /* Fonte personalizada */
+  }
+  
+  .wifi-standardDD::after {
+    content: " B/G/N/AC/AX";
+    display: inline-block; /* Faz a sigla se comportar como um bloco inline */
+    background-color: #006A88; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    font-size: 12px; /* Tamanho da fonte */
+    padding: 2px 8px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-left: 8px; /* Espaçamento à esquerda */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    text-transform: uppercase; /* Maiúsculas */
+    font-family: Arial, sans-serif; /* Fonte personalizada */
+  }
+  
