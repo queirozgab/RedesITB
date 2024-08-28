@@ -161,22 +161,28 @@
 						<!-- Menu de pesquisa -->
 						<div class="search-filter-container">
 							<div class="input-button-group">
-								<input type="text" id="searchInput" placeholder="Pesquisar vídeos..." oninput="applyFilters()" class="search-input" />
 								<button id="toggleFiltro" onclick="toggleFiltros()">Filtrar</button>
+
+								<input type="text" id="searchInput" placeholder="Pesquisar vídeos..."
+									oninput="applyFilters()" class="search-input" />
 							</div>
 						</div>
-						
+
+
 						<!-- Seção de filtros -->
 						<div id="filtros" class="escondido">
-							<button class="botao-filtro" onclick="setCategoryFilter('categoria-configuracao')">Configurações</button>
-							<button class="botao-filtro" onclick="setCategoryFilter('categoria-tecnologias')">Tecnologias</button>
-							<button class="botao-filtro" onclick="setCategoryFilter('categoria-comercial')">Comercial</button>
+							<button class="botao-filtro"
+								onclick="setCategoryFilter('categoria-configuracao')">Configurações</button>
+							<button class="botao-filtro"
+								onclick="setCategoryFilter('categoria-tecnologias')">Tecnologias</button>
+							<button class="botao-filtro"
+								onclick="setCategoryFilter('categoria-comercial')">Comercial</button>
 							<!-- <button onclick="setCategoryFilter('categoria-boas-praticas')">Boas Práticas</button> -->
 							<button class="botao-filtro" onclick="setCategoryFilter('')">Mostrar Todos</button>
 						</div>
-						
 
-						
+
+
 						<div id="videoAccordion">
 							<div class="accordion-item categoria-configuracao">
 								<h2 class="accordion-header">
@@ -2251,17 +2257,17 @@
 			currentCategoryFilter = category;
 			applyFilters();
 		}
-// Função para alternar a exibição dos filtros
-function toggleFiltros() {
-    var filtros = document.getElementById('filtros');
-    if (filtros.classList.contains('escondido')) {
-        filtros.classList.remove('escondido');
-        filtros.classList.add('mostrar');
-    } else {
-        filtros.classList.remove('mostrar');
-        filtros.classList.add('escondido');
-    }
-}
+		// Função para alternar a exibição dos filtros
+		function toggleFiltros() {
+			var filtros = document.getElementById('filtros');
+			if (filtros.classList.contains('escondido')) {
+				filtros.classList.remove('escondido');
+				filtros.classList.add('mostrar');
+			} else {
+				filtros.classList.remove('mostrar');
+				filtros.classList.add('escondido');
+			}
+		}
 
 
 	</script>

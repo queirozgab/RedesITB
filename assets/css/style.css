@@ -874,6 +874,8 @@ td:not(.modelo), th:not(.modelo) {
     border: 1px solid #50788a;
     border-radius: 25px;
     background-color: #f8f9fa;
+    text-align: left;
+
     color: #50788a;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
@@ -883,6 +885,9 @@ td:not(.modelo), th:not(.modelo) {
     background-color: #6990A7;
     color: #FFFFFF;
     transform: translateY(-3px);
+    text-align: left;
+    text-align: left; /* Mantém o texto alinhado à esquerda no estado ativo */
+
 }
 
 .botao-filtro.ativo {
@@ -890,6 +895,9 @@ td:not(.modelo), th:not(.modelo) {
     color: #ffffff;
     border-color: #1f80ad;
     transform: scale(1.05);
+    margin-left: 0; /* Alinha o botão à esquerda */
+    text-align: left; /* Mantém o texto alinhado à esquerda no estado ativo */
+
 }
 .filtros {
     display: flex;
@@ -901,6 +909,8 @@ td:not(.modelo), th:not(.modelo) {
 #filtros.mostrar {
     opacity: 1;
     height: auto; /* Ajusta a altura automaticamente */
+    text-align: left; /* Mantém o texto alinhado à esquerda no estado ativo */
+
 }
 
 .escondido {
