@@ -3,7 +3,8 @@
     margin: 0 auto;
     padding: 0 15px;
     width: 100%;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
 a.sidebar-link {
     background: #ffffff;
@@ -14,6 +15,7 @@ a.sidebar-link {
     margin-left: 15px;
     margin-right: 15px;
 }
+
 @media (max-width: 768px) {
     .input-button-group {
         flex-direction: column;
@@ -34,6 +36,7 @@ a.sidebar-link {
         padding: 10px;
     }
 }
+
 input-button-group {
     display: flex;
     flex-wrap: wrap;
@@ -84,12 +87,13 @@ a.sidebar-link.actived {
 }
 
 a.sidebar-link:hover {
-    background-color: rgba(0,0,0,0.04);
+    background-color: rgba(0, 0, 0, 0.04);
     color: #647279;
 }
 
 .sidebar-nav {
-    padding: 0; /* Remove padding from the ul */
+    padding: 0;
+    /* Remove padding from the ul */
 }
 
 .sidebar-link {
@@ -98,12 +102,15 @@ a.sidebar-link:hover {
     width: 100%;
     padding: 10px;
 }
+
 .sidebar-item {
     background: #ffffff;
     display: flex;
-    margin-bottom: 0px; /* Ajuste este valor conforme necessário */
+    margin-bottom: 0px;
+    /* Ajuste este valor conforme necessário */
 
 }
+
 .icon-container {
     display: flex;
     align-items: center;
@@ -116,7 +123,8 @@ a.sidebar-link:hover {
     align-items: center;
     place-content: center;
     white-space: nowrap;
-    height: 15px; /* Garante que a altura do texto seja igual à do ícone */
+    height: 15px;
+    /* Garante que a altura do texto seja igual à do ícone */
 }
 
 
@@ -136,7 +144,7 @@ a.sidebar-link:hover {
     border-radius: 9;
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
     .margin-top-icon {
         padding-top: 10px;
     }
@@ -149,6 +157,7 @@ a.sidebar-link:hover {
 .align-middle {
     text-align: center;
 }
+
 .white-icon {
     filter: brightness(0) invert(1);
 }
@@ -161,17 +170,22 @@ a.sidebar-link:hover {
 
 /* Estilo CSS para aproximar os submenus */
 .navbar {
-    margin-bottom: 4 !important; /* Reduz a margem inferior da barra de navegação */
+    margin-bottom: 4 !important;
+    /* Reduz a margem inferior da barra de navegação */
 }
 
 .menu-aproximado {
-    margin-left: 1px; /* Ajusta a margem esquerda para aproximar os submenus */
-    margin-right: 55px; /* Ajusta a margem direita para aproximar os submenus */
+    margin-left: 1px;
+    /* Ajusta a margem esquerda para aproximar os submenus */
+    margin-right: 55px;
+    /* Ajusta a margem direita para aproximar os submenus */
 }
 
 .router-icon {
-    width: 100px; /* Ajuste o tamanho conforme necessário */
-    height: 100px; /* Ajuste o tamanho conforme necessário */
+    width: 100px;
+    /* Ajuste o tamanho conforme necessário */
+    height: 100px;
+    /* Ajuste o tamanho conforme necessário */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,7 +220,8 @@ a.sidebar-link:hover {
 #config-results li {
     padding: 10px;
     border: 1px solid #ccc;
-    margin-top: -1px; /* Evitar a duplicação da borda */
+    margin-top: -1px;
+    /* Evitar a duplicação da borda */
     cursor: pointer;
 }
 
@@ -216,35 +231,47 @@ a.sidebar-link:hover {
 
 /* Estilizando o menu principal */
 #id_do_menu {
-    width: 250px; /* Largura do menu */
-    height: 30px; /* Altura do menu */
-    background-color: #87c984; /* Cor de fundo */
-    border: 1px solid #00a335; /* Borda */
-    font-family: Arial, sans-serif; /* Fonte */
-    padding: 5px; /* Espaçamento interno */
-  }
+    width: 250px;
+    /* Largura do menu */
+    height: 30px;
+    /* Altura do menu */
+    background-color: #87c984;
+    /* Cor de fundo */
+    border: 1px solid #00a335;
+    /* Borda */
+    font-family: Arial, sans-serif;
+    /* Fonte */
+    padding: 5px;
+    /* Espaçamento interno */
+}
 
-  /* Estilizando as opções do menu */
-  #id_do_menu option {
-    padding: 5px; /* Espaçamento entre as opções */
-    background-color: #fff; /* Cor de fundo das opções */
-    color: #000; /* Cor do texto das opções */
-  }
+/* Estilizando as opções do menu */
+#id_do_menu option {
+    padding: 5px;
+    /* Espaçamento entre as opções */
+    background-color: #fff;
+    /* Cor de fundo das opções */
+    color: #000;
+    /* Cor do texto das opções */
+}
 
-  /* Estilizando a opção selecionada */
-  #id_do_menu option:selected {
-    background-color: #eee; /* Cor de fundo da opção selecionada */
-  }
+/* Estilizando a opção selecionada */
+#id_do_menu option:selected {
+    background-color: #eee;
+    /* Cor de fundo da opção selecionada */
+}
 
-  .search-container {
+.search-container {
     display: flex;
     align-items: center;
     position: relative;
 }
 
 #id_do_menu {
-  margin-right: 15px; /* Add spacing between select and icon */
+    margin-right: 15px;
+    /* Add spacing between select and icon */
 }
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #f9f9f9;
@@ -255,17 +282,20 @@ body {
 
 @font-face {
     font-family: 'MinhaFonte';
-    src: url('/workspaces/queirozgab.github.io/assets/fonts/MuseoSans-300.otf') format('opentype'); /* Ajuste o caminho e formato conforme necessário */
+    src: url('/workspaces/queirozgab.github.io/assets/fonts/MuseoSans-300.otf') format('opentype');
+    /* Ajuste o caminho e formato conforme necessário */
 }
 
 @font-face {
     font-family: 'Museo';
-    src: url('/workspaces/queirozgab.github.io/assets/fonts/MuseoSans.otf') format('opentype'); /* Ajuste o caminho e formato conforme necessário */
+    src: url('/workspaces/queirozgab.github.io/assets/fonts/MuseoSans.otf') format('opentype');
+    /* Ajuste o caminho e formato conforme necessário */
 }
 
 @font-face {
     font-family: 'Museo500';
-    src: url('/workspaces/queirozgab.github.io/assets/fonts/MUSEOSANS_500_ITALIC.OTF') format('opentype'); /* Ajuste o caminho e formato conforme necessário */
+    src: url('/workspaces/queirozgab.github.io/assets/fonts/MUSEOSANS_500_ITALIC.OTF') format('opentype');
+    /* Ajuste o caminho e formato conforme necessário */
 }
 
 h2 {
@@ -286,25 +316,33 @@ h4 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 25px;
-    font-family: 'Museo500', sans-serif; /* Aplica a fonte local */
+    font-family: 'Museo500', sans-serif;
+    /* Aplica a fonte local */
 
 }
 
 
 table {
-    border-spacing: 15px; /* Define o espaçamento entre as colunas */
+    border-spacing: 15px;
+    /* Define o espaçamento entre as colunas */
     margin: 10px;
     background-color: #fff;
     box-shadow: 0 2px 35px rgba(0, 0, 0, 0.1);
-    border-collapse: collapse; /* Remove espaçamento entre bordas das células */
-    width: 100%; /* Ajuste a largura da tabela conforme necessário */
+    border-collapse: collapse;
+    /* Remove espaçamento entre bordas das células */
+    width: 100%;
+    /* Ajuste a largura da tabela conforme necessário */
 
 
 }
-table, th, td {
+
+table,
+th,
+td {
     border: 3px solid #cccccc00;
     border-radius: 8px
 }
+
 th {
     background-color: #50788A;
     color: white;
@@ -312,34 +350,51 @@ th {
     text-align: center;
     font-size: 15px;
     height: 50px;
-    padding: 10px 15px; /* Ajusta o espaçamento interno */
-    border-radius: 8px 8px 0 0; /* Bordas arredondadas no topo */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+    padding: 10px 15px;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+th:hover {
+    /* transform: translateY(-8px); */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    background-color: #5F9EA0;
+    border-radius: 8px 8px 0 0; /* Garante que as bordas permaneçam arredondadas */
+    background-color: #31586C;
+    color: white;
 }
 
 
 td {
-    padding: 0; /* Remove o padding padrão das células */
+    padding: 0;
+    /* Remove o padding padrão das células */
     font-size: 15px;
-    color: #3e5055 ;
-    vertical-align: middle; /* Centraliza verticalmente o conteúdo da célula */
+    color: #3e5055;
+    vertical-align: middle;
+    /* Centraliza verticalmente o conteúdo da célula */
 }
 
 tr:nth-child(even) {
     background-color: #e2e9ed;
 }
+
 tr:nth-child(odd) {
     background-color: #FFFFFF;
 }
+
 tr:hover {
     background-color: #EBEEEE;
+    
 }
 
 a.saiba-mais {
-    display: block; /* Garantir que o botão ocupe toda a largura disponível */
-    padding: 8px 15px; /* Diminuir o padding para reduzir o tamanho do botão */
-    font-size: 12px; /* Reduzir o tamanho da fonte */
+    display: block;
+    /* Garantir que o botão ocupe toda a largura disponível */
+    padding: 8px 15px;
+    /* Diminuir o padding para reduzir o tamanho do botão */
+    font-size: 12px;
+    /* Reduzir o tamanho da fonte */
     font-weight: bold;
     color: white;
     background-color: #00a335;
@@ -349,8 +404,10 @@ a.saiba-mais {
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 200px; /* Limitar a largura máxima do botão */
-    margin: 0 auto; /* Centralizar o botão */
+    max-width: 200px;
+    /* Limitar a largura máxima do botão */
+    margin: 0 auto;
+    /* Centralizar o botão */
 }
 
 a.saiba-mais:hover {
@@ -368,22 +425,28 @@ a.saiba-mais:active {
 
 /* CSS para a célula */
 td.pagina-coluna {
-    padding: 0; /* Remove o padding da célula */
-    width: 150px; /* Define uma largura fixa para a célula */
+    padding: 0;
+    /* Remove o padding da célula */
+    width: 150px;
+    /* Define uma largura fixa para a célula */
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
 
 
-th, td {
-    padding: 10px;
-    font-size: 12px;
-    border: 1px solid black; /* Borda das células */
-    padding: 5px; /* Adiciona algum espaço interno nas células */
+    th,
+    td {
+        padding: 10px;
+        font-size: 12px;
+        border: 1px solid black;
+        /* Borda das células */
+        padding: 5px;
+        /* Adiciona algum espaço interno nas células */
     }
 
 }
+
 .hidden {
     display: none;
 }
@@ -393,107 +456,155 @@ th, td {
 .button {
     display: flex;
     align-items: center;
-    background-color: #00A335; /* Cor de fundo */
-    border: none; /* Remover borda */
-    color: white; /* Cor do texto */
-    padding: 15px 32px; /* Espaçamento interno */
-    text-align: center; /* Centralizar texto */
-    text-decoration: none; /* Remover sublinhado */
-    display: inline-block; /* Exibir como bloco inline */
-    font-size: 16px; /* Tamanho da fonte */
-    margin: 4px 2px; /* Margem */
-    cursor: pointer; /* Cursor de ponteiro */
-    border-radius: 25px; /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-    transition: background-color 0.3s; /* Transição para a cor de fundo */
+    background-color: #00A335;
+    /* Cor de fundo */
+    border: none;
+    /* Remover borda */
+    color: white;
+    /* Cor do texto */
+    padding: 15px 32px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Centralizar texto */
+    text-decoration: none;
+    /* Remover sublinhado */
+    display: inline-block;
+    /* Exibir como bloco inline */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    margin: 4px 2px;
+    /* Margem */
+    cursor: pointer;
+    /* Cursor de ponteiro */
+    border-radius: 25px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    transition: background-color 0.3s;
+    /* Transição para a cor de fundo */
 }
 
 .button:hover {
-    background-color: #00863F; /* Cor de fundo ao passar o mouse */
-    transform: translateY(-2px); /* Elevar o botão ao passar o mouse */
+    background-color: #00863F;
+    /* Cor de fundo ao passar o mouse */
+    transform: translateY(-2px);
+    /* Elevar o botão ao passar o mouse */
 }
 
 .button:active {
-    background-color: #00863F; /* Cor de fundo ao clicar */
-    transform: translateY(2px); /* Rebaixar o botão ao clicar */
+    background-color: #00863F;
+    /* Cor de fundo ao clicar */
+    transform: translateY(2px);
+    /* Rebaixar o botão ao clicar */
 }
+
 .button img {
-    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
-    width: 24px; /* Largura da imagem */
-    height: 24px; /* Altura da imagem */
+    margin-right: 10px;
+    /* Espaçamento entre a imagem e o texto */
+    width: 24px;
+    /* Largura da imagem */
+    height: 24px;
+    /* Altura da imagem */
 }
 
 
 
 .image-text-container img {
-    margin-right: 5px; /* Espaçamento entre a imagem e o texto */
+    margin-right: 5px;
+    /* Espaçamento entre a imagem e o texto */
 }
+
 .image-text-container {
-    display: flex; /* Usa flexbox para alinear a imagem e o texto */
-    align-items: center; /* Alinha a imagem e o texto verticalmente */
-    margin: 0; /* Remove qualquer margem */
+    display: flex;
+    /* Usa flexbox para alinear a imagem e o texto */
+    align-items: center;
+    /* Alinha a imagem e o texto verticalmente */
+    margin: 0;
+    /* Remove qualquer margem */
 }
 
 .modelo {
-    text-align: left; /* Alinha o texto da coluna "Modelo" à esquerda */
+    text-align: left;
+    /* Alinha o texto da coluna "Modelo" à esquerda */
     width: 200px;
-    white-space: nowrap; /* Evita a quebra de linha */
+    white-space: nowrap;
+    /* Evita a quebra de linha */
 
 }
+
 .pag {
     width: 150px;
 }
+
 .modelorac {
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left;
+    /* Alinha o texto à esquerda */
     width: 350px;
 }
+
 /* Regra específica para a coluna com a classe .modelorac */
-td.modelorac, th.modelorac {
+td.modelorac,
+th.modelorac {
     text-align: left !important;
 }
+
 .conec {
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left;
+    /* Alinha o texto à esquerda */
     width: 300px;
     vertical-align: middle;
 }
+
 /* Regra específica para a coluna com a classe .modelorac */
-td.conec, th.conec {
+td.conec,
+th.conec {
     text-align: left !important;
     vertical-align: middle;
 }
 
 .modelospli {
-    text-align: left; /* Alinha o texto à esquerda */
+    text-align: left;
+    /* Alinha o texto à esquerda */
     width: 250px;
     vertical-align: middle;
 }
+
 /* Regra específica para a coluna com a classe .modelorac */
-td.modelospli, th.modelospli {
+td.modelospli,
+th.modelospli {
     text-align: left !important;
 }
 
 .interface {
-    text-align: center; /* Alinha o texto da coluna "Modelo" à esquerda */
+    text-align: center;
+    /* Alinha o texto da coluna "Modelo" à esquerda */
     width: 200px;
 }
 
 th.modelo {
-    text-align: left; /* Alinha o texto do cabeçalho da coluna "Modelo" à esquerda */
+    text-align: left;
+    /* Alinha o texto do cabeçalho da coluna "Modelo" à esquerda */
 }
 
-td:not(.modelo), th:not(.modelo) {
-    text-align: center; /* Centraliza o texto das outras células e cabeçalhos */
+td:not(.modelo),
+th:not(.modelo) {
+    text-align: center;
+    /* Centraliza o texto das outras células e cabeçalhos */
 }
 
 .abertura {
-    text-align: center; /* Alinha o texto da coluna "Modelo" à esquerda */
+    text-align: center;
+    /* Alinha o texto da coluna "Modelo" à esquerda */
     width: 150px;
 }
+
 .tensão {
-    text-align: center; /* Alinha o texto da coluna "Modelo" à esquerda */
+    text-align: center;
+    /* Alinha o texto da coluna "Modelo" à esquerda */
     width: 150px;
 }
-  /* Estilos para o botão e a tooltip */
+
+/* Estilos para o botão e a tooltip */
 .qwert {
     position: relative;
     display: inline-block;
@@ -509,19 +620,22 @@ td:not(.modelo), th:not(.modelo) {
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: 125%; /* Posiciona a tooltip acima do botão */
+    bottom: 125%;
+    /* Posiciona a tooltip acima do botão */
     left: 50%;
     margin-left: -80px;
     opacity: 0;
     transition: opacity 0.3s;
-    white-space: normal; /* Permite a quebra de linha */
+    white-space: normal;
+    /* Permite a quebra de linha */
 
-  }
+}
 
 .qwert .tooltiptext::after {
     content: "";
     position: absolute;
-    top: 100%; /* Posiciona a seta abaixo da tooltip */
+    top: 100%;
+    /* Posiciona a seta abaixo da tooltip */
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
@@ -541,7 +655,8 @@ td:not(.modelo), th:not(.modelo) {
 
 /* Estilos para o botão */
 .info-button {
-    background: linear-gradient(45deg, #203164, #00A335); /* De 45 graus de #4CAF50 para #8BC34A */
+    background: linear-gradient(45deg, #203164, #00A335);
+    /* De 45 graus de #4CAF50 para #8BC34A */
     border: none;
     color: white;
     padding: 0px 5px;
@@ -553,8 +668,10 @@ td:not(.modelo), th:not(.modelo) {
     cursor: pointer;
     border-radius: 5px;
 }
+
 .info-buttonleg {
-    background: linear-gradient(45deg, #203164, #00A335); /* De 45 graus de #4CAF50 para #8BC34A */
+    background: linear-gradient(45deg, #203164, #00A335);
+    /* De 45 graus de #4CAF50 para #8BC34A */
     border: none;
     color: white;
     padding: 0px 5px;
@@ -565,20 +682,24 @@ td:not(.modelo), th:not(.modelo) {
     margin: 4px 2px;
     border-radius: 5px;
 }
+
 .tooltiptextleg {
     width: 160px;
     text-align: left;
     border-radius: 5px;
     padding: 5px 0;
 }
+
 .tooltipleg-container {
     position: relative;
     display: inline-block;
     text-align: left;
 }
+
 /* Estilos para o botão */
 .info-button-curio {
-    background: linear-gradient(45deg, #bfae11, #49d611); /* De 45 graus de #4CAF50 para #8BC34A */
+    background: linear-gradient(45deg, #bfae11, #49d611);
+    /* De 45 graus de #4CAF50 para #8BC34A */
     border: none;
     color: white;
     padding: 0px 6px;
@@ -590,8 +711,10 @@ td:not(.modelo), th:not(.modelo) {
     cursor: pointer;
     border-radius: 5px;
 }
+
 .info-button-proj {
-    background: linear-gradient(45deg, #49d611, #d6114c); /* De 45 graus de #4CAF50 para #8BC34A */
+    background: linear-gradient(45deg, #49d611, #d6114c);
+    /* De 45 graus de #4CAF50 para #8BC34A */
     border: none;
     color: white;
     padding: 0px 6px;
@@ -605,240 +728,337 @@ td:not(.modelo), th:not(.modelo) {
 }
 
 .info-button:hover {
-    background-color: #45a049; /* Verde mais escuro */
+    background-color: #45a049;
+    /* Verde mais escuro */
 }
 
 .rectangle-cell {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente o conteúdo da célula */
-    align-items: center;     /* Centraliza verticalmente o conteúdo da célula */
-    height: 100%;            /* Garante que a célula ocupe a altura total */
-    min-height: 50px;        /* Garante altura mínima para a célula */
+    justify-content: center;
+    /* Centraliza horizontalmente o conteúdo da célula */
+    align-items: center;
+    /* Centraliza verticalmente o conteúdo da célula */
+    height: 100%;
+    /* Garante que a célula ocupe a altura total */
+    min-height: 50px;
+    /* Garante altura mínima para a célula */
 }
 
 .yellow-rectangle {
-    width: 50px; /* Largura do retângulo */
-    height: 20px; /* Altura do retângulo */
-    border-radius: 15px; /* Bordas arredondadas */
-    background-color: #EB741F; /* Amarelo */
-    color: #ffffff; /* Cor do texto */
+    width: 50px;
+    /* Largura do retângulo */
+    height: 20px;
+    /* Altura do retângulo */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    background-color: #EB741F;
+    /* Amarelo */
+    color: #ffffff;
+    /* Cor do texto */
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente o texto dentro do retângulo */
-    align-items: center;     /* Centraliza verticalmente o texto dentro do retângulo */
+    justify-content: center;
+    /* Centraliza horizontalmente o texto dentro do retângulo */
+    align-items: center;
+    /* Centraliza verticalmente o texto dentro do retângulo */
     font-size: 14px;
-    font-weight: bold; /* Negrito */
-    text-align: center; /* Alinha o texto no centro */
+    font-weight: bold;
+    /* Negrito */
+    text-align: center;
+    /* Alinha o texto no centro */
 }
 
 .green-rectangle {
-    width: 50px; /* Largura do retângulo */
-    height: 20px; /* Altura do retângulo */
-    border-radius: 15px; /* Bordas arredondadas */
-    background-color: #48b554; /* Amarelo */
-    color: #ffffff; /* Cor do texto */
+    width: 50px;
+    /* Largura do retângulo */
+    height: 20px;
+    /* Altura do retângulo */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    background-color: #48b554;
+    /* Amarelo */
+    color: #ffffff;
+    /* Cor do texto */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    font-weight: bold; /* Negrito */
+    font-weight: bold;
+    /* Negrito */
     text-align: center;
 }
 
 .green10-rectangle {
-    width: 70px; /* Largura do retângulo */
-    height: 20px; /* Altura do retângulo */
-    border-radius: 15px; /* Bordas arredondadas */
-    background-color: #48b554; /* Amarelo */
-    color: #ffffff; /* Cor do texto */
+    width: 70px;
+    /* Largura do retângulo */
+    height: 20px;
+    /* Altura do retângulo */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    background-color: #48b554;
+    /* Amarelo */
+    color: #ffffff;
+    /* Cor do texto */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    font-weight: bold; /* Negrito */
+    font-weight: bold;
+    /* Negrito */
     text-align: center;
 }
 
 .greenusb-rectangle {
-    width: 70px; /* Largura do retângulo */
-    height: 20px; /* Altura do retângulo */
-    border-radius: 15px; /* Bordas arredondadas */
-    background-color: #48b554; /* Amarelo */
-    color: #ffffff; /* Cor do texto */
+    width: 70px;
+    /* Largura do retângulo */
+    height: 20px;
+    /* Altura do retângulo */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    background-color: #48b554;
+    /* Amarelo */
+    color: #ffffff;
+    /* Cor do texto */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    font-weight: bold; /* Negrito */
+    font-weight: bold;
+    /* Negrito */
     text-align: center;
 }
 
 .yellowusb-rectangle {
-    width: 70px; /* Largura do retângulo */
-    height: 20px; /* Altura do retângulo */
-    border-radius: 15px; /* Bordas arredondadas */
-    background-color: #EB741F; /* Amarelo */
-    color: #ffffff; /* Cor do texto */
+    width: 70px;
+    /* Largura do retângulo */
+    height: 20px;
+    /* Altura do retângulo */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    background-color: #EB741F;
+    /* Amarelo */
+    color: #ffffff;
+    /* Cor do texto */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    font-weight: bold; /* Negrito */
+    font-weight: bold;
+    /* Negrito */
     text-align: center;
 }
 
 .gigafast-rectangle {
-    width: 80px; /* Largura do retângulo */
-    height: 20px; /* Altura do retângulo */
-    border-radius: 15px; /* Bordas arredondadas */
-    background-color: #48b554; /* Amarelo */
-    color: #ffffff; /* Cor do texto */
+    width: 80px;
+    /* Largura do retângulo */
+    height: 20px;
+    /* Altura do retângulo */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    background-color: #48b554;
+    /* Amarelo */
+    color: #ffffff;
+    /* Cor do texto */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    font-weight: bold; /* Negrito */
+    font-weight: bold;
+    /* Negrito */
     text-align: center;
 }
+
 .proj-rectangle {
-    width: 80px; /* Largura do retângulo */
-    height: 20px; /* Altura do retângulo */
-    border-radius: 15px; /* Bordas arredondadas */
-    background-color: #48b554; /* Amarelo */
-    color: #ffffff; /* Cor do texto */
+    width: 80px;
+    /* Largura do retângulo */
+    height: 20px;
+    /* Altura do retângulo */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    background-color: #48b554;
+    /* Amarelo */
+    color: #ffffff;
+    /* Cor do texto */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    font-weight: bold; /* Negrito */
+    font-weight: bold;
+    /* Negrito */
     text-align: center;
 }
+
 .gpon-rectangle {
-    width: 80px; /* Largura do retângulo */
-    height: 20px; /* Altura do retângulo */
-    border-radius: 15px; /* Bordas arredondadas */
-    background-color: #21495A; /* Amarelo */
-    color: #ffffff; /* Cor do texto */
+    width: 80px;
+    /* Largura do retângulo */
+    height: 20px;
+    /* Altura do retângulo */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    background-color: #21495A;
+    /* Amarelo */
+    color: #ffffff;
+    /* Cor do texto */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    font-weight: bold; /* Negrito */
+    font-weight: bold;
+    /* Negrito */
     text-align: center;
 }
 
 .epon-rectangle {
-    width: 80px; /* Largura do retângulo */
-    height: 20px; /* Altura do retângulo */
-    border-radius: 15px; /* Bordas arredondadas */
-    background-color: #27bdbe; /* Amarelo */
-    color: #ffffff; /* Cor do texto */
+    width: 80px;
+    /* Largura do retângulo */
+    height: 20px;
+    /* Altura do retângulo */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    background-color: #27bdbe;
+    /* Amarelo */
+    color: #ffffff;
+    /* Cor do texto */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    font-weight: bold; /* Negrito */
+    font-weight: bold;
+    /* Negrito */
     text-align: center;
 }
 
 .sfp-rectangle {
-    width: 80px; /* Largura do retângulo */
-    height: 20px; /* Altura do retângulo */
-    border-radius: 15px; /* Bordas arredondadas */
-    background-color: #ed2e2e; /* Amarelo */
-    color: #ffffff; /* Cor do texto */
+    width: 80px;
+    /* Largura do retângulo */
+    height: 20px;
+    /* Altura do retângulo */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    background-color: #ed2e2e;
+    /* Amarelo */
+    color: #ffffff;
+    /* Cor do texto */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    font-weight: bold; /* Negrito */
+    font-weight: bold;
+    /* Negrito */
     text-align: center;
 }
 
 .xfp-rectangle {
-    width: 80px; /* Largura do retângulo */
-    height: 20px; /* Altura do retângulo */
-    border-radius: 15px; /* Bordas arredondadas */
-    background-color: #A05213; /* Amarelo */
-    color: #ffffff; /* Cor do texto */
+    width: 80px;
+    /* Largura do retângulo */
+    height: 20px;
+    /* Altura do retângulo */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    background-color: #A05213;
+    /* Amarelo */
+    color: #ffffff;
+    /* Cor do texto */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    font-weight: bold; /* Negrito */
+    font-weight: bold;
+    /* Negrito */
     text-align: center;
 }
 
 .sfpmais-rectangle {
-    width: 80px; /* Largura do retângulo */
-    height: 20px; /* Altura do retângulo */
-    border-radius: 15px; /* Bordas arredondadas */
-    background-color: #ff2ca4; /* Amarelo */
-    color: #ffffff; /* Cor do texto */
+    width: 80px;
+    /* Largura do retângulo */
+    height: 20px;
+    /* Altura do retângulo */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    background-color: #ff2ca4;
+    /* Amarelo */
+    color: #ffffff;
+    /* Cor do texto */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    font-weight: bold; /* Negrito */
+    font-weight: bold;
+    /* Negrito */
     text-align: center;
 }
 
 .xgspon-rectangle {
-    width: 80px; /* Largura do retângulo */
-    height: 20px; /* Altura do retângulo */
-    border-radius: 15px; /* Bordas arredondadas */
-    background-color: #7c006d; /* Amarelo */
-    color: #ffffff; /* Cor do texto */
+    width: 80px;
+    /* Largura do retângulo */
+    height: 20px;
+    /* Altura do retângulo */
+    border-radius: 15px;
+    /* Bordas arredondadas */
+    background-color: #7c006d;
+    /* Amarelo */
+    color: #ffffff;
+    /* Cor do texto */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 12px;
-    font-weight: bold; /* Negrito */
+    font-weight: bold;
+    /* Negrito */
     text-align: center;
 }
 
 
 .search-container input[type=text] {
-    padding: 12px; /* Aumenta um pouco o padding para melhorar o espaçamento */
+    padding: 12px;
+    /* Aumenta um pouco o padding para melhorar o espaçamento */
     margin-right: 10px;
     width: 300px;
     box-sizing: border-box;
-    border: 2px solid #50788a; /* Adiciona uma borda para destacar o campo */
-    border-radius: 35px; /* Arredonda os cantos do campo */
-    font-size: 14px; /* Define um tamanho de fonte adequado */
-    
+    border: 2px solid #50788a;
+    /* Adiciona uma borda para destacar o campo */
+    border-radius: 35px;
+    /* Arredonda os cantos do campo */
+    font-size: 14px;
+    /* Define um tamanho de fonte adequado */
+
 }
 
 .search-container button {
-    padding: 12px; /* Aumenta um pouco o padding para melhorar a usabilidade */
+    padding: 12px;
+    /* Aumenta um pouco o padding para melhorar a usabilidade */
     background-color: #48b554;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 30px; /* Arredonda os cantos do botão */
-    transition: background-color 0.3s; /* Adiciona uma transição suave na cor de fundo */
-    
-}
-.search-container button:hover {
-    background-color: #257b30; /* Cor mais escura ao passar o mouse para um visual mais destacado */
+    border-radius: 30px;
+    /* Arredonda os cantos do botão */
+    transition: background-color 0.3s;
+    /* Adiciona uma transição suave na cor de fundo */
+
 }
 
-  .connector {
+.search-container button:hover {
+    background-color: #257b30;
+    /* Cor mais escura ao passar o mouse para um visual mais destacado */
+}
+
+.connector {
     position: absolute;
     width: 30px;
     height: 20px;
     background-color: #ccc;
     border-radius: 5px;
-  }
+}
 
-  .connector.left {
+.connector.left {
     left: -15px;
-  }
+}
 
-  .connector.right {
+.connector.right {
     right: -15px;
-  }
+}
 
-  .pins {
+.pins {
     position: absolute;
     top: 2px;
     left: 2px;
@@ -848,34 +1068,37 @@ td:not(.modelo), th:not(.modelo) {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
+}
 
-  .pin {
+.pin {
     width: 2px;
     height: 14px;
     background-color: #ffcc00;
-  }
+}
 
-  .hidden-text {
+.hidden-text {
     display: none;
 }
+
 /* Contêiner para centralizar os botões */
 #filtros18 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centraliza os botões horizontalmente */
-    gap: 10px; /* Espaçamento entre os botões */
-    padding: 10px; /* Espaçamento interno ao redor dos botões */
+    justify-content: center;
+    /* Centraliza os botões horizontalmente */
+    gap: 10px;
+    /* Espaçamento entre os botões */
+    padding: 10px;
+    /* Espaçamento interno ao redor dos botões */
 }
 
 .botao-filtro {
     padding: 7px 15px;
-    font-size: 12px;
+    font-size: 14px;
     border: 1px solid #50788a;
     border-radius: 25px;
     background-color: #f8f9fa;
     text-align: left;
-
     color: #50788a;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
@@ -886,7 +1109,8 @@ td:not(.modelo), th:not(.modelo) {
     color: #FFFFFF;
     transform: translateY(-3px);
     text-align: left;
-    text-align: left; /* Mantém o texto alinhado à esquerda no estado ativo */
+    text-align: left;
+    /* Mantém o texto alinhado à esquerda no estado ativo */
 
 }
 
@@ -895,10 +1119,13 @@ td:not(.modelo), th:not(.modelo) {
     color: #ffffff;
     border-color: #1f80ad;
     transform: scale(1.05);
-    margin-left: 0; /* Alinha o botão à esquerda */
-    text-align: left; /* Mantém o texto alinhado à esquerda no estado ativo */
+    margin-left: 0;
+    /* Alinha o botão à esquerda */
+    text-align: left;
+    /* Mantém o texto alinhado à esquerda no estado ativo */
 
 }
+
 .filtros {
     display: flex;
     flex-wrap: wrap;
@@ -908,8 +1135,10 @@ td:not(.modelo), th:not(.modelo) {
 
 #filtros.mostrar {
     opacity: 1;
-    height: auto; /* Ajusta a altura automaticamente */
-    text-align: left; /* Mantém o texto alinhado à esquerda no estado ativo */
+    height: auto;
+    /* Ajusta a altura automaticamente */
+    text-align: left;
+    /* Mantém o texto alinhado à esquerda no estado ativo */
 
 }
 
@@ -921,30 +1150,34 @@ td:not(.modelo), th:not(.modelo) {
     border-collapse: collapse;
     width: 100%;
 }
+
 table {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
 }
+
 .card {
-  border: 1px solid #00a335;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 50px;
-  background-color: #fff;
+    border: 1px solid #00a335;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    background-color: #fff;
 }
 
 .card h5 {
-  font-size: 1.5rem;
-  text-align: center;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
-.pt-4, .pb-4 {
-  padding-top: 1.5rem!important;
-  padding-bottom: 1.5rem!important;
+.pt-4,
+.pb-4 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
 }
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* Proporção de 16:9 */
+    padding-bottom: 56.25%;
+    /* Proporção de 16:9 */
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -963,19 +1196,25 @@ table {
 /* Estilos para o acordeão */
 .accordion-item {
     display: block;
-    margin-bottom: 4px; /* Aumentei o espaço entre os itens */
+    margin-bottom: 4px;
+    /* Aumentei o espaço entre os itens */
     margin-top: 4px;
-    border: 1px solid #00a335; /* Verde Intelbras */
+    border: 1px solid #00a335;
+    /* Verde Intelbras */
     border-radius: 5px;
-    overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
-    
+    overflow: hidden;
+    /* Garante que o conteúdo não ultrapasse as bordas */
+
 }
 
 .accordion-button {
-    background-color: #FFFFFF; /* Fundo branco */
-    color: #00a335; /* Texto verde Intelbras */
-    font-weight: bold; 
-    border: none; /* Removi a borda extra para simplificar */
+    background-color: #FFFFFF;
+    /* Fundo branco */
+    color: #00a335;
+    /* Texto verde Intelbras */
+    font-weight: bold;
+    border: none;
+    /* Removi a borda extra para simplificar */
     padding: 15px;
     transition: background-color 0.3s ease, color 0.3s ease;
     font-size: 16px;
@@ -984,8 +1223,10 @@ table {
 }
 
 .accordion-button:hover {
-    background-color: #007938; /* Verde escuro ao passar o mouse */
-    color: #FFFFFF; /* Texto branco ao passar o mouse */
+    background-color: #007938;
+    /* Verde escuro ao passar o mouse */
+    color: #FFFFFF;
+    /* Texto branco ao passar o mouse */
 }
 
 .accordion-collapse {
@@ -994,15 +1235,19 @@ table {
 
 /* Estilização quando o acordeão está aberto */
 .accordion-button:not(.collapsed) {
-    background-color: #007938; /* Verde escuro quando expandido */
-    color: #FFFFFF; /* Texto branco */
-    box-shadow: none; /* Removi o box-shadow para simplificar */
+    background-color: #007938;
+    /* Verde escuro quando expandido */
+    color: #FFFFFF;
+    /* Texto branco */
+    box-shadow: none;
+    /* Removi o box-shadow para simplificar */
 }
 
 .accordion-body {
-    background-color: #f8f9fa; 
+    background-color: #f8f9fa;
     padding: 15px;
-    border-top: 1px solid #00a335; /* Linha superior para separar o conteúdo */
+    border-top: 1px solid #00a335;
+    /* Linha superior para separar o conteúdo */
 }
 
 
@@ -1017,6 +1262,7 @@ table {
         padding: 0.75rem;
     }
 }
+
 .toggle-button {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -1034,30 +1280,39 @@ table {
 
 .filtro-categorias {
     flex-flow: row-reverse nowrap;
-    display: none; /* Inicialmente oculto */
+    display: none;
+    /* Inicialmente oculto */
     align: top;
 }
 
 .filtro-categorias button,
 #toggleFiltro {
-    background-color: #fff; /* Fundo branco para contraste */
-    color: #50788a; /* Cor do texto */
+    background-color: #fff;
+    /* Fundo branco para contraste */
+    color: #50788a;
+    /* Cor do texto */
     padding: 8px 13px;
     font-size: 14px;
-    border: 2px solid #50788a; /* Borda com cor para combinar com o texto */
-    border-radius: 25px;
-    cursor: pointer; /* Cursor de ponteiro para indicar que é clicável */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave para mudanças de cor */
+    border: 2px solid #50788a;
+    /* Borda com cor para combinar com o texto */
+    border-radius: 20px;
+    cursor: pointer;
+    /* Cursor de ponteiro para indicar que é clicável */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Transição suave para mudanças de cor */
 }
 
 .filtro-categorias button:hover,
 #toggleFiltro:hover {
-    background-color: #50788a; /* Fundo muda para a cor da borda */
-    color: #fff; /* Texto branco para contraste com o fundo */
+    background-color: #50788a;
+    /* Fundo muda para a cor da borda */
+    color: #fff;
+    /* Texto branco para contraste com o fundo */
 }
 
 .filtro-categorias.show {
-    display: block; /* Mostra os botões em linha */
+    display: block;
+    /* Mostra os botões em linha */
 }
 
 .filtro-container {
@@ -1065,51 +1320,63 @@ table {
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+}
 
 #toggleFiltro {
-    margin-right: 10px; /* Distância entre o botão de toggle e os demais botões */
+    margin-right: 10px;
+    /* Distância entre o botão de toggle e os demais botões */
 }
+
 .search-filter-container {
     display: flex;
     align-items: center;
     gap: 15px;
-    background-color: #e4e7e8; /* Cor de fundo harmoniosa com as cores principais */
+    background-color: #e4e7e8;
+    /* Cor de fundo harmoniosa com as cores principais */
     padding: 10px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .search-filter-container input[type="text"] {
-    background-color: #FFFFFF; /* Fundo do campo de pesquisa */
-    border: 2px solid #50788A; /* Borda em destaque */
+    background-color: #FFFFFF;
+    /* Fundo do campo de pesquisa */
+    border: 2px solid #50788A;
+    /* Borda em destaque */
     padding: 8px;
-    border-radius: 10px;
-    color: #50788A; /* Cor do texto */
+    border-radius: 25px;
+    color: #50788A;
+    /* Cor do texto */
 }
 
 .search-filter-container button {
-    background-color: #00A335; /* Fundo do botão de pesquisa */
+    background-color: #00A335;
+    /* Fundo do botão de pesquisa */
     border: none;
     padding: 8px 15px;
     border-radius: 10px;
-    color: #FFFFFF; /* Cor do texto no botão */
+    color: #FFFFFF;
+    /* Cor do texto no botão */
     cursor: pointer;
     transition: background-color 0.3s ease;
 
 }
 
 .search-filter-container button:hover {
-    background-color: #50788A; /* Alteração de cor ao passar o mouse */
+    background-color: #50788A;
+    /* Alteração de cor ao passar o mouse */
 }
 
 .filter-buttons {
     display: flex;
     gap: 10px;
 }
+
 .filter-buttons-container {
     position: relative;
 }
+
 .search-input {
     padding: 8px 15px;
     font-size: 14px;
@@ -1126,6 +1393,7 @@ table {
     box-shadow: 0 0 5px rgba(31, 128, 173, 0.5);
     outline: none;
 }
+
 /* Exemplo de Flexbox */
 .container {
     display: flex;
@@ -1139,6 +1407,7 @@ table {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
 }
+
 .scrollable-container {
     width: 1560px;
     height: 1200px;
@@ -1146,5 +1415,6 @@ table {
 }
 
 .scrollable-container:hover {
-    overflow: scroll; /* Aparece apenas ao passar o mouse */
+    overflow: scroll;
+    /* Aparece apenas ao passar o mouse */
 }
