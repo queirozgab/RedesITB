@@ -745,146 +745,105 @@ th:not(.modelo) {
 }
 
 .yellow-rectangle {
-    width: 50px;
-    /* Largura do retângulo */
-    height: 20px;
-    /* Altura do retângulo */
-    border-radius: 15px;
-    /* Bordas arredondadas */
+    display: inline-block; /* Faz a sigla se comportar como um bloco inline */
+    border-radius: 15px;/* Bordas arredondadas */
     background-color: #EB741F;
-    /* Amarelo */
-    color: #ffffff;
-    /* Cor do texto */
-    display: flex;
-    justify-content: center;
-    /* Centraliza horizontalmente o texto dentro do retângulo */
-    align-items: center;
-    /* Centraliza verticalmente o texto dentro do retângulo */
-    font-size: 14px;
-    font-weight: bold;
-    /* Negrito */
-    text-align: center;
-    /* Alinha o texto no centro */
+    color: #fff; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    font-size: 12px; /* Tamanho da fonte */
+    padding: 2px 8px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-left: 8px; /* Espaçamento à esquerda */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    text-transform: uppercase; /* Maiúsculas */
+    font-family: Arial, sans-serif; /* Fonte personalizada */
 }
 
 .green-rectangle {
-    width: 50px;
-    /* Largura do retângulo */
-    height: 20px;
-    /* Altura do retângulo */
-    border-radius: 15px;
-    /* Bordas arredondadas */
-    background-color: #48b554;
-    /* Amarelo */
-    color: #ffffff;
-    /* Cor do texto */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: bold;
-    /* Negrito */
-    text-align: center;
+    display: inline-block; /* Faz a sigla se comportar como um bloco inline */
+    border-radius: 15px;/* Bordas arredondadas */
+    background-color: #48b554;/* Amarelo */
+    color: #fff; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    font-size: 12px; /* Tamanho da fonte */
+    padding: 2px 8px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-left: 8px; /* Espaçamento à esquerda */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    text-transform: uppercase; /* Maiúsculas */
+    font-family: Arial, sans-serif; /* Fonte personalizada */
 }
 
 .green10-rectangle {
-    width: 70px;
-    /* Largura do retângulo */
-    height: 20px;
-    /* Altura do retângulo */
-    border-radius: 15px;
-    /* Bordas arredondadas */
+    display: inline-block; /* Faz a sigla se comportar como um bloco inline */
     background-color: #48b554;
-    /* Amarelo */
-    color: #ffffff;
-    /* Cor do texto */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: bold;
-    /* Negrito */
-    text-align: center;
+    color: #ffffff;/* Cor do texto */
+    font-weight: bold; /* Negrito */
+    font-size: 12px; /* Tamanho da fonte */
+    padding: 2px 8px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-left: 8px; /* Espaçamento à esquerda */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    text-transform: uppercase; /* Maiúsculas */
+    font-family: Arial, sans-serif; /* Fonte personalizada */
 }
 
 .greenusb-rectangle {
-    width: 70px;
-    /* Largura do retângulo */
-    height: 20px;
-    /* Altura do retângulo */
-    border-radius: 15px;
-    /* Bordas arredondadas */
+    display: inline-block; /* Faz a sigla se comportar como um bloco inline */
     background-color: #48b554;
-    /* Amarelo */
-    color: #ffffff;
-    /* Cor do texto */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: bold;
-    /* Negrito */
-    text-align: center;
+    color: #ffffff;/* Cor do texto */
+    font-weight: bold; /* Negrito */
+    font-size: 12px; /* Tamanho da fonte */
+    padding: 2px 8px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-left: 8px; /* Espaçamento à esquerda */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    text-transform: uppercase; /* Maiúsculas */
+    font-family: Arial, sans-serif; /* Fonte personalizada */
 }
 
 .yellowusb-rectangle {
-    width: 70px;
-    /* Largura do retângulo */
-    height: 20px;
-    /* Altura do retângulo */
-    border-radius: 15px;
-    /* Bordas arredondadas */
+    display: inline-block; /* Faz a sigla se comportar como um bloco inline */
     background-color: #EB741F;
-    /* Amarelo */
-    color: #ffffff;
-    /* Cor do texto */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: bold;
-    /* Negrito */
-    text-align: center;
+    color: #ffffff;/* Cor do texto */
+    font-weight: bold; /* Negrito */
+    font-size: 12px; /* Tamanho da fonte */
+    padding: 2px 8px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-left: 8px; /* Espaçamento à esquerda */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    text-transform: uppercase; /* Maiúsculas */
+    font-family: Arial, sans-serif; /* Fonte personalizada */
 }
 
 .gigafast-rectangle {
-    width: 80px;
-    /* Largura do retângulo */
-    height: 20px;
-    /* Altura do retângulo */
-    border-radius: 15px;
-    /* Bordas arredondadas */
+    display: inline-block; /* Faz a sigla se comportar como um bloco inline */
+    width: 80px;/* Largura do retângulo */
+    height: 20px;/* Altura do retângulo */
+    color: #ffffff;/* Cor do texto */
+    border-radius: 15px;/* Bordas arredondadas */
     background-color: #48b554;
-    /* Amarelo */
-    color: #ffffff;
-    /* Cor do texto */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: bold;
-    /* Negrito */
-    text-align: center;
+    font-weight: bold; /* Negrito */
+    font-size: 12px; /* Tamanho da fonte */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-left: 8px; /* Espaçamento à esquerda */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    text-transform: uppercase; /* Maiúsculas */
+    font-family: Arial, sans-serif; /* Fonte personalizada */
 }
 
 .proj-rectangle {
-    width: 80px;
-    /* Largura do retângulo */
-    height: 20px;
-    /* Altura do retângulo */
-    border-radius: 15px;
-    /* Bordas arredondadas */
+    display: inline-block; /* Faz a sigla se comportar como um bloco inline */
     background-color: #48b554;
-    /* Amarelo */
-    color: #ffffff;
-    /* Cor do texto */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: bold;
-    /* Negrito */
-    text-align: center;
+    color: #ffffff;/* Cor do texto */
+    font-weight: bold; /* Negrito */
+    font-size: 12px; /* Tamanho da fonte */
+    padding: 2px 8px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-left: 8px; /* Espaçamento à esquerda */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar destaque */
+    text-transform: uppercase; /* Maiúsculas */
+    font-family: Arial, sans-serif; /* Fonte personalizada */
 }
 
 .gpon-rectangle {
