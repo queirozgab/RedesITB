@@ -157,26 +157,28 @@
 					<!-- accordion -->
 					<div class="accordion w-100 mt-5">
 						<!-- Menu de pesquisa -->
-						<div class="search-filter-container">
-							<div class="input-button-group">
-								<button id="toggleFiltro" onclick="toggleFiltros()">Filtrar</button>
-
-								<input type="text" id="searchInput" placeholder="Pesquisar vídeos..."
-									oninput="applyFilters()" class="search-input" />
-							</div>
-						</div>
-
-
-						<!-- Seção de filtros -->
-						<div id="filtros" class="escondido">
-							<button class="botao-filtro"
-								onclick="setCategoryFilter('categoria-configuracao')">Configurações</button>
-							<!-- <button class="botao-filtro" onclick="setCategoryFilter('categoria-tecnologias')">Tecnologias</button> -->
-							<button class="botao-filtro"
-								onclick="setCategoryFilter('categoria-comercial')">Comercial</button>
-							<!-- <button class="botao-filtro" onclick="setCategoryFilter('categoria-boas-praticas')">Boas Práticas</button> -->
-							<button class="botao-filtro" onclick="setCategoryFilter('')">Mostrar Todos</button>
-						</div>
+								<!-- Menu de pesquisa -->
+								<div class="search-filter-container">
+									<div class="input-button-group">
+										<button id="toggleFiltro" onclick="toggleFiltros()">Filtrar</button>
+		
+										<input type="text" id="searchInput" placeholder="Pesquisar vídeos..."
+											oninput="applyFilters()" class="search-input" />
+									</div>
+								</div>
+		
+		
+								<!-- Seção de filtros -->
+								<div id="filtros" class="escondido">
+									<button class="botao-filtro"
+										onclick="setCategoryFilter('categoria-configuracao')">Configurações</button>
+									<!-- <button class="botao-filtro"onclick="setCategoryFilter('categoria-tecnologias')">Tecnologias</button> -->
+									<button class="botao-filtro"onclick="setCategoryFilter('categoria-comercial')">Comercial</button>
+									<!-- <button class="botao-filtro" onclick="setCategoryFilter('categoria-boas-praticas')">Boas Práticas</button> -->
+									<button class="botao-filtro" onclick="setCategoryFilter('')">Mostrar Todos</button>
+								</div>
+		
+		
 
 
 						<!-- Acordeão de vídeos -->
