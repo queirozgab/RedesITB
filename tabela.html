@@ -2715,7 +2715,7 @@
 									<tr>
 										<th>Modelo</th>
 										<th>Interface</th>
-										<th>Qtde Portas</th>
+										<th onclick="sortTable(2)">Qtde Portas</th>
 										<th>Gerenciável</th>
 										<th>PoE Ativo</th>
 										<th>Taxa de Encam. de Pacotes</th>
@@ -4380,7 +4380,7 @@
 									</td>
 									<td><img src="./assets/img/icons/x-removebg-preview.png" style="width: 15px;">
 									</td>
-									<td>3 Anos</td>
+									<td>2 Anos</td>
 									<td><a href="https://www.intelbras.com/pt-br/switch-24-portas-gigabit-ethernet-sg-2400-qr-0"
 											class="saiba-mais" target="_blank">Saiba mais</a></td>
 								</tr>
@@ -7598,6 +7598,45 @@
 							}
 						}
 
+
+
+						function sortTable(n) {
+    const table = document.getElementById("tabelaProdutos");
+    let rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+    switching = true;
+    dir = "asc"; // Inicialmente, ordenar de forma ascendente
+
+    while (switching) {
+        switching = false;
+        rows = table.rows;
+        for (i = 1; i < (rows.length - 1); i++) {
+            shouldSwitch = false;
+            x = rows[i].getElementsByTagName("TD")[n];
+            y = rows[i + 1].getElementsByTagName("TD")[n];
+            if (dir === "asc") {
+                if (parseInt(x.innerHTML) > parseInt(y.innerHTML)) {
+                    shouldSwitch = true;
+                    break;
+                }
+            } else if (dir === "desc") {
+                if (parseInt(x.innerHTML) < parseInt(y.innerHTML)) {
+                    shouldSwitch = true;
+                    break;
+                }
+            }
+        }
+        if (shouldSwitch) {
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+            switchcount++;
+        } else {
+            if (switchcount === 0 && dir === "asc") {
+                dir = "desc";
+                switching = true;
+            }
+        }
+    }
+}
 
 					</script>
 					<h3><button class="info-buttonleg">F</button>

@@ -1084,6 +1084,39 @@ th:not(.modelo) {
     /* Mantém o texto alinhado à esquerda no estado ativo */
 
 }
+.botao-filtroap {
+    padding: 7px 15px;
+    font-size: 14px;
+    border: 1px solid #50788a;
+    border-radius: 25px;
+    background-color: #f8f9fa;
+    text-align: left;
+    color: #50788a;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.botao-filtroap:hover {
+    background-color: #6990A7;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+    text-align: left;
+    text-align: left;
+    /* Mantém o texto alinhado à esquerda no estado ativo */
+
+}
+
+.botao-filtroap.ativo {
+    background-color: #50788a;
+    color: #ffffff;
+    border-color: #1f80ad;
+    transform: scale(1.05);
+    margin-left: 0;
+    /* Alinha o botão à esquerda */
+    text-align: left;
+    /* Mantém o texto alinhado à esquerda no estado ativo */
+
+}
 
 .filtros {
     display: flex;
@@ -1335,7 +1368,14 @@ table {
 .filter-buttons-container {
     position: relative;
 }
+.filter-buttonsap {
+    display: flex;
+    gap: 10px;
+}
 
+.filter-buttonsap-container {
+    position: relative;
+}
 .search-input {
     padding: 8px 15px;
     font-size: 14px;
